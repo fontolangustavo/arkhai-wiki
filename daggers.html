@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adagas - Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/wiki.css" />
+</head>
+<body>
+  <div class="wiki-shell">
+    <div id="wiki-sidebar"></div>
+
+    <main class="main">
+      <div id="wiki-topbar"></div>
+
+      <section class="content">
+        <article class="article">
+          <header class="article-header">
+            <h1>Adagas</h1>
+            <div class="article-actions">versao publicada · Arkhai Wiki</div>
+          </header>
+
+          <div class="status-line">🗡️ Lista inicial de adagas conhecidas em Arkhai.</div>
+
+          <p>As <strong>adagas</strong> sao armas rapidas focadas em mobilidade, veneno, sangramento e ataques criticos. Muitas linhagens de assassinos e duelistas utilizam adagas ancestrais ligadas a residuos de Ar-Khe.</p>
+
+          <table class="wiki-table" id="daggers-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Icone</th>
+                <th>Lvl</th>
+                <th>Vocacao</th>
+                <th>Maos</th>
+                <th>Atq</th>
+                <th>Dano Elemental</th>
+                <th>Def</th>
+                <th>Mod. Defesa</th>
+                <th>Bonus</th>
+                <th>Slots</th>
+                <th>Tier</th>
+                <th>Raridade</th>
+                <th>Fonte</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/layout.js"></script>
+  <script>
+    renderLayout('daggers.html');
+
+    async function loadDaggers() {
+      const response = await fetch('data/daggers.json');
+      const daggers = await response.json();
+
+      const tbody = document.querySelector('#daggers-table tbody');
+
+      daggers.forEach(dagger => {
+        const rarityClass = dagger.rarity === 'Lendario'
+          ? 'legendary'
+          : dagger.rarity === 'Incomum'
+            ? 'uncommon'
+            : '';
+
+        const row = document.createElement('tr');
+
+        row.innerHTML = `
+          <td>
+            <strong>${dagger.name}</strong><br>
+            <small style="color: var(--muted)">${dagger.description}</small>
+          </td>
+          <td style="font-size:28px">${dagger.icon}</td>
+          <td>${dagger.level}</td>
+          <td>${dagger.vocation}</td>
+          <td>${dagger.hands}</td>
+          <td>${dagger.attack}</td>
+          <td>${dagger.elementalDamage}</td>
+          <td>${dagger.defense}</td>
+          <td>${dagger.defenseModifier}</td>
+          <td>${dagger.bonus}</td>
+          <td>${dagger.slots}</td>
+          <td>${dagger.tier}</td>
+          <td><span class="rarity ${rarityClass}">${dagger.rarity}</span></td>
+          <td>${dagger.source}</td>
+        `;
+
+        tbody.appendChild(row);
+      });
+    }
+
+    loadDaggers();
+  </script>
+</body>
+</html>
