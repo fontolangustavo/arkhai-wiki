@@ -6,141 +6,194 @@
   <title>Arkhai Wiki</title>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #1a1714; color: #e7dcc4; }
-    a { color: #f4d8a3; }
-    .page-shell { max-width: 1400px; margin: 0 auto; }
-    .topbar { background: linear-gradient(to bottom, #3a2616, #24170f); border-bottom: 3px solid #8c6738; display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
-    .brand { display: flex; align-items: center; gap: 16px; }
-    .brand-mark { width: 52px; height: 52px; border-radius: 12px; background: #8c6738; color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; border: 2px solid #f4d8a3; }
-    .brand h1 { margin: 0; color: #f4d8a3; font-size: 34px; }
-    .brand p { margin: 4px 0 0; color: #c7ae7b; }
-    .topnav { display: flex; gap: 18px; flex-wrap: wrap; }
-    .topnav a, .sidebar a { text-decoration: none; color: #e7dcc4; }
-    .topnav a:hover, .sidebar a:hover { color: #f4d8a3; }
-    .wiki-layout { display: grid; grid-template-columns: 280px 1fr; gap: 20px; padding: 20px; }
-    .panel { background: #2a211a; border: 2px solid #6f5230; border-radius: 10px; box-shadow: 0 0 0 1px #3a2a1c inset, 0 8px 24px rgba(0,0,0,.25); padding: 20px; }
-    .sidebar { height: fit-content; position: sticky; top: 20px; }
-    .sidebar h2, .panel h2, .panel h3 { color: #f4d8a3; }
-    .sidebar h2 { margin-top: 0; }
-    .sidebar a { display: block; padding: 8px 0; border-bottom: 1px solid #493522; }
-    .content { display: flex; flex-direction: column; gap: 20px; }
-    .hero-card { display: flex; justify-content: space-between; gap: 20px; background: radial-gradient(circle at top left, #4a311d, #2b1e14 42%, #1e1814); }
-    .hero-card h2 { margin: 0 0 12px; font-size: 38px; color: #f4d8a3; }
-    .eyebrow { text-transform: uppercase; letter-spacing: 2px; color: #c7ae7b; margin-top: 0; }
-    .hero-stats { display: flex; gap: 16px; align-items: stretch; }
-    .hero-stats div { background: #201711; border: 1px solid #6f5230; border-radius: 8px; padding: 16px; min-width: 110px; text-align: center; }
-    .hero-stats strong { display: block; font-size: 30px; color: #f4d8a3; }
-    .hero-stats span { display: block; margin-top: 6px; font-size: 13px; color: #c7ae7b; }
-    .grid { display: grid; gap: 20px; }
-    .two-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .three-columns { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .wiki-table { width: 100%; border-collapse: collapse; background: #211812; }
-    .wiki-table th, .wiki-table td { border: 1px solid #5a4127; padding: 10px; text-align: left; }
-    .wiki-table th { background: #3a2a1c; color: #f4d8a3; }
-    .rarity { padding: 4px 8px; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block; }
-    .legendary { background: #a56a16; color: white; }
-    .uncommon { background: #2d7a43; color: white; }
-    .link-list { display: flex; flex-direction: column; gap: 14px; }
-    .link-list a { background: #211812; border: 1px solid #5a4127; border-radius: 8px; padding: 14px; text-decoration: none; color: #e7dcc4; }
-    .link-list strong { display: block; margin-bottom: 6px; color: #f4d8a3; }
-    .link-list span { color: #c7ae7b; }
-    .city-list { list-style: none; padding: 0; margin: 0; }
-    .city-list li { padding: 12px 0; border-bottom: 1px solid #493522; }
-    .city-list strong { display: block; color: #f4d8a3; }
-    .city-list span { color: #c7ae7b; }
-    .parchment { background: linear-gradient(to bottom, #3b2d1d, #2d2118); }
-    @media (max-width: 960px) { .wiki-layout { grid-template-columns: 1fr; } .two-columns, .three-columns { grid-template-columns: 1fr; } .hero-card { flex-direction: column; } .hero-stats { flex-wrap: wrap; } .topbar { flex-direction: column; gap: 16px; align-items: flex-start; } }
+    :root {
+      --page-bg: #f5f6f8;
+      --sidebar-bg: #eef1f5;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --border: #d8dee8;
+      --border-strong: #aab7c8;
+      --text: #20242a;
+      --muted: #5f6b7a;
+      --link: #1659a8;
+      --accent: #8c6738;
+      --accent-soft: #fff4df;
+      --gold: #b8872e;
+    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--page-bg); color: var(--text); font-size: 14px; line-height: 1.55; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wiki-shell { display: grid; grid-template-columns: 178px 1fr; min-height: 100vh; }
+    .sidebar { background: var(--sidebar-bg); border-right: 1px solid var(--border); padding: 18px 14px; position: sticky; top: 0; height: 100vh; overflow: auto; }
+    .logo { text-align: center; margin-bottom: 24px; }
+    .logo-mark { width: 84px; height: 84px; margin: 0 auto 8px; border-radius: 22px; background: linear-gradient(135deg, #322115, #b8872e); color: white; display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; font-size: 52px; box-shadow: 0 8px 22px rgba(0,0,0,.18); }
+    .logo strong { display: block; font-family: Georgia, serif; font-size: 24px; color: #1f2933; }
+    .logo span { display: block; color: var(--muted); font-size: 12px; }
+    .side-section { margin-bottom: 20px; }
+    .side-section h3 { margin: 0 0 8px; padding-bottom: 4px; color: #4a5563; font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: .04em; }
+    .side-section a { display: block; padding: 4px 0; font-size: 13px; }
+    .main { min-width: 0; }
+    .topbar { height: 54px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 18px 0 22px; position: sticky; top: 0; z-index: 5; }
+    .tabs { display: flex; align-items: stretch; height: 100%; }
+    .tab { display: flex; align-items: center; padding: 0 14px; border-right: 1px solid var(--border); color: #334155; }
+    .tab.active { background: #edf4ff; color: var(--link); border-bottom: 3px solid var(--link); }
+    .search { display: flex; gap: 8px; align-items: center; }
+    .search input { width: min(320px, 32vw); padding: 8px 10px; border: 1px solid var(--border-strong); border-radius: 4px; background: #fff; }
+    .content { padding: 26px 26px 60px; }
+    .notice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 34px; }
+    .notice-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; box-shadow: 0 2px 8px rgba(20, 30, 45, .06); display: grid; grid-template-columns: 54px 1fr; gap: 14px; align-items: start; }
+    .notice-icon { width: 48px; height: 48px; border-radius: 10px; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-size: 26px; }
+    .notice-card h2 { margin: 0 0 8px; font-size: 17px; }
+    .notice-card p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+    .article { background: var(--surface); border: 1px solid var(--border); padding: 26px; box-shadow: 0 2px 8px rgba(20, 30, 45, .04); }
+    .article-header { display: flex; align-items: end; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--border-strong); margin-bottom: 10px; }
+    .article h1 { font-family: Georgia, serif; font-size: 34px; font-weight: 500; margin: 0 0 6px; }
+    .article-actions { color: var(--muted); font-size: 13px; white-space: nowrap; margin-bottom: 10px; }
+    .status-line { background: #edf4ff; border: 1px solid #b8cbe4; padding: 8px 12px; color: #374151; font-size: 13px; margin: 12px 0 20px; }
+    .article-body { display: grid; grid-template-columns: 1fr 270px; gap: 24px; }
+    .article p { margin: 0 0 12px; }
+    .infobox { border: 1px solid var(--border-strong); background: var(--surface-soft); align-self: start; }
+    .infobox-title { background: linear-gradient(to bottom, #ece3d4, #d7c39e); border-bottom: 1px solid var(--border-strong); color: #2c2116; font-weight: 700; text-align: center; padding: 9px; }
+    .item-preview { height: 130px; display: flex; align-items: center; justify-content: center; font-size: 56px; background: #f1f3f6; border-bottom: 1px solid var(--border); }
+    .infobox table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .infobox th, .infobox td { border-top: 1px solid var(--border); padding: 7px 8px; text-align: left; }
+    .infobox th { width: 42%; background: #eef1f5; color: #4b5563; }
+    .wiki-table { width: 100%; border-collapse: collapse; margin-top: 14px; }
+    .wiki-table th, .wiki-table td { border: 1px solid var(--border); padding: 9px 10px; text-align: left; }
+    .wiki-table th { background: #eef4fb; color: #334155; }
+    .rarity { padding: 3px 7px; border-radius: 999px; font-size: 12px; font-weight: 700; display: inline-block; }
+    .legendary { background: #fff0d4; color: #935f00; border: 1px solid #e4b35c; }
+    .uncommon { background: #e5f7ec; color: #237345; border: 1px solid #9bd3ae; }
+    .see-also { display: inline-flex; align-items: center; gap: 10px; margin: 12px 0 24px; background: #eef8ff; border: 1px solid #c7dff1; border-radius: 8px; padding: 10px 14px; color: #334155; }
+    .section-title { font-family: Georgia, serif; font-size: 24px; font-weight: 500; border-bottom: 1px solid var(--border-strong); margin: 26px 0 12px; padding-bottom: 4px; }
+    .city-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .city-card { border: 1px solid var(--border); background: var(--surface-soft); border-radius: 8px; padding: 13px; }
+    .city-card strong { display: block; color: #263241; margin-bottom: 4px; }
+    .city-card span { color: var(--muted); font-size: 13px; }
+    @media (max-width: 1050px) { .notice-grid { grid-template-columns: 1fr; } .article-body { grid-template-columns: 1fr; } .infobox { max-width: 420px; } }
+    @media (max-width: 760px) { .wiki-shell { grid-template-columns: 1fr; } .sidebar { position: static; height: auto; } .topbar { position: static; height: auto; flex-direction: column; align-items: stretch; gap: 10px; padding: 12px; } .tabs { height: auto; flex-wrap: wrap; } .tab { padding: 8px 10px; border: 1px solid var(--border); } .search input { width: 100%; } .content { padding: 16px; } .city-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark">A</div>
-        <div>
-          <h1>Arkhai Wiki</h1>
-          <p>Codex de itens, monstros, cidades e sistemas</p>
-        </div>
+  <div class="wiki-shell">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-mark">A</div>
+        <strong>Arkhai Wiki</strong>
+        <span>Codex do mundo antigo</span>
       </div>
-      <nav class="topnav">
+
+      <nav class="side-section">
+        <h3>Principal</h3>
+        <a href="#home">Home</a>
+        <a href="#updates">Mudancas recentes</a>
         <a href="#items">Itens</a>
         <a href="#systems">Sistemas</a>
-        <a href="#cities">Cidades</a>
-        <a href="#lore">Lore</a>
       </nav>
-    </header>
 
-    <main class="wiki-layout">
-      <aside class="sidebar panel">
-        <h2>Navegacao</h2>
-        <a href="#home">Pagina inicial</a>
+      <nav class="side-section">
+        <h3>Cyclopedia</h3>
         <a href="#items">Itens</a>
-        <a href="#upgrade">Aprimoramento</a>
-        <a href="#ascension">Ascensao</a>
+        <a href="#monsters">Bestiario</a>
         <a href="#cities">Cidades</a>
-        <a href="#monsters">Monstros</a>
+        <a href="#classes">Classes</a>
         <a href="#crafting">Crafting</a>
-        <a href="#lore">Lore</a>
-      </aside>
+        <a href="#lore">Magical Archive</a>
+      </nav>
+
+      <nav class="side-section">
+        <h3>Utilidades</h3>
+        <a href="#upgrade">Calculadora de Upgrade</a>
+        <a href="#ascension">Simulador de Ascensao</a>
+        <a href="#loot">Loot Tables</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <nav class="tabs">
+          <a class="tab active" href="#home">Pagina</a>
+          <a class="tab" href="#discussion">Discussao</a>
+          <a class="tab" href="#source">Codigo-fonte</a>
+          <a class="tab" href="#history">Historico</a>
+        </nav>
+        <div class="search">
+          <input type="search" placeholder="Pesquisar em Arkhai Wiki" />
+        </div>
+      </header>
 
       <section class="content">
-        <article id="home" class="panel hero-card">
-          <div>
-            <p class="eyebrow">Welcome to</p>
-            <h2>Arkhai Wiki</h2>
-            <p>Uma wiki inspirada na estrutura classica de MMORPGs, mas focada no universo de Arkhai: progressao de itens, ascensao, grimorios, cidades antigas, chefes, crafting e sistemas de mundo.</p>
-          </div>
-          <div class="hero-stats">
-            <div><strong>4</strong><span>Cidades principais</span></div>
-            <div><strong>10</strong><span>Niveis de ascensao</span></div>
-            <div><strong>5</strong><span>Raridades base</span></div>
+        <div id="updates" class="notice-grid">
+          <article class="notice-card">
+            <div class="notice-icon">🏜️</div>
+            <div><h2>Khem-Nippur</h2><p>Regiao inicial do deserto, necromancia, sol e artefatos antigos.</p><a href="#cities">Saiba mais →</a></div>
+          </article>
+          <article class="notice-card">
+            <div class="notice-icon">⚔️</div>
+            <div><h2>Balanceamento de Itens</h2><p>Base inicial para raridades, atributos, aprimoramento e ascensao.</p><a href="#items">Saiba mais →</a></div>
+          </article>
+          <article class="notice-card">
+            <div class="notice-icon">📜</div>
+            <div><h2>Codex Ar-Khe</h2><p>Fragmentos de lore, grimorios, essencias e historia do mundo.</p><a href="#lore">Saiba mais →</a></div>
+          </article>
+        </div>
+
+        <article id="home" class="article">
+          <header class="article-header">
+            <h1>Adagas</h1>
+            <div class="article-actions">versao publicada · Arkhai Wiki</div>
+          </header>
+          <div class="status-line">👁 Esta pagina apresenta a base inicial das adagas conhecidas em Arkhai.</div>
+
+          <div class="article-body">
+            <div>
+              <p><strong>Adagas</strong> sao armas rapidas focadas em velocidade, mobilidade, critico e aplicacao constante de efeitos como veneno, sangramento ou maldicoes de essencia.</p>
+              <p>Em Arkhai, cada arma pode possuir uma linhagem de evolucao, permitindo que um item comum se transforme em uma reliquia lendaria atraves de aprimoramento, ascensao e materiais raros.</p>
+              <p>Algumas adagas antigas carregam residuos de <a href="#lore">Ar-Khe</a>, permitindo efeitos unicos quando despertadas por jogadores com dominio suficiente.</p>
+
+              <div class="see-also">🔎 <span>Veja tambem: <a href="#upgrade">Aprimoramento</a>, <a href="#ascension">Ascensao</a>, <a href="#crafting">Crafting</a> e <a href="#lore">Ar-Khe</a></span></div>
+
+              <h2 id="items" class="section-title">Adagas conhecidas</h2>
+              <table class="wiki-table">
+                <thead><tr><th>Item</th><th>Tier</th><th>Raridade</th><th>Identidade</th></tr></thead>
+                <tbody>
+                  <tr><td><a href="docs/items/presas-do-rei.md">Adaga de Escorpiao</a></td><td>I</td><td><span class="rarity uncommon">Incomum</span></td><td>Aplicacao rapida de veneno</td></tr>
+                  <tr><td>Adaga do Escorpiao Elite</td><td>II</td><td>Raro</td><td>Veneno melhorado e perfuracao</td></tr>
+                  <tr><td>Lamina do Mestre Escorpiao</td><td>III</td><td>Epico</td><td>Critico, veneno e mobilidade</td></tr>
+                  <tr><td>Presas do Rei</td><td>IV</td><td><span class="rarity legendary">Lendario</span></td><td>Veneno real, critico e velocidade</td></tr>
+                </tbody>
+              </table>
+
+              <h2 id="systems" class="section-title">Sistemas relacionados</h2>
+              <p id="upgrade"><strong>Aprimoramento:</strong> aumenta atributos diretos como ataque, chance critica, velocidade e poder de veneno.</p>
+              <p id="ascension"><strong>Ascensao:</strong> leva o item alem do limite comum, adicionando multiplicadores e efeitos visuais.</p>
+              <p id="crafting"><strong>Crafting:</strong> usa ferraria, essencias, partes de monstros e artefatos para criar ou evoluir equipamentos.</p>
+
+              <h2 id="cities" class="section-title">Cidades de Arkhai</h2>
+              <div class="city-grid">
+                <div class="city-card"><strong>Khem-Nippur</strong><span>O Bercario de Ouro, deserto, necromancia e sol.</span></div>
+                <div class="city-card"><strong>Hellas-Assur</strong><span>A Agora de Marmore, arenas, forja e disciplina marcial.</span></div>
+                <div class="city-card"><strong>Ermo de Nod</strong><span>A fronteira do esquecimento, neve, polvora e exilio.</span></div>
+                <div class="city-card"><strong>Silvan-Arcadia</strong><span>O santuario das raizes, alquimia botanica e cura.</span></div>
+              </div>
+
+              <h2 id="lore" class="section-title">Fragmento de lore</h2>
+              <p>Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem. Outros lembram. Os mais antigos escolhem quem pode desperta-los.</p>
+            </div>
+
+            <aside class="infobox">
+              <div class="infobox-title">Presas do Rei</div>
+              <div class="item-preview">🦂</div>
+              <table>
+                <tr><th>Tipo</th><td>Adaga</td></tr>
+                <tr><th>Raridade</th><td><span class="rarity legendary">Lendario</span></td></tr>
+                <tr><th>Regiao</th><td>Khem-Nippur</td></tr>
+                <tr><th>Identidade</th><td>Veneno, critico, velocidade</td></tr>
+                <tr><th>Ascensao</th><td>0 - 10</td></tr>
+              </table>
+            </aside>
           </div>
         </article>
-
-        <section class="grid two-columns">
-          <article id="items" class="panel">
-            <h2>Itens em destaque</h2>
-            <table class="wiki-table">
-              <thead><tr><th>Item</th><th>Tipo</th><th>Raridade</th><th>Identidade</th></tr></thead>
-              <tbody>
-                <tr><td><a href="docs/items/presas-do-rei.md">Presas do Rei</a></td><td>Adaga</td><td><span class="rarity legendary">Lendario</span></td><td>Veneno, critico e velocidade</td></tr>
-                <tr><td>Adaga de Escorpiao</td><td>Adaga</td><td><span class="rarity uncommon">Incomum</span></td><td>Aplicacao rapida de veneno</td></tr>
-              </tbody>
-            </table>
-          </article>
-
-          <article id="systems" class="panel">
-            <h2>Sistemas principais</h2>
-            <div class="link-list">
-              <a href="#upgrade"><strong>Aprimoramento</strong><span>Melhore atributos e poder bruto do equipamento.</span></a>
-              <a href="#ascension"><strong>Ascensao</strong><span>Leve itens alem do limite normal de progressao.</span></a>
-              <a href="#crafting"><strong>Crafting</strong><span>Forja, reparo, recursos e receitas.</span></a>
-            </div>
-          </article>
-        </section>
-
-        <section class="grid three-columns">
-          <article id="upgrade" class="panel"><h3>Aprimoramento</h3><p>O aprimoramento aumenta atributos diretos como ataque, defesa, chance critica e poder elemental.</p></article>
-          <article id="ascension" class="panel"><h3>Ascensao</h3><p>A ascensao redefine o potencial do item, adicionando multiplicadores, efeitos visuais e poder de endgame.</p></article>
-          <article id="crafting" class="panel"><h3>Crafting</h3><p>Itens podem nascer de monstros, receitas raras, essencias, minerios e artefatos das cidades antigas.</p></article>
-        </section>
-
-        <section class="grid two-columns">
-          <article id="cities" class="panel">
-            <h2>Cidades de Arkhai</h2>
-            <ul class="city-list">
-              <li><strong>Khem-Nippur</strong><span>O Bercario de Ouro, deserto, necromancia e sol.</span></li>
-              <li><strong>Hellas-Assur</strong><span>A Agora de Marmore, arenas, forja e disciplina marcial.</span></li>
-              <li><strong>Ermo de Nod</strong><span>A fronteira do esquecimento, neve, polvora e exilio.</span></li>
-              <li><strong>Silvan-Arcadia</strong><span>O santuario das raizes, alquimia botanica e cura.</span></li>
-            </ul>
-          </article>
-
-          <article id="lore" class="panel parchment">
-            <h2>Fragmento de lore</h2>
-            <p>Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem. Outros lembram. Os mais antigos escolhem quem pode desperta-los.</p>
-          </article>
-        </section>
       </section>
     </main>
   </div>
