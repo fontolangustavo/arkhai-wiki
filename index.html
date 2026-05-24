@@ -4,7 +4,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arkhai Wiki</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #1a1714; color: #e7dcc4; }
+    a { color: #f4d8a3; }
+    .page-shell { max-width: 1400px; margin: 0 auto; }
+    .topbar { background: linear-gradient(to bottom, #3a2616, #24170f); border-bottom: 3px solid #8c6738; display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand-mark { width: 52px; height: 52px; border-radius: 12px; background: #8c6738; color: white; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; border: 2px solid #f4d8a3; }
+    .brand h1 { margin: 0; color: #f4d8a3; font-size: 34px; }
+    .brand p { margin: 4px 0 0; color: #c7ae7b; }
+    .topnav { display: flex; gap: 18px; flex-wrap: wrap; }
+    .topnav a, .sidebar a { text-decoration: none; color: #e7dcc4; }
+    .topnav a:hover, .sidebar a:hover { color: #f4d8a3; }
+    .wiki-layout { display: grid; grid-template-columns: 280px 1fr; gap: 20px; padding: 20px; }
+    .panel { background: #2a211a; border: 2px solid #6f5230; border-radius: 10px; box-shadow: 0 0 0 1px #3a2a1c inset, 0 8px 24px rgba(0,0,0,.25); padding: 20px; }
+    .sidebar { height: fit-content; position: sticky; top: 20px; }
+    .sidebar h2, .panel h2, .panel h3 { color: #f4d8a3; }
+    .sidebar h2 { margin-top: 0; }
+    .sidebar a { display: block; padding: 8px 0; border-bottom: 1px solid #493522; }
+    .content { display: flex; flex-direction: column; gap: 20px; }
+    .hero-card { display: flex; justify-content: space-between; gap: 20px; background: radial-gradient(circle at top left, #4a311d, #2b1e14 42%, #1e1814); }
+    .hero-card h2 { margin: 0 0 12px; font-size: 38px; color: #f4d8a3; }
+    .eyebrow { text-transform: uppercase; letter-spacing: 2px; color: #c7ae7b; margin-top: 0; }
+    .hero-stats { display: flex; gap: 16px; align-items: stretch; }
+    .hero-stats div { background: #201711; border: 1px solid #6f5230; border-radius: 8px; padding: 16px; min-width: 110px; text-align: center; }
+    .hero-stats strong { display: block; font-size: 30px; color: #f4d8a3; }
+    .hero-stats span { display: block; margin-top: 6px; font-size: 13px; color: #c7ae7b; }
+    .grid { display: grid; gap: 20px; }
+    .two-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three-columns { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .wiki-table { width: 100%; border-collapse: collapse; background: #211812; }
+    .wiki-table th, .wiki-table td { border: 1px solid #5a4127; padding: 10px; text-align: left; }
+    .wiki-table th { background: #3a2a1c; color: #f4d8a3; }
+    .rarity { padding: 4px 8px; border-radius: 4px; font-size: 13px; font-weight: bold; display: inline-block; }
+    .legendary { background: #a56a16; color: white; }
+    .uncommon { background: #2d7a43; color: white; }
+    .link-list { display: flex; flex-direction: column; gap: 14px; }
+    .link-list a { background: #211812; border: 1px solid #5a4127; border-radius: 8px; padding: 14px; text-decoration: none; color: #e7dcc4; }
+    .link-list strong { display: block; margin-bottom: 6px; color: #f4d8a3; }
+    .link-list span { color: #c7ae7b; }
+    .city-list { list-style: none; padding: 0; margin: 0; }
+    .city-list li { padding: 12px 0; border-bottom: 1px solid #493522; }
+    .city-list strong { display: block; color: #f4d8a3; }
+    .city-list span { color: #c7ae7b; }
+    .parchment { background: linear-gradient(to bottom, #3b2d1d, #2d2118); }
+    @media (max-width: 960px) { .wiki-layout { grid-template-columns: 1fr; } .two-columns, .three-columns { grid-template-columns: 1fr; } .hero-card { flex-direction: column; } .hero-stats { flex-wrap: wrap; } .topbar { flex-direction: column; gap: 16px; align-items: flex-start; } }
+  </style>
 </head>
 <body>
   <div class="page-shell">
@@ -42,10 +88,7 @@
           <div>
             <p class="eyebrow">Welcome to</p>
             <h2>Arkhai Wiki</h2>
-            <p>
-              Uma wiki inspirada na estrutura classica de MMORPGs, mas focada no universo de Arkhai:
-              progressao de itens, ascensao, grimorios, cidades antigas, chefes, crafting e sistemas de mundo.
-            </p>
+            <p>Uma wiki inspirada na estrutura classica de MMORPGs, mas focada no universo de Arkhai: progressao de itens, ascensao, grimorios, cidades antigas, chefes, crafting e sistemas de mundo.</p>
           </div>
           <div class="hero-stats">
             <div><strong>4</strong><span>Cidades principais</span></div>
@@ -58,27 +101,10 @@
           <article id="items" class="panel">
             <h2>Itens em destaque</h2>
             <table class="wiki-table">
-              <thead>
-                <tr>
-                  <th>Item</th>
-                  <th>Tipo</th>
-                  <th>Raridade</th>
-                  <th>Identidade</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Item</th><th>Tipo</th><th>Raridade</th><th>Identidade</th></tr></thead>
               <tbody>
-                <tr>
-                  <td><a href="docs/items/presas-do-rei.md">Presas do Rei</a></td>
-                  <td>Adaga</td>
-                  <td><span class="rarity legendary">Lendario</span></td>
-                  <td>Veneno, critico e velocidade</td>
-                </tr>
-                <tr>
-                  <td>Adaga de Escorpiao</td>
-                  <td>Adaga</td>
-                  <td><span class="rarity uncommon">Incomum</span></td>
-                  <td>Aplicacao rapida de veneno</td>
-                </tr>
+                <tr><td><a href="docs/items/presas-do-rei.md">Presas do Rei</a></td><td>Adaga</td><td><span class="rarity legendary">Lendario</span></td><td>Veneno, critico e velocidade</td></tr>
+                <tr><td>Adaga de Escorpiao</td><td>Adaga</td><td><span class="rarity uncommon">Incomum</span></td><td>Aplicacao rapida de veneno</td></tr>
               </tbody>
             </table>
           </article>
@@ -94,18 +120,9 @@
         </section>
 
         <section class="grid three-columns">
-          <article id="upgrade" class="panel info-box">
-            <h3>Aprimoramento</h3>
-            <p>O aprimoramento aumenta atributos diretos como ataque, defesa, chance critica e poder elemental.</p>
-          </article>
-          <article id="ascension" class="panel info-box">
-            <h3>Ascensao</h3>
-            <p>A ascensao redefine o potencial do item, adicionando multiplicadores, efeitos visuais e poder de endgame.</p>
-          </article>
-          <article id="crafting" class="panel info-box">
-            <h3>Crafting</h3>
-            <p>Itens podem nascer de monstros, receitas raras, essencias, minerios e artefatos das cidades antigas.</p>
-          </article>
+          <article id="upgrade" class="panel"><h3>Aprimoramento</h3><p>O aprimoramento aumenta atributos diretos como ataque, defesa, chance critica e poder elemental.</p></article>
+          <article id="ascension" class="panel"><h3>Ascensao</h3><p>A ascensao redefine o potencial do item, adicionando multiplicadores, efeitos visuais e poder de endgame.</p></article>
+          <article id="crafting" class="panel"><h3>Crafting</h3><p>Itens podem nascer de monstros, receitas raras, essencias, minerios e artefatos das cidades antigas.</p></article>
         </section>
 
         <section class="grid two-columns">
@@ -121,10 +138,7 @@
 
           <article id="lore" class="panel parchment">
             <h2>Fragmento de lore</h2>
-            <p>
-              Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem.
-              Outros lembram. Os mais antigos escolhem quem pode desperta-los.
-            </p>
+            <p>Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem. Outros lembram. Os mais antigos escolhem quem pode desperta-los.</p>
           </article>
         </section>
       </section>
