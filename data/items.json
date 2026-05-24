@@ -1,0 +1,23 @@
+[
+  {
+    "id": "presas_do_rei",
+    "name": "Presas do Rei",
+    "type": "dagger",
+    "rarity": "legendary",
+    "baseStats": {
+      "attack": 120,
+      "critChance": 18,
+      "attackSpeed": 1.9,
+      "poisonPower": 80
+    },
+    "upgradeScaling": {
+      "attackPerLevel": 12,
+      "critPerLevel": 1.2,
+      "poisonPerLevel": 8
+    },
+    "ascension": {
+      "maxLevel": 10,
+      "multiplier": 1.15
+    }
+  }
+]
