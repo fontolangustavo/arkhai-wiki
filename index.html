@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">A</div>
+        <div>
+          <h1>Arkhai Wiki</h1>
+          <p>Codex de itens, monstros, cidades e sistemas</p>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a href="#items">Itens</a>
+        <a href="#systems">Sistemas</a>
+        <a href="#cities">Cidades</a>
+        <a href="#lore">Lore</a>
+      </nav>
+    </header>
+
+    <main class="wiki-layout">
+      <aside class="sidebar panel">
+        <h2>Navegacao</h2>
+        <a href="#home">Pagina inicial</a>
+        <a href="#items">Itens</a>
+        <a href="#upgrade">Aprimoramento</a>
+        <a href="#ascension">Ascensao</a>
+        <a href="#cities">Cidades</a>
+        <a href="#monsters">Monstros</a>
+        <a href="#crafting">Crafting</a>
+        <a href="#lore">Lore</a>
+      </aside>
+
+      <section class="content">
+        <article id="home" class="panel hero-card">
+          <div>
+            <p class="eyebrow">Welcome to</p>
+            <h2>Arkhai Wiki</h2>
+            <p>
+              Uma wiki inspirada na estrutura classica de MMORPGs, mas focada no universo de Arkhai:
+              progressao de itens, ascensao, grimorios, cidades antigas, chefes, crafting e sistemas de mundo.
+            </p>
+          </div>
+          <div class="hero-stats">
+            <div><strong>4</strong><span>Cidades principais</span></div>
+            <div><strong>10</strong><span>Niveis de ascensao</span></div>
+            <div><strong>5</strong><span>Raridades base</span></div>
+          </div>
+        </article>
+
+        <section class="grid two-columns">
+          <article id="items" class="panel">
+            <h2>Itens em destaque</h2>
+            <table class="wiki-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Tipo</th>
+                  <th>Raridade</th>
+                  <th>Identidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="docs/items/presas-do-rei.md">Presas do Rei</a></td>
+                  <td>Adaga</td>
+                  <td><span class="rarity legendary">Lendario</span></td>
+                  <td>Veneno, critico e velocidade</td>
+                </tr>
+                <tr>
+                  <td>Adaga de Escorpiao</td>
+                  <td>Adaga</td>
+                  <td><span class="rarity uncommon">Incomum</span></td>
+                  <td>Aplicacao rapida de veneno</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article id="systems" class="panel">
+            <h2>Sistemas principais</h2>
+            <div class="link-list">
+              <a href="#upgrade"><strong>Aprimoramento</strong><span>Melhore atributos e poder bruto do equipamento.</span></a>
+              <a href="#ascension"><strong>Ascensao</strong><span>Leve itens alem do limite normal de progressao.</span></a>
+              <a href="#crafting"><strong>Crafting</strong><span>Forja, reparo, recursos e receitas.</span></a>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid three-columns">
+          <article id="upgrade" class="panel info-box">
+            <h3>Aprimoramento</h3>
+            <p>O aprimoramento aumenta atributos diretos como ataque, defesa, chance critica e poder elemental.</p>
+          </article>
+          <article id="ascension" class="panel info-box">
+            <h3>Ascensao</h3>
+            <p>A ascensao redefine o potencial do item, adicionando multiplicadores, efeitos visuais e poder de endgame.</p>
+          </article>
+          <article id="crafting" class="panel info-box">
+            <h3>Crafting</h3>
+            <p>Itens podem nascer de monstros, receitas raras, essencias, minerios e artefatos das cidades antigas.</p>
+          </article>
+        </section>
+
+        <section class="grid two-columns">
+          <article id="cities" class="panel">
+            <h2>Cidades de Arkhai</h2>
+            <ul class="city-list">
+              <li><strong>Khem-Nippur</strong><span>O Bercario de Ouro, deserto, necromancia e sol.</span></li>
+              <li><strong>Hellas-Assur</strong><span>A Agora de Marmore, arenas, forja e disciplina marcial.</span></li>
+              <li><strong>Ermo de Nod</strong><span>A fronteira do esquecimento, neve, polvora e exilio.</span></li>
+              <li><strong>Silvan-Arcadia</strong><span>O santuario das raizes, alquimia botanica e cura.</span></li>
+            </ul>
+          </article>
+
+          <article id="lore" class="panel parchment">
+            <h2>Fragmento de lore</h2>
+            <p>
+              Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem.
+              Outros lembram. Os mais antigos escolhem quem pode desperta-los.
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
