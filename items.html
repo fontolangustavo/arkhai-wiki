@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Itens - Arkhai Wiki</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { --page-bg:#f4efe6; --sidebar-bg:#172033; --surface:#fffdf8; --surface-soft:#fbf4e8; --border:#dfd0b8; --border-strong:#bda47d; --text:#2a251f; --muted:#74685a; --link:#245c89; --accent:#b98238; --accent-soft:#fff2d8; --sidebar-link:#dbe8f4; --sidebar-muted:#93a3b7; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:radial-gradient(circle at top right,#fff7e8 0,var(--page-bg) 360px); color:var(--text); font-size:14px; line-height:1.55; }
+    a { color:var(--link); text-decoration:none; font-weight:500; } a:hover { text-decoration:underline; }
+    .wiki-shell { display:grid; grid-template-columns:188px 1fr; min-height:100vh; }
+    .sidebar { background:linear-gradient(180deg,#111827 0%,var(--sidebar-bg) 45%,#121927 100%); border-right:1px solid #0c1220; padding:18px 14px; position:sticky; top:0; height:100vh; overflow:auto; color:var(--sidebar-link); }
+    .logo { text-align:center; margin-bottom:24px; } .logo-mark { width:86px; height:86px; margin:0 auto 9px; border-radius:24px; background:linear-gradient(135deg,#22314f,#b98238 70%,#e7c578); color:#fff8e8; display:flex; align-items:center; justify-content:center; font-family:Georgia,serif; font-size:54px; box-shadow:0 10px 26px rgba(0,0,0,.34); border:1px solid rgba(255,255,255,.22); }
+    .logo strong { display:block; font-family:Georgia,serif; font-size:23px; color:#fff2d8; } .logo span { display:block; color:var(--sidebar-muted); font-size:12px; }
+    .side-section { margin-bottom:21px; } .side-section h3 { margin:0 0 8px; padding-bottom:5px; color:#d7b879; font-size:11px; font-weight:800; border-bottom:1px solid rgba(255,255,255,.12); text-transform:uppercase; letter-spacing:.08em; }
+    .side-section a { display:block; padding:4px 0; font-size:13px; color:var(--sidebar-link); font-weight:400; } .side-section a:hover { color:#fff2d8; }
+    .main { min-width:0; } .topbar { height:54px; background:rgba(255,250,241,.94); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; padding:0 18px 0 22px; position:sticky; top:0; z-index:5; backdrop-filter:blur(8px); }
+    .tabs { display:flex; align-items:stretch; height:100%; } .tab { display:flex; align-items:center; padding:0 14px; border-right:1px solid var(--border); color:#5b5146; font-weight:500; } .tab.active { background:var(--accent-soft); color:#7a4d16; border-bottom:3px solid var(--accent); }
+    .search input { width:min(340px,32vw); padding:8px 10px; border:1px solid var(--border-strong); border-radius:6px; background:#fffdf8; color:var(--text); }
+    .content { padding:26px 26px 60px; } .article { background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:26px; box-shadow:0 8px 24px rgba(89,64,35,.07); }
+    .article-header { display:flex; align-items:end; justify-content:space-between; gap:18px; border-bottom:1px solid var(--border-strong); margin-bottom:10px; }
+    h1 { font-family:Georgia,serif; font-size:35px; font-weight:500; margin:0 0 6px; color:#1f2937; } h2 { font-family:Georgia,serif; font-size:25px; font-weight:500; border-bottom:1px solid var(--border-strong); margin:28px 0 10px; padding-bottom:4px; color:#1f2937; }
+    .article-actions { color:var(--muted); font-size:13px; white-space:nowrap; margin-bottom:10px; } .status-line { background:#fff6df; border:1px solid #e0c181; padding:8px 12px; color:#5f4b25; font-size:13px; margin:12px 0 20px; border-radius:4px; }
+    .category-grid { display:grid; grid-template-columns:repeat(3,minmax(190px,1fr)); gap:8px 28px; margin:14px 0 18px; max-width:920px; }
+    .category-link { display:grid; grid-template-columns:34px 1fr; align-items:center; min-height:38px; color:var(--link); }
+    .category-icon { width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#fff5df,#ead3a5); border:1px solid #e3c78f; font-size:19px; box-shadow:inset 0 1px 0 rgba(255,255,255,.75); }
+    .category-note { color:var(--muted); margin-top:0; max-width:1100px; }
+    .subtle-box { background:#f5fbff; border:1px solid #c7dff1; border-left:4px solid #245c89; border-radius:8px; padding:10px 14px; color:#334155; margin:18px 0; }
+    @media(max-width:960px){.category-grid{grid-template-columns:repeat(2,minmax(160px,1fr));}.wiki-shell{grid-template-columns:1fr}.sidebar{position:static;height:auto}.topbar{position:static;height:auto;flex-direction:column;align-items:stretch;gap:10px;padding:12px}.tabs{height:auto;flex-wrap:wrap}.tab{padding:8px 10px;border:1px solid var(--border)}.search input{width:100%}.content{padding:16px}}
+    @media(max-width:560px){.category-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wiki-shell">
+    <aside class="sidebar">
+      <div class="logo"><div class="logo-mark">A</div><strong>Arkhai Wiki</strong><span>Codex do mundo antigo</span></div>
+      <nav class="side-section"><h3>Principal</h3><a href="index.html">Home</a><a href="items.html">Itens</a><a href="index.html#systems">Sistemas</a></nav>
+      <nav class="side-section"><h3>Cyclopedia</h3><a href="items.html">Itens</a><a href="#weapons">Armas</a><a href="#body-equipment">Equipamentos</a><a href="#utilities">Utilidades</a><a href="index.html#cities">Cidades</a></nav>
+      <nav class="side-section"><h3>Utilidades</h3><a href="index.html#upgrade">Calculadora de Upgrade</a><a href="index.html#ascension">Simulador de Ascensao</a><a href="#">Loot Tables</a></nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <nav class="tabs"><a class="tab active" href="items.html">Pagina</a><a class="tab" href="#discussion">Discussao</a><a class="tab" href="#source">Codigo-fonte</a><a class="tab" href="#history">Historico</a></nav>
+        <div class="search"><input type="search" placeholder="Pesquisar em Arkhai Wiki" /></div>
+      </header>
+
+      <section class="content">
+        <article class="article">
+          <header class="article-header"><h1>Itens</h1><div class="article-actions">versao publicada · Arkhai Wiki</div></header>
+          <div class="status-line">📦 Esta pagina lista as categorias iniciais de itens conhecidas em Arkhai.</div>
+
+          <p>Os <strong>itens</strong> de Arkhai sao divididos por funcao, raridade, origem, regiao e potencial de evolucao. Alguns equipamentos podem ser aprimorados, ascendidos ou transformados em reliquias antigas atraves de materiais raros.</p>
+
+          <h2 id="body-equipment">Equipamentos de Corpo</h2>
+          <p class="category-note">Esses itens servem principalmente para defesa, identidade visual do personagem e progressao de atributos defensivos.</p>
+          <div class="category-grid">
+            <a class="category-link" href="#helmets"><span class="category-icon">🪖</span><span>Capacetes</span></a>
+            <a class="category-link" href="#armors"><span class="category-icon">🛡️</span><span>Armaduras</span></a>
+            <a class="category-link" href="#shields"><span class="category-icon">🔰</span><span>Escudos</span></a>
+            <a class="category-link" href="#legs"><span class="category-icon">🥾</span><span>Calcas</span></a>
+            <a class="category-link" href="#spellbooks"><span class="category-icon">📘</span><span>Spellbooks</span></a>
+            <a class="category-link" href="#boots"><span class="category-icon">👢</span><span>Botas</span></a>
+            <a class="category-link" href="#quivers"><span class="category-icon">🏹</span><span>Aljavas</span></a>
+            <a class="category-link" href="#extra-slot"><span class="category-icon">💍</span><span>Extra Slot</span></a>
+          </div>
+
+          <h2 id="weapons">Armas</h2>
+          <p class="category-note">Todo personagem precisa ter uma arma, seja ela de uma mao, duas maos, magica, ritualistica ou de distancia.</p>
+          <div class="category-grid">
+            <a class="category-link" href="#axes"><span class="category-icon">🪓</span><span>Machados</span></a>
+            <a class="category-link" href="#clubs"><span class="category-icon">🔨</span><span>Clavas</span></a>
+            <a class="category-link" href="#swords"><span class="category-icon">🗡️</span><span>Espadas</span></a>
+            <a class="category-link" href="#rods"><span class="category-icon">🔱</span><span>Rods</span></a>
+            <a class="category-link" href="#wands"><span class="category-icon">🪄</span><span>Wands</span></a>
+            <a class="category-link" href="#ancient-wands-rods"><span class="category-icon">🏺</span><span>Antigas Wands e Rods</span></a>
+            <a class="category-link" href="#distance"><span class="category-icon">🏹</span><span>Distancia</span></a>
+            <a class="category-link" href="#ammunition"><span class="category-icon">➶</span><span>Municao</span></a>
+            <a class="category-link" href="#weapon-replicas"><span class="category-icon">⚔️</span><span>Replicas de Armas</span></a>
+            <a class="category-link" href="#fists"><span class="category-icon">🥊</span><span>Punhos</span></a>
+            <a class="category-link" href="#daggers"><span class="category-icon">🦂</span><span>Adagas</span></a>
+            <a class="category-link" href="#relic-weapons"><span class="category-icon">💠</span><span>Armas Reliquias</span></a>
+          </div>
+
+          <h2 id="utilities">Outras Categorias Planejadas</h2>
+          <div class="category-grid">
+            <a class="category-link" href="#crafting-materials"><span class="category-icon">⛏️</span><span>Materiais de Crafting</span></a>
+            <a class="category-link" href="#essences"><span class="category-icon">✨</span><span>Essencias</span></a>
+            <a class="category-link" href="#teleport-stones"><span class="category-icon">🪨</span><span>Pedras de Teleport</span></a>
+            <a class="category-link" href="#runes"><span class="category-icon">🔷</span><span>Runas</span></a>
+            <a class="category-link" href="#consumables"><span class="category-icon">🧪</span><span>Consumiveis</span></a>
+            <a class="category-link" href="#quest-items"><span class="category-icon">📜</span><span>Itens de Quest</span></a>
+          </div>
+
+          <div class="subtle-box">Proximo passo: transformar cada categoria em uma pagina propria, começando por <strong>Adagas</strong>, <strong>Espadas</strong>, <strong>Armaduras</strong> e <strong>Materiais de Crafting</strong>.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
