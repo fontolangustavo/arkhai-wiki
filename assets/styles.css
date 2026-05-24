@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #1a1714;
+  color: #e7dcc4;
+}
+
+.page-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.topbar {
+  background: linear-gradient(to bottom, #3a2616, #24170f);
+  border-bottom: 3px solid #8c6738;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #8c6738;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.brand h1 {
+  margin: 0;
+  color: #f4d8a3;
+}
+
+.brand p {
+  margin: 4px 0 0 0;
+  color: #c7ae7b;
+}
+
+.topnav {
+  display: flex;
+  gap: 18px;
+}
+
+.topnav a,
+.sidebar a {
+  text-decoration: none;
+  color: #e7dcc4;
+}
+
+.topnav a:hover,
+.sidebar a:hover {
+  color: #f4d8a3;
+}
+
+.wiki-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.panel {
+  background: #2a211a;
+  border: 2px solid #6f5230;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #3a2a1c inset;
+}
+
+.sidebar {
+  padding: 18px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #f4d8a3;
+}
+
+.sidebar a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #493522;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px;
+  background: linear-gradient(to bottom right, #2b1e14, #1e1814);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  font-size: 38px;
+  color: #f4d8a3;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c7ae7b;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-stats div {
+  background: #201711;
+  border: 1px solid #6f5230;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.hero-stats strong {
+  display: block;
+  font-size: 28px;
+  color: #f4d8a3;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.panel h2,
+.panel h3 {
+  color: #f4d8a3;
+}
+
+.panel {
+  padding: 20px;
+}
+
+.wiki-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wiki-table th,
+.wiki-table td {
+  border: 1px solid #5a4127;
+  padding: 10px;
+}
+
+.wiki-table th {
+  background: #3a2a1c;
+}
+
+.rarity {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.legendary {
+  background: #a56a16;
+  color: white;
+}
+
+.uncommon {
+  background: #2d7a43;
+  color: white;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-list a {
+  background: #211812;
+  border: 1px solid #5a4127;
+  border-radius: 8px;
+  padding: 14px;
+  text-decoration: none;
+  color: #e7dcc4;
+}
+
+.link-list strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #f4d8a3;
+}
+
+.city-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #493522;
+}
+
+.city-list strong {
+  display: block;
+  color: #f4d8a3;
+}
+
+.parchment {
+  background: linear-gradient(to bottom, #3b2d1d, #2d2118);
+}
+
+@media (max-width: 960px) {
+  .wiki-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .two-columns,
+  .three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    flex-direction: column;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+}
