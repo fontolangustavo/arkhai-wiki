@@ -71,7 +71,9 @@
 
         row.innerHTML = `
           <td>
-            <strong>${dagger.name}</strong><br>
+            <a href="item.html?source=daggers&id=${dagger.id}">
+              <strong>${dagger.name}</strong>
+            </a><br>
             <small style="color: var(--muted)">${dagger.description}</small>
           </td>
           <td style="font-size:28px">${dagger.icon}</td>
