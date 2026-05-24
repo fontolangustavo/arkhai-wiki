@@ -2,6 +2,7 @@
   {
     "id": "scorpion_dagger",
     "name": "Adaga de Escorpiao",
+    "image": "assets/images/items/weapons/daggers/scorpion_dagger.png",
     "icon": "🦂",
     "level": 12,
     "vocation": "Todas",
@@ -20,6 +21,7 @@
   {
     "id": "elite_scorpion_dagger",
     "name": "Adaga do Escorpiao Elite",
+    "image": "assets/images/items/weapons/daggers/elite_scorpion_dagger.png",
     "icon": "🦂",
     "level": 28,
     "vocation": "Todas",
@@ -38,6 +40,7 @@
   {
     "id": "master_scorpion_blade",
     "name": "Lamina do Mestre Escorpiao",
+    "image": "assets/images/items/weapons/daggers/master_scorpion_blade.png",
     "icon": "🦂",
     "level": 48,
     "vocation": "Assassinos, Duelistas",
@@ -51,11 +54,12 @@
     "tier": 3,
     "rarity": "Epico",
     "source": "Mestre Escorpiao",
-    "description": "Uma lamina agressiva, usada por caçadores do deserto que aprenderam a lutar observando o movimento dos escorpioes."
+    "description": "Uma lamina agressiva, usada por cacadores do deserto que aprenderam a lutar observando o movimento dos escorpioes."
   },
   {
     "id": "fangs_of_the_king",
     "name": "Presas do Rei",
+    "image": "assets/images/items/weapons/daggers/fangs_of_the_king.png",
     "icon": "👑",
     "level": 72,
     "vocation": "Assassinos, Duelistas",
