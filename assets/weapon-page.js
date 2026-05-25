@@ -146,6 +146,32 @@
     `;
   }
 
+  function renderOptionChips(label, items, activeValue, inputName) {
+    const buttons = items.map(item => {
+      const isActive = item === activeValue;
+      return `
+        <button
+          type="button"
+          class="variant-chip ${isActive ? 'is-active' : ''}"
+          data-variant-input="${inputName}"
+          data-variant-value="${item}"
+          aria-pressed="${isActive ? 'true' : 'false'}"
+        >
+          ${item}
+        </button>
+      `;
+    }).join('');
+
+    return `
+      <div class="variant-field variant-field-chips">
+        <label>${label}</label>
+        <div class="variant-chip-group" role="group" aria-label="${label}">
+          ${buttons}
+        </div>
+      </div>
+    `;
+  }
+
   function renderRarityMatrix(weaponType, activeVariant) {
     const rows = weaponRarityOrder.map(rarity => {
       const cells = weaponTierOrder.map(tier => {
@@ -174,6 +200,43 @@
             <th>Tier II</th>
             <th>Tier III</th>
             <th>Tier IV</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
+  function renderWeaponAttributeTable(weaponType, activeVariant) {
+    if (!weaponType.statTable || !weaponType.statTable.columns || weaponType.statTable.columns.length === 0) {
+      return '';
+    }
+
+    const rows = weaponRarityOrder.flatMap(rarity => weaponTierOrder.map(tier => {
+      const key = `${rarity}:${tier}`;
+      const stats = weaponType.statTable.rows ? weaponType.statTable.rows[key] : null;
+      const isActive = activeVariant && activeVariant.rarity === rarity && activeVariant.tier === tier;
+      const values = weaponType.statTable.columns.map(column => {
+        const value = stats && Object.prototype.hasOwnProperty.call(stats, column) ? stats[column] : '-';
+        const text = formatWeaponStatValue(value);
+        return `<td>${text}</td>`;
+      }).join('');
+
+      return `
+        <tr class="${isActive ? 'is-active' : ''}">
+          <th scope="row">${rarity} ${tier}</th>
+          ${values}
+        </tr>
+      `;
+    })).join('');
+
+    return `
+      <h2 class="section-title">${weaponType.statTable.title || 'Atributos'}</h2>
+      <table class="wiki-table progression-table attribute-table">
+        <thead>
+          <tr>
+            <th scope="col">Raridade/Tier</th>
+            ${weaponType.statTable.columns.map(column => `<th scope="col">${column}</th>`).join('')}
           </tr>
         </thead>
         <tbody>${rows}</tbody>
@@ -237,38 +300,19 @@
       const active = entry.id === type.id ? 'selected' : '';
       return `<option value="${entry.id}" ${active}>${entry.weaponType}</option>`;
     }).join('');
-    const rarityOptions = weaponRarityOrder.map(rarity => {
-      const active = rarity === state.rarity ? 'selected' : '';
-      return `<option value="${rarity}" ${active}>${rarity}</option>`;
-    }).join('');
-    const tierOptions = weaponTierOrder.map(tier => {
-      const active = tier === state.tier ? 'selected' : '';
-      return `<option value="${tier}" ${active}>${tier}</option>`;
-    }).join('');
 
     title.textContent = variant.name;
     actions.textContent = `${family.familyName} - ${type.weaponType} - ${variant.rarity} ${variant.tier}`;
     document.title = `${variant.name} - Arkhai Wiki`;
 
     content.innerHTML = `
-      <div class="status-line">
-        Dados carregados de <strong>assets/weapons-data.js</strong>, sincronizado com
-        <strong>${family.sourceDocument}</strong>.
-      </div>
-
       <div class="variant-switcher">
         <div class="variant-field">
           <label for="type-select">Tipo</label>
           <select id="type-select">${typeOptions}</select>
         </div>
-        <div class="variant-field">
-          <label for="rarity-select">Raridade</label>
-          <select id="rarity-select">${rarityOptions}</select>
-        </div>
-        <div class="variant-field">
-          <label for="tier-select">Tier</label>
-          <select id="tier-select">${tierOptions}</select>
-        </div>
+        ${renderOptionChips('Raridade', weaponRarityOrder, state.rarity, 'rarity')}
+        ${renderOptionChips('Tier', weaponTierOrder, state.tier, 'tier')}
       </div>
 
       <div class="subtle-box">
@@ -299,6 +343,7 @@
           <p><strong>Materiais de familia:</strong> ${family.materials.join(', ')}</p>
 
           ${renderRarityMatrix(type, variant)}
+          ${renderWeaponAttributeTable(type, variant)}
 
           <h2 class="section-title">Receita Inicial</h2>
           ${renderCodeBlock(recipe)}
@@ -336,8 +381,7 @@
     `;
 
     const typeSelect = document.getElementById('type-select');
-    const raritySelect = document.getElementById('rarity-select');
-    const tierSelect = document.getElementById('tier-select');
+    const variantChips = content.querySelectorAll('[data-variant-input]');
 
     typeSelect.addEventListener('change', event => {
       state.typeId = event.target.value;
@@ -347,16 +391,20 @@
       renderWeaponPage();
     });
 
-    raritySelect.addEventListener('change', event => {
-      state.rarity = event.target.value;
-      syncWeaponUrl(state);
-      renderWeaponPage();
-    });
+    variantChips.forEach(button => {
+      button.addEventListener('click', event => {
+        const inputName = event.currentTarget.dataset.variantInput;
+        const value = event.currentTarget.dataset.variantValue;
 
-    tierSelect.addEventListener('change', event => {
-      state.tier = event.target.value;
-      syncWeaponUrl(state);
-      renderWeaponPage();
+        if (inputName === 'rarity') {
+          state.rarity = value;
+        } else if (inputName === 'tier') {
+          state.tier = value;
+        }
+
+        syncWeaponUrl(state);
+        renderWeaponPage();
+      });
     });
 
     syncWeaponUrl(state);
