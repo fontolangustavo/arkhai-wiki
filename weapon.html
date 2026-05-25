@@ -51,6 +51,90 @@
       return `<pre><code>${lines.join('\n')}</code></pre>`;
     }
 
+    function formatWeaponStatValue(value) {
+      if (value === null || value === undefined || value === '') {
+        return '-';
+      }
+
+      return String(value);
+    }
+
+    function parseWeaponStatNumber(value) {
+      const text = String(value || '').trim();
+
+      if (!text || text === '-') {
+        return null;
+      }
+
+      const match = text.match(/^([+-]?)(\d+(?:[.,]\d+)?)(.*)$/);
+      if (!match) {
+        return null;
+      }
+
+      const numeric = Number(match[2].replace(',', '.'));
+      if (!Number.isFinite(numeric)) {
+        return null;
+      }
+
+      return {
+        numeric,
+        suffix: match[3].trim()
+      };
+    }
+
+    function formatWeaponStatDelta(baseValue, selectedValue) {
+      const base = parseWeaponStatNumber(baseValue);
+      const selected = parseWeaponStatNumber(selectedValue);
+
+      if (!base || !selected || base.suffix !== selected.suffix) {
+        return '';
+      }
+
+      const delta = selected.numeric - base.numeric;
+      if (!delta) {
+        return 'sem ajuste';
+      }
+
+      const deltaText = Number.isInteger(delta)
+        ? String(delta)
+        : String(Number(delta.toFixed(2)));
+
+      return `${delta > 0 ? '+' : ''}${deltaText}${selected.suffix}`;
+    }
+
+    function renderWeaponAttributeComparison(type, variant) {
+      if (!type.statTable || !type.statTable.columns || type.statTable.columns.length === 0) {
+        return '';
+      }
+
+      const baseVariant = type.variantByKey['Incomum:I'] || type.variants[0];
+      const rows = type.statTable.columns.map(column => {
+        const baseValue = baseVariant && baseVariant.stats ? baseVariant.stats[column] : '-';
+        const selectedValue = variant.stats ? variant.stats[column] : '-';
+        const baseText = formatWeaponStatValue(baseValue);
+        const selectedText = formatWeaponStatValue(selectedValue);
+        const deltaText = formatWeaponStatDelta(baseValue, selectedValue);
+        const stateClass = deltaText && deltaText !== 'sem ajuste'
+          ? (deltaText.startsWith('+') ? 'is-upgrade' : 'is-downgrade')
+          : '';
+
+        return `
+          <div class="detail-stat-card ${stateClass}">
+            <span>${column}</span>
+            <strong>${selectedText}</strong>
+            <small>Base ${baseText}${deltaText ? ` | ${deltaText}` : ''}</small>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <div class="detail-section detail-section-stats">
+          <h3>Atributos</h3>
+          <div class="detail-stat-grid">${rows}</div>
+        </div>
+      `;
+    }
+
     function renderAscensions(family) {
       if (!family.ascensions || family.ascensions.length === 0) {
         return `
@@ -166,6 +250,7 @@
       const family = selection.family;
       const type = selection.type;
       const variant = selection.variant;
+      const baseVariant = type.variantByKey['Incomum:I'] || type.variants[0];
       const recipe = type.recipe || family.recipe;
       const ascensions = type.ascensions || family.ascensions;
       const visuals = type.visuals || family.visuals;
@@ -190,12 +275,12 @@
       }).join('');
 
       title.textContent = `${variant.name}`;
-      actions.textContent = `${family.familyName} · ${type.weaponType} · ${variant.rarity} ${variant.tier}`;
+      actions.textContent = `${family.familyName} - ${type.weaponType} - ${variant.rarity} ${variant.tier}`;
       document.title = `${variant.name} - Arkhai Wiki`;
 
       content.innerHTML = `
         <div class="status-line">
-          ⚔️ Dados carregados de <strong>assets/weapons-data.js</strong>, sincronizado com
+          Dados carregados de <strong>assets/weapons-data.js</strong>, sincronizado com
           <strong>${family.sourceDocument}</strong>.
         </div>
 
@@ -231,7 +316,6 @@
                 <p><strong>Efeito:</strong> ${family.markEffect}</p>
               </div>
             </section>
-            ${renderWeaponAttributePreview(family, type, variant)}
 
             <h2 class="section-title">Visao Geral</h2>
             <p>${family.summary}</p>
@@ -243,7 +327,6 @@
             <p><strong>Materiais de familia:</strong> ${family.materials.join(', ')}</p>
 
             ${renderRarityMatrix(type, variant)}
-            ${renderWeaponAttributeTable(family, type, variant)}
 
             <h2 class="section-title">Receita Inicial</h2>
             ${renderCodeBlock(recipe)}
@@ -269,6 +352,9 @@
             <div class="detail-row"><span class="detail-label">Regiao</span><span class="detail-value">${family.region}</span></div>
             <div class="detail-row"><span class="detail-label">Marca</span><span class="detail-value">${family.markName}</span></div>
             <div class="detail-row"><span class="detail-label">Efeito</span><span class="detail-value">${family.markEffect}</span></div>
+            <div class="detail-row"><span class="detail-label">Base</span><span class="detail-value">${baseVariant.name}</span></div>
+            <div class="detail-row"><span class="detail-label">Selecionada</span><span class="detail-value">${variant.name}</span></div>
+            ${renderWeaponAttributeComparison(type, variant)}
             <div class="detail-section">
               <h3>Resumo</h3>
               <p>${family.theme}</p>
