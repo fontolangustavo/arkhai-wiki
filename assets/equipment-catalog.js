@@ -1,5 +1,5 @@
 window.ArkhaiEquipmentCatalog = {
-  "generatedAt": "2026-05-25T23:41:07.224Z",
+  "generatedAt": "2026-05-25T23:55:36.659Z",
   "families": [
     {
       "id": "aracu-das-sombras",
@@ -1416,7 +1416,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/adaga/adaga_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/daggers/adaga_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1425,7 +1425,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/adaga/adaga_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/daggers/adaga_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1434,7 +1434,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/adaga/adaga_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/daggers/adaga_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1443,7 +1443,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/adaga/adaga_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/daggers/adaga_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1452,7 +1452,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/espada/espada_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1461,7 +1461,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/espada/espada_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1470,7 +1470,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/espada/espada_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1479,7 +1479,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/espada/espada_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1488,7 +1488,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/cajado/cajado_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1497,7 +1497,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/cajado/cajado_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1506,7 +1506,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/cajado/cajado_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1515,7 +1515,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/cajado/cajado_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1524,7 +1524,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/arco/arco_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1533,7 +1533,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/arco/arco_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1542,7 +1542,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/arco/arco_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1551,7 +1551,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/arco/arco_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1560,7 +1560,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistola/pistola_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1569,7 +1569,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistola/pistola_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1578,7 +1578,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistola/pistola_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1587,7 +1587,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistola/pistola_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1596,7 +1596,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/martelo/martelo_do_aracu_i.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1605,7 +1605,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/martelo/martelo_do_aracu_ii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1614,7 +1614,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/martelo/martelo_do_aracu_iii.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1623,7 +1623,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/martelo/martelo_do_aracu_iv.png",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             }
           ]
@@ -6835,7 +6835,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/adaga/adaga_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/daggers/adaga_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6844,7 +6844,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/adaga/adaga_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/daggers/adaga_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6853,7 +6853,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/adaga/adaga_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/daggers/adaga_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6862,7 +6862,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/adaga/adaga_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/daggers/adaga_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6871,7 +6871,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/espada/espada_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/swords/espada_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6880,7 +6880,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/espada/espada_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/swords/espada_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6889,7 +6889,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/espada/espada_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/swords/espada_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6898,7 +6898,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/espada/espada_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/swords/espada_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6907,7 +6907,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/cajado/cajado_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/staffs/cajado_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6916,7 +6916,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/cajado/cajado_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/staffs/cajado_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6925,7 +6925,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/cajado/cajado_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/staffs/cajado_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6934,7 +6934,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/cajado/cajado_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/staffs/cajado_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6943,7 +6943,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/arco/arco_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/bows/arco_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6952,7 +6952,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/arco/arco_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/bows/arco_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6961,7 +6961,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/arco/arco_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/bows/arco_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6970,7 +6970,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/arco/arco_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/bows/arco_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6979,7 +6979,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/pistola/pistola_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/pistols/pistola_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6988,7 +6988,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/pistola/pistola_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/pistols/pistola_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -6997,7 +6997,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/pistola/pistola_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/pistols/pistola_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -7006,7 +7006,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/pistola/pistola_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/pistols/pistola_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -7015,7 +7015,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo de Escorpiao",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/escorpiao/martelo/martelo_de_escorpiao_i.png",
+              "image": "assets/images/items/weapons/families/escorpiao/hammers/martelo_de_escorpiao_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -7024,7 +7024,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo de Escorpiao",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/escorpiao/martelo/martelo_de_escorpiao_ii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/hammers/martelo_de_escorpiao_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -7033,7 +7033,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo de Escorpiao",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/escorpiao/martelo/martelo_de_escorpiao_iii.png",
+              "image": "assets/images/items/weapons/families/escorpiao/hammers/martelo_de_escorpiao_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             },
             {
@@ -7042,7 +7042,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo de Escorpiao",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/escorpiao/martelo/martelo_de_escorpiao_iv.png",
+              "image": "assets/images/items/weapons/families/escorpiao/hammers/martelo_de_escorpiao_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md"
             }
           ]
@@ -11851,7 +11851,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/adaga/adaga_vulcanica_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11860,7 +11860,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/adaga/adaga_vulcanica_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11869,7 +11869,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/adaga/adaga_vulcanica_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11878,7 +11878,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/adaga/adaga_vulcanica_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11887,7 +11887,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/espada/espada_vulcanica_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11896,7 +11896,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/espada/espada_vulcanica_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11905,7 +11905,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/espada/espada_vulcanica_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11914,7 +11914,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/espada/espada_vulcanica_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11923,7 +11923,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/cajado/cajado_vulcanico_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11932,7 +11932,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/cajado/cajado_vulcanico_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11941,7 +11941,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/cajado/cajado_vulcanico_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11950,7 +11950,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/cajado/cajado_vulcanico_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11959,7 +11959,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/arco/arco_vulcanico_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11968,7 +11968,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/arco/arco_vulcanico_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11977,7 +11977,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/arco/arco_vulcanico_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11986,7 +11986,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/arco/arco_vulcanico_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -11995,7 +11995,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistola/pistola_vulcanica_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12004,7 +12004,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistola/pistola_vulcanica_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12013,7 +12013,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistola/pistola_vulcanica_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12022,7 +12022,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistola/pistola_vulcanica_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12031,7 +12031,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/martelo/martelo_vulcanico_i.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12040,7 +12040,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/martelo/martelo_vulcanico_ii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12049,7 +12049,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/martelo/martelo_vulcanico_iii.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -12058,7 +12058,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/martelo/martelo_vulcanico_iv.png",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             }
           ]
@@ -17135,7 +17135,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Profanada",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/adaga/adaga_profanada_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/daggers/adaga_profanada_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17144,7 +17144,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Profanada",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/adaga/adaga_profanada_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/daggers/adaga_profanada_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17153,7 +17153,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Profanada",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/adaga/adaga_profanada_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/daggers/adaga_profanada_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17162,7 +17162,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Profanada",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/adaga/adaga_profanada_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/daggers/adaga_profanada_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17171,7 +17171,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Profanada",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/espada/espada_profanada_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/swords/espada_profanada_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17180,7 +17180,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Profanada",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/espada/espada_profanada_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/swords/espada_profanada_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17189,7 +17189,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Profanada",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/espada/espada_profanada_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/swords/espada_profanada_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17198,7 +17198,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Profanada",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/espada/espada_profanada_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/swords/espada_profanada_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17207,7 +17207,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Nod",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/cajado/cajado_de_nod_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/staffs/cajado_de_nod_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17216,7 +17216,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Nod",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/cajado/cajado_de_nod_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/staffs/cajado_de_nod_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17225,7 +17225,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Nod",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/cajado/cajado_de_nod_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/staffs/cajado_de_nod_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17234,7 +17234,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado de Nod",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/cajado/cajado_de_nod_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/staffs/cajado_de_nod_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17243,7 +17243,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Profanado",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/arco/arco_profanado_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/bows/arco_profanado_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17252,7 +17252,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Profanado",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/arco/arco_profanado_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/bows/arco_profanado_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17261,7 +17261,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Profanado",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/arco/arco_profanado_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/bows/arco_profanado_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17270,7 +17270,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Profanado",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/arco/arco_profanado_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/bows/arco_profanado_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17279,7 +17279,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Profanada",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistola/pistola_profanada_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistols/pistola_profanada_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17288,7 +17288,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Profanada",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistola/pistola_profanada_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistols/pistola_profanada_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17297,7 +17297,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Profanada",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistola/pistola_profanada_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistols/pistola_profanada_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17306,7 +17306,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Profanada",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistola/pistola_profanada_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/pistols/pistola_profanada_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17315,7 +17315,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Profanado",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/martelo/martelo_profanado_i.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/hammers/martelo_profanado_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17324,7 +17324,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Profanado",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/martelo/martelo_profanado_ii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/hammers/martelo_profanado_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17333,7 +17333,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Profanado",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/martelo/martelo_profanado_iii.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/hammers/martelo_profanado_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             },
             {
@@ -17342,7 +17342,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Profanado",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/martelo/martelo_profanado_iv.png",
+              "image": "assets/images/items/weapons/families/sacerdotisa-de-nod/hammers/martelo_profanado_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/sacerdotisa-de-nod/weapons.md"
             }
           ]
@@ -22446,7 +22446,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Carmesim",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/adaga/adaga_carmesim_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/daggers/adaga_carmesim_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22455,7 +22455,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Carmesim",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/adaga/adaga_carmesim_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/daggers/adaga_carmesim_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22464,7 +22464,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Carmesim",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/adaga/adaga_carmesim_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/daggers/adaga_carmesim_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22473,7 +22473,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Carmesim",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/adaga/adaga_carmesim_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/daggers/adaga_carmesim_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22482,7 +22482,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Carmesim",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/espada/espada_carmesim_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/swords/espada_carmesim_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22491,7 +22491,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Carmesim",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/espada/espada_carmesim_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/swords/espada_carmesim_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22500,7 +22500,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Carmesim",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/espada/espada_carmesim_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/swords/espada_carmesim_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22509,7 +22509,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada Carmesim",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/espada/espada_carmesim_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/swords/espada_carmesim_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22518,7 +22518,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Sanguineo",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/cajado/cajado_sanguineo_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/staffs/cajado_sanguineo_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22527,7 +22527,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Sanguineo",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/cajado/cajado_sanguineo_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/staffs/cajado_sanguineo_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22536,7 +22536,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Sanguineo",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/cajado/cajado_sanguineo_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/staffs/cajado_sanguineo_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22545,7 +22545,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Sanguineo",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/cajado/cajado_sanguineo_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/staffs/cajado_sanguineo_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22554,7 +22554,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Carmesim",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/arco/arco_carmesim_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/bows/arco_carmesim_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22563,7 +22563,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Carmesim",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/arco/arco_carmesim_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/bows/arco_carmesim_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22572,7 +22572,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Carmesim",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/arco/arco_carmesim_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/bows/arco_carmesim_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22581,7 +22581,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Carmesim",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/arco/arco_carmesim_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/bows/arco_carmesim_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22590,7 +22590,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Carmesim",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/pistola/pistola_carmesim_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/pistols/pistola_carmesim_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22599,7 +22599,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Carmesim",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/pistola/pistola_carmesim_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/pistols/pistola_carmesim_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22608,7 +22608,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Carmesim",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/pistola/pistola_carmesim_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/pistols/pistola_carmesim_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22617,7 +22617,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Carmesim",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/pistola/pistola_carmesim_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/pistols/pistola_carmesim_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22626,7 +22626,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Carmesim",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/vampiro/martelo/martelo_carmesim_i.png",
+              "image": "assets/images/items/weapons/families/vampiro/hammers/martelo_carmesim_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22635,7 +22635,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Carmesim",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/vampiro/martelo/martelo_carmesim_ii.png",
+              "image": "assets/images/items/weapons/families/vampiro/hammers/martelo_carmesim_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22644,7 +22644,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Carmesim",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/vampiro/martelo/martelo_carmesim_iii.png",
+              "image": "assets/images/items/weapons/families/vampiro/hammers/martelo_carmesim_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             },
             {
@@ -22653,7 +22653,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Carmesim",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/vampiro/martelo/martelo_carmesim_iv.png",
+              "image": "assets/images/items/weapons/families/vampiro/hammers/martelo_carmesim_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/vampiro/weapons.md"
             }
           ]
@@ -27760,7 +27760,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Glacial",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/adaga/adaga_glacial_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/daggers/adaga_glacial_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27769,7 +27769,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Glacial",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/adaga/adaga_glacial_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/daggers/adaga_glacial_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27778,7 +27778,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Glacial",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/adaga/adaga_glacial_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/daggers/adaga_glacial_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27787,7 +27787,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Adaga Glacial",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/adaga/adaga_glacial_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/daggers/adaga_glacial_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27796,7 +27796,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Wyrm",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/espada/espada_do_wyrm_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/swords/espada_do_wyrm_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27805,7 +27805,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Wyrm",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/espada/espada_do_wyrm_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/swords/espada_do_wyrm_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27814,7 +27814,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Wyrm",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/espada/espada_do_wyrm_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/swords/espada_do_wyrm_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27823,7 +27823,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Espada do Wyrm",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/espada/espada_do_wyrm_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/swords/espada_do_wyrm_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27832,7 +27832,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Glacial",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/cajado/cajado_glacial_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/staffs/cajado_glacial_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27841,7 +27841,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Glacial",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/cajado/cajado_glacial_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/staffs/cajado_glacial_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27850,7 +27850,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Glacial",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/cajado/cajado_glacial_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/staffs/cajado_glacial_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27859,7 +27859,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Cajado Glacial",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/cajado/cajado_glacial_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/staffs/cajado_glacial_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27868,7 +27868,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Glacial",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/arco/arco_glacial_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/bows/arco_glacial_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27877,7 +27877,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Glacial",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/arco/arco_glacial_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/bows/arco_glacial_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27886,7 +27886,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Glacial",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/arco/arco_glacial_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/bows/arco_glacial_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27895,7 +27895,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Arco Glacial",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/arco/arco_glacial_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/bows/arco_glacial_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27904,7 +27904,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Glacial",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistola/pistola_glacial_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistols/pistola_glacial_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27913,7 +27913,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Glacial",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistola/pistola_glacial_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistols/pistola_glacial_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27922,7 +27922,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Glacial",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistola/pistola_glacial_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistols/pistola_glacial_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27931,7 +27931,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Pistola Glacial",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistola/pistola_glacial_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/pistols/pistola_glacial_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27940,7 +27940,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Glacial",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/martelo/martelo_glacial_i.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/hammers/martelo_glacial_i.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27949,7 +27949,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Glacial",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/martelo/martelo_glacial_ii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/hammers/martelo_glacial_ii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27958,7 +27958,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Glacial",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/martelo/martelo_glacial_iii.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/hammers/martelo_glacial_iii.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             },
             {
@@ -27967,7 +27967,7 @@ window.ArkhaiEquipmentCatalog = {
               "baseName": "Martelo Glacial",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/wyrm-de-gelo/martelo/martelo_glacial_iv.png",
+              "image": "assets/images/items/weapons/families/wyrm-de-gelo/hammers/martelo_glacial_iv.png",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/wyrm-de-gelo/weapons.md"
             }
           ]

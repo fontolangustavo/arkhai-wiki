@@ -233,7 +233,9 @@ function parseFamilyDoc(category, familyId, familyName, filePath) {
   const variants = [];
 
   baseLines.forEach(line => {
-    const groupSlug = slugify(line.label);
+    const groupSlug = category === 'weapons'
+      ? (weaponTypeFolderByName[line.label] || `${slugify(line.label)}s`)
+      : slugify(line.label);
     tierOrder.forEach(tier => {
       const rarityIndex = rarityOrder.findIndex(r => Object.prototype.hasOwnProperty.call(line.rarities, r));
       const rarity = rarityTable && rarityTable.headers[rarityIndex + 1] ? rarityTable.headers[rarityIndex + 1] : rarityOrder[0];
