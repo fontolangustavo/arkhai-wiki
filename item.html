@@ -1,24 +1,13 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Item - Arkhai Wiki</title>
   <link rel="stylesheet" href="assets/wiki.css" />
-  <style>
-    .detail-card { background:#121821; color:#e7edf6; border:2px solid #7fc7ff; box-shadow:0 10px 32px rgba(0,0,0,.22); padding:18px; max-width:520px; font-family:Consolas, monospace; }
-    .detail-card h2 { color:#fff2d8; border-bottom:1px solid #7fc7ff; margin-top:0; font-family:Consolas, monospace; font-size:18px; }
-    .detail-row { display:flex; justify-content:space-between; gap:16px; border-bottom:1px solid rgba(127,199,255,.35); padding:8px 0; }
-    .detail-label { color:#b6c7d8; }
-    .detail-value { color:#fff; text-align:right; }
-    .detail-section { border-top:1px solid rgba(127,199,255,.65); margin-top:14px; padding-top:12px; }
-    .detail-section h3 { margin:0 0 8px; color:#fff2d8; font-size:14px; text-transform:uppercase; }
-    .detail-section p { margin:0 0 8px; color:#e7edf6; }
-    .detail-icon { width:86px; height:86px; display:flex; align-items:center; justify-content:center; font-size:46px; background:#202a36; border:1px solid #7fc7ff; margin-bottom:12px; }
-    .detail-layout { display:grid; grid-template-columns:minmax(0,1fr) 540px; gap:24px; align-items:start; }
-    @media(max-width:1050px){.detail-layout{grid-template-columns:1fr}.detail-card{max-width:none}}
-  </style>
 </head>
+
 <body>
   <div class="wiki-shell">
     <div id="wiki-sidebar"></div>
@@ -43,9 +32,12 @@
     const params = new URLSearchParams(window.location.search);
     const itemId = params.get('id');
     const source = params.get('source') || 'daggers';
+    const allowedSources = new Set(['daggers']);
 
     const rarityClassMap = {
       'Incomum': 'uncommon',
+      'Raro': 'rare',
+      'Epico': 'epic',
       'Lendario': 'legendary'
     };
 
@@ -57,67 +49,92 @@
         return;
       }
 
-      const response = await fetch(`data/${source}.json`);
-      const items = await response.json();
-      const item = items.find(entry => entry.id === itemId);
-
-      if (!item) {
-        content.innerHTML = '<div class="status-line">Item nao encontrado na base de dados.</div>';
+      if (!allowedSources.has(source)) {
+        content.innerHTML = `<div class="status-line">A fonte <strong>${source}</strong> nao existe nesta wiki ainda.</div>`;
         return;
       }
 
-      document.title = `${item.name} - Arkhai Wiki`;
-      document.getElementById('item-title').textContent = item.name;
+      try {
+        const items = await loadWikiJson(`data/${source}.json`);
+        const item = items.find(entry => entry.id === itemId);
 
-      const rarityClass = rarityClassMap[item.rarity] || '';
+        if (!item) {
+          content.innerHTML = '<div class="status-line">Item nao encontrado na base de dados.</div>';
+          return;
+        }
 
-      content.innerHTML = `
-        <div class="status-line">📦 Esta pagina foi gerada a partir de <strong>data/${source}.json</strong>.</div>
-        <div class="detail-layout">
-          <div>
-            <p><strong>${item.name}</strong> pertence a familia Escorpiao de Khem-Nippur e faz parte da linha de armas rapidas focadas em veneno, critico e perfuracao.</p>
+        document.title = `${item.name} - Arkhai Wiki`;
+        document.getElementById('item-title').textContent = item.name;
 
-            <h2 class="section-title">Descricao</h2>
-            <p>${item.description || '-'}</p>
+        const rarityClass = rarityClassMap[item.rarity] || '';
+        const detailCardClass = rarityClass ? `detail-card rarity-${rarityClass}` : 'detail-card';
+        const itemImage = item.image
+          ? `<img class="item-image" src="${item.image}" alt="${item.name}">`
+          : '<div class="item-image-fallback">?</div>';
 
-            <h2 class="section-title">Funcao</h2>
-            <p>${item.function || '-'}</p>
+        content.innerHTML = `
+          <div class="status-line">📦 Esta pagina foi gerada a partir de <strong>data/${source}.json</strong>.</div>
+          <div class="detail-layout">
+            <div>
+              <section class="item-spotlight">
+                <figure>${itemImage}</figure>
+                <div>
+                  <p><strong>${item.name}</strong> pertence a familia Escorpiao de Khem-Nippur e faz parte da linha de armas rapidas focadas em veneno, critico e perfuracao.</p>
+                  <p><strong>Raridade:</strong> <span class="rarity ${rarityClass}">${item.rarity}</span></p>
+                  <p><strong>Nivel alvo:</strong> ${item.level}</p>
+                  <p><strong>Vocacao:</strong> ${item.vocation}</p>
+                </div>
+              </section>
 
-            <h2 class="section-title">Gameplay</h2>
-            <p>${item.gameplay || '-'}</p>
+              <h2 class="section-title">Descricao</h2>
+              <p>${item.description || '-'}</p>
 
-            <h2 class="section-title">Visual</h2>
-            <p><strong>Silhueta:</strong> ${item.silhouette || '-'}</p>
-            <p><strong>Visual:</strong> ${item.visual || '-'}</p>
+              <h2 class="section-title">Funcao</h2>
+              <p>${item.function || '-'}</p>
 
-            <h2 class="section-title">Fonte</h2>
-            <p>${item.source || '-'}</p>
-          </div>
+              <h2 class="section-title">Gameplay</h2>
+              <p>${item.gameplay || '-'}</p>
 
-          <aside class="detail-card">
-            <div class="detail-icon">${item.icon || '❔'}</div>
-            <h2>${item.name}</h2>
-            <div class="detail-row"><span class="detail-label">ID</span><span class="detail-value">${item.id}</span></div>
-            <div class="detail-row"><span class="detail-label">Raridade</span><span class="detail-value"><span class="rarity ${rarityClass}">${item.rarity}</span></span></div>
-            <div class="detail-row"><span class="detail-label">Nivel</span><span class="detail-value">${item.level}</span></div>
-            <div class="detail-row"><span class="detail-label">Vocacao</span><span class="detail-value">${item.vocation}</span></div>
-            <div class="detail-row"><span class="detail-label">Maos</span><span class="detail-value">${item.hands}</span></div>
-            <div class="detail-row"><span class="detail-label">Ataque</span><span class="detail-value">${item.attack}</span></div>
-            <div class="detail-row"><span class="detail-label">Dano Elemental</span><span class="detail-value">${item.elementalDamage}</span></div>
-            <div class="detail-row"><span class="detail-label">Defesa</span><span class="detail-value">${item.defense}</span></div>
-            <div class="detail-row"><span class="detail-label">Mod. Defesa</span><span class="detail-value">${item.defenseModifier}</span></div>
-            <div class="detail-row"><span class="detail-label">Slots</span><span class="detail-value">${item.slots}</span></div>
-            <div class="detail-row"><span class="detail-label">Tier</span><span class="detail-value">${item.tier}</span></div>
-            <div class="detail-section">
-              <h3>Atributos</h3>
-              <p>${item.bonus}</p>
+              <h2 class="section-title">Visual</h2>
+              <p><strong>Silhueta:</strong> ${item.silhouette || '-'}</p>
+              <p><strong>Visual:</strong> ${item.visual || '-'}</p>
+
+              <h2 class="section-title">Fonte</h2>
+              <p>${item.source || '-'}</p>
             </div>
-          </aside>
-        </div>
-      `;
+
+            <aside class="${detailCardClass}">
+              <figure>${itemImage}</figure>
+              <h2>${item.name}</h2>
+              <div class="detail-row"><span class="detail-label">ID</span><span class="detail-value">${item.id}</span></div>
+              <div class="detail-row"><span class="detail-label">Raridade</span><span class="detail-value"><span class="rarity ${rarityClass}">${item.rarity}</span></span></div>
+              <div class="detail-row"><span class="detail-label">Nivel</span><span class="detail-value">${item.level}</span></div>
+              <div class="detail-row"><span class="detail-label">Vocacao</span><span class="detail-value">${item.vocation}</span></div>
+              <div class="detail-row"><span class="detail-label">Maos</span><span class="detail-value">${item.hands}</span></div>
+              <div class="detail-row"><span class="detail-label">Ataque</span><span class="detail-value">${item.attack}</span></div>
+              <div class="detail-row"><span class="detail-label">Dano Elemental</span><span class="detail-value">${item.elementalDamage}</span></div>
+              <div class="detail-row"><span class="detail-label">Defesa</span><span class="detail-value">${item.defense}</span></div>
+              <div class="detail-row"><span class="detail-label">Mod. Defesa</span><span class="detail-value">${item.defenseModifier}</span></div>
+              <div class="detail-row"><span class="detail-label">Slots</span><span class="detail-value">${item.slots}</span></div>
+              <div class="detail-row"><span class="detail-label">Tier</span><span class="detail-value">${item.tier}</span></div>
+              <div class="detail-section">
+                <h3>Atributos</h3>
+                <p>${item.bonus}</p>
+              </div>
+            </aside>
+          </div>
+        `;
+      } catch (error) {
+        content.innerHTML = `
+          <div class="status-line">
+            Nao foi possivel carregar os dados do item. ${error.message}
+          </div>
+        `;
+      }
     }
 
     loadItem();
   </script>
 </body>
+
 </html>

@@ -1,4 +1,70 @@
+function getCurrentPageName() {
+  const path = window.location.pathname;
+  const name = path.slice(path.lastIndexOf('/') + 1);
+  return name || 'index.html';
+}
+
+function getActiveSectionName() {
+  const pageName = getCurrentPageName();
+
+  if (pageName === 'item.html') {
+    const source = new URLSearchParams(window.location.search).get('source');
+
+    if (source) {
+      return `${source}.html`;
+    }
+  }
+
+  return pageName;
+}
+
+function resolveHref(target) {
+  return new URL(target, document.baseURI).href;
+}
+
+async function loadWikiJson(relativePath) {
+  if (window.location.protocol === 'file:') {
+    throw new Error(
+      'Abra esta wiki por HTTP. Use o servidor local em scripts/serve.ps1 ou publique no GitHub Pages.'
+    );
+  }
+
+  const response = await fetch(resolveHref(relativePath));
+
+  if (!response.ok) {
+    throw new Error(`Nao foi possivel carregar ${relativePath} (${response.status}).`);
+  }
+
+  return response.json();
+}
+
+function buildLink(href, label, active) {
+  return `<a class="tab${active ? ' active' : ''}" href="${href}"${active ? ' aria-current="page"' : ''}>${label}</a>`;
+}
+
+function buildSidebarLink(href, label, active) {
+  return `<a class="${active ? 'active' : ''}" href="${href}"${active ? ' aria-current="page"' : ''}>${label}</a>`;
+}
+
 function renderLayout(activePage) {
+  const pageName = activePage || getCurrentPageName();
+  const activeSection = getActiveSectionName();
+  const currentHref = window.location.href;
+  const currentLabel = pageName === 'index.html'
+    ? 'Home'
+    : pageName === 'items.html'
+      ? 'Itens'
+      : pageName === 'daggers.html'
+        ? 'Adagas'
+        : 'Item';
+
+  const tabs = [
+    { label: currentLabel, href: currentHref, active: true },
+    { label: 'Início', href: resolveHref('index.html'), active: activeSection === 'index.html' },
+    { label: 'Itens', href: resolveHref('items.html'), active: activeSection === 'items.html' },
+    { label: 'Adagas', href: resolveHref('daggers.html'), active: activeSection === 'daggers.html' }
+  ].filter((tab, index) => index === 0 || tab.href !== currentHref);
+
   const sidebar = `
     <aside class="sidebar">
       <div class="logo">
@@ -9,27 +75,24 @@ function renderLayout(activePage) {
 
       <nav class="side-section">
         <h3>Principal</h3>
-        <a href="index.html">Home</a>
-        <a href="index.html#updates">Mudancas recentes</a>
-        <a href="items.html">Itens</a>
-        <a href="index.html#systems">Sistemas</a>
+        ${buildSidebarLink(resolveHref('index.html'), 'Home', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('index.html#updates'), 'Mudancas recentes', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('items.html'), 'Itens', activeSection === 'items.html')}
+        ${buildSidebarLink(resolveHref('daggers.html'), 'Adagas', activeSection === 'daggers.html')}
       </nav>
 
       <nav class="side-section">
-        <h3>Cyclopedia</h3>
-        <a href="items.html">Itens</a>
-        <a href="index.html#monsters">Bestiario</a>
-        <a href="index.html#cities">Cidades</a>
-        <a href="index.html#classes">Classes</a>
-        <a href="index.html#crafting">Crafting</a>
-        <a href="index.html#lore">Magical Archive</a>
+        <h3>Atlas</h3>
+        ${buildSidebarLink(resolveHref('index.html#cities'), 'Cidades', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('index.html#systems'), 'Sistemas', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('index.html#crafting'), 'Crafting', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('index.html#lore'), 'Lore', activeSection === 'index.html')}
       </nav>
 
       <nav class="side-section">
         <h3>Utilidades</h3>
-        <a href="index.html#upgrade">Calculadora de Upgrade</a>
-        <a href="index.html#ascension">Simulador de Ascensao</a>
-        <a href="#">Loot Tables</a>
+        ${buildSidebarLink(resolveHref('index.html#upgrade'), 'Calculadora de Upgrade', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('index.html#ascension'), 'Simulador de Ascensao', activeSection === 'index.html')}
       </nav>
     </aside>
   `;
@@ -37,10 +100,7 @@ function renderLayout(activePage) {
   const topbar = `
     <header class="topbar">
       <nav class="tabs">
-        <a class="tab active" href="${activePage}">Pagina</a>
-        <a class="tab" href="#discussion">Discussao</a>
-        <a class="tab" href="#source">Codigo-fonte</a>
-        <a class="tab" href="#history">Historico</a>
+        ${tabs.map(tab => buildLink(tab.href, tab.label, tab.active)).join('')}
       </nav>
       <div class="search">
         <input type="search" placeholder="Pesquisar em Arkhai Wiki" />
