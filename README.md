@@ -8,7 +8,8 @@ This repository separates game documentation and balancing data from the Unity c
 
 The goal is to keep a clean source for:
 
-- item pages
+- category pages
+- weapon type indices
 - item progression
 - upgrade rules
 - ascension rules
@@ -16,29 +17,48 @@ The goal is to keep a clean source for:
 - lore references
 - future calculators and simulators
 
-## Initial Structure
+## Current Structure
 
 ```txt
+index.html
+items.html
+weapons.html
+weapon-type.html
+weapon.html
+armors.html
+accessories.html
+consumables.html
+item.html
+daggers.html
+swords.html
+
+assets/
+  layout.js
+  wiki.css
+  items-data.js
+  weapons-data.js
+  hub-page.js
+  item-page.js
+  weapon-page.js
+  weapon-type-page.js
+  weapons-page.js
+  images/
+data/
+  items.json
+  daggers.json
 docs/
   index.md
   items/
   systems/
-
-data/
-  items.json
-  upgrade-scaling.json
-  ascension-rules.json
 ```
 
-## Recommended Evolution
+## Navigation Model
 
-Phase 1: Markdown wiki with JSON data.
-
-Phase 2: GitHub Pages documentation site.
-
-Phase 3: Nextra/MDX interactive wiki with item simulators.
-
-Phase 4: Shared definitions exported from the game backend.
+- `items.html` is the public hub for categories.
+- `weapons.html` lists weapon types.
+- `weapon-type.html` lists families for the selected type.
+- `weapon.html` shows the family, selected variant, and comparison data.
+- `item.html`, `daggers.html`, and `swords.html` are legacy-compatible entry points that keep older links working.
 
 ## Running Locally
 
@@ -75,3 +95,4 @@ The site is built as a static wiki and can be published directly from the reposi
 - Keep page and asset links relative, which this repo already does.
 - Keep `.nojekyll` in place so Pages serves files as-is.
 - If you add new data files, load them through the shared JSON helpers in `assets/layout.js`.
+- Prefer one source of truth in `arkhai/` and sync only curated public data here.

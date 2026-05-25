@@ -4,6 +4,26 @@ function getCurrentPageName() {
   return name || 'index.html';
 }
 
+const PAGE_SECTION_ALIASES = {
+  'weapon.html': 'weapons.html',
+  'weapon-type.html': 'weapons.html',
+  'daggers.html': 'weapons.html',
+  'swords.html': 'weapons.html'
+};
+
+const PAGE_LABELS = {
+  'index.html': 'Home',
+  'items.html': 'Itens',
+  'weapons.html': 'Armas',
+  'weapon-type.html': 'Tipo de Arma',
+  'weapon.html': 'Arma',
+  'swords.html': 'Espadas',
+  'armors.html': 'Armaduras',
+  'accessories.html': 'Acessorios',
+  'consumables.html': 'Consumiveis',
+  'item.html': 'Item'
+};
+
 function getActiveSectionName() {
   const pageName = getCurrentPageName();
 
@@ -19,23 +39,7 @@ function getActiveSectionName() {
     }
   }
 
-  if (pageName === 'weapon.html') {
-    return 'weapons.html';
-  }
-
-  if (pageName === 'weapon-type.html') {
-    return 'weapons.html';
-  }
-
-  if (pageName === 'daggers.html') {
-    return 'weapons.html';
-  }
-
-  if (pageName === 'swords.html') {
-    return 'weapons.html';
-  }
-
-  return pageName;
+  return PAGE_SECTION_ALIASES[pageName] || pageName;
 }
 
 function resolveHref(target) {
@@ -70,29 +74,11 @@ function renderLayout(activePage) {
   const pageName = activePage || getCurrentPageName();
   const activeSection = getActiveSectionName();
   const currentHref = window.location.href;
-  const currentLabel = pageName === 'index.html'
-    ? 'Home'
-    : pageName === 'items.html'
-      ? 'Itens'
-      : pageName === 'weapons.html'
-        ? 'Armas'
-        : pageName === 'weapon-type.html'
-          ? 'Tipo de Arma'
-      : pageName === 'weapon.html'
-          ? 'Arma'
-      : pageName === 'swords.html'
-        ? 'Espadas'
-      : pageName === 'armors.html'
-        ? 'Armaduras'
-      : pageName === 'accessories.html'
-        ? 'Acessorios'
-      : pageName === 'consumables.html'
-        ? 'Consumiveis'
-        : 'Item';
+  const currentLabel = PAGE_LABELS[pageName] || 'Item';
 
   const tabs = [
     { label: currentLabel, href: currentHref, active: true },
-    { label: 'Início', href: resolveHref('index.html'), active: activeSection === 'index.html' },
+    { label: 'Inicio', href: resolveHref('index.html'), active: activeSection === 'index.html' },
     { label: 'Itens', href: resolveHref('items.html'), active: activeSection === 'items.html' },
     { label: 'Armas', href: resolveHref('weapons.html'), active: activeSection === 'weapons.html' },
     { label: 'Armaduras', href: resolveHref('armors.html'), active: activeSection === 'armors.html' },

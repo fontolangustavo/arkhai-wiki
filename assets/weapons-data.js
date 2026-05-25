@@ -2,6 +2,44 @@
   const rarityOrder = ['Incomum', 'Raro', 'Epico', 'Lendario'];
   const tierOrder = ['I', 'II', 'III', 'IV'];
   const weaponTypeOrder = ['Adaga', 'Espada', 'Cajado', 'Arco', 'Pistola', 'Martelo'];
+  const weaponTypeMeta = {
+    Adaga: {
+      icon: '🦂',
+      summary: 'Ataques rapidos, veneno constante, critico e perfuracao curta.',
+      focus: 'Mobilidade, burst e aplicacao de marca',
+      detailSummary: 'Linha focada em velocidade, veneno, critico e perfuracao curta.'
+    },
+    Espada: {
+      icon: '🗡️',
+      summary: 'Cortes consistentes, forca e identidade marcial clara.',
+      focus: 'Dano solido, ritmo medio e versatilidade',
+      detailSummary: 'Linha focada em corte consistente, forca e identidade marcial.'
+    },
+    Cajado: {
+      icon: '🔱',
+      summary: 'Canalizacao magica, controle e efeitos elementais.',
+      focus: 'Inteligencia, area e sustentacao arcana',
+      detailSummary: 'Linha focada em canalizacao arcana, controle e area.'
+    },
+    Arco: {
+      icon: '🏹',
+      summary: 'Longo alcance, precision e dano de flanco.',
+      focus: 'Mobilidade, perfuracao e distancia',
+      detailSummary: 'Linha focada em distancia, precision e dano de flanco.'
+    },
+    Pistola: {
+      icon: '🔫',
+      summary: 'Disparo concentrado, critico e pressao de medio alcance.',
+      focus: 'Explosao rapida e dano por janela',
+      detailSummary: 'Linha focada em disparo concentrado e critico de medio alcance.'
+    },
+    Martelo: {
+      icon: '🔨',
+      summary: 'Impacto pesado, quebra de defesa e controle bruto.',
+      focus: 'Forca, atordoamento e area curta',
+      detailSummary: 'Linha focada em impacto, quebra de defesa e forca bruta.'
+    }
+  };
   const weaponTypeNameBySlug = Object.fromEntries(
     weaponTypeOrder.map(typeName => [slugifyWeaponType(typeName), typeName])
   );
@@ -15,14 +53,6 @@
     const resolvedImage = resolveWeaponImage(image);
 
     return `<img class="${className}" src="${resolvedImage}" alt="${alt}" onerror="this.onerror=null;this.src='${defaultImage}'">`;
-  }
-
-  function formatWeaponStatValue(value) {
-    if (value === null || value === undefined || value === '') {
-      return '-';
-    }
-
-    return String(value);
   }
 
   function slugifyWeaponType(value) {
@@ -126,56 +156,6 @@
       variants: defaultType.variants,
       variantByKey: defaultType.variantByKey
     };
-  }
-
-  function renderWeaponAttributePreview(family, type, variant) {
-    if (!type.statTable || !type.statTable.columns || type.statTable.columns.length === 0) {
-      return `
-        <section class="attribute-preview">
-          <h3>Atributos</h3>
-          <p>${family.attributes.join(', ')}</p>
-        </section>
-      `;
-    }
-
-    const stats = variant.stats || {};
-    const chips = type.statTable.columns.map(column => `
-      <div class="attribute-stat">
-        <span>${column}</span>
-        <strong>${formatWeaponStatValue(stats[column])}</strong>
-      </div>
-    `).join('');
-
-    return `
-      <section class="attribute-preview">
-        <h3>Atributos</h3>
-        <div class="attribute-stat-grid">${chips}</div>
-      </section>
-    `;
-  }
-
-  function renderWeaponAttributeTable(family, type, variant) {
-    if (!type.statTable || !type.statTable.columns || type.statTable.columns.length === 0) {
-      return `
-        <h2 class="section-title">Atributos</h2>
-        <div class="subtle-box">Atributos numericos ainda nao documentados para esta familia.</div>
-      `;
-    }
-
-    const stats = variant.stats || {};
-    const rows = type.statTable.columns.map(column => `
-      <tr>
-        <th>${column}</th>
-        <td>${formatWeaponStatValue(stats[column])}</td>
-      </tr>
-    `).join('');
-
-    return `
-      <h2 class="section-title">${type.statTable.title || 'Atributos'}</h2>
-      <table class="wiki-table attribute-table">
-        <tbody>${rows}</tbody>
-      </table>
-    `;
   }
 
   const families = [
@@ -938,14 +918,13 @@
     rarityOrder,
     tierOrder,
     weaponTypeOrder,
+    weaponTypeMeta,
     weaponTypeIndex,
     resolveWeaponTypeName,
     defaultImage,
     resolveWeaponImage,
     createWeaponImageHtml,
     buildWeaponType,
-    renderWeaponAttributePreview,
-    renderWeaponAttributeTable,
     families,
     familyById,
     getWeaponSelection
@@ -955,13 +934,12 @@
   window.weaponRarityOrder = rarityOrder;
   window.weaponTierOrder = tierOrder;
   window.weaponTypeOrder = weaponTypeOrder;
+  window.weaponTypeMeta = weaponTypeMeta;
   window.weaponTypeIndex = weaponTypeIndex;
   window.resolveWeaponTypeName = resolveWeaponTypeName;
   window.weaponDefaultImage = defaultImage;
   window.resolveWeaponImage = resolveWeaponImage;
   window.createWeaponImageHtml = createWeaponImageHtml;
   window.buildWeaponType = buildWeaponType;
-  window.renderWeaponAttributePreview = renderWeaponAttributePreview;
-  window.renderWeaponAttributeTable = renderWeaponAttributeTable;
   window.getWeaponSelection = getWeaponSelection;
 })();

@@ -104,9 +104,4 @@
     buildDaggersModel,
     getDaggersSelection
   };
-
-  window.rarityOrder = rarityOrder;
-  window.toItemId = toItemId;
-  window.buildDaggersModel = buildDaggersModel;
-  window.getDaggersSelection = getDaggersSelection;
 })();

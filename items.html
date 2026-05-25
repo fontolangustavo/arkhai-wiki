@@ -23,47 +23,34 @@
           </div>
 
           <p>
-            Em Arkhai, a navegação começa pela categoria: depois disso, cada área abre sua própria
-            listagem por tipo, slot ou uso. Isso evita misturar armas, armaduras e acessórios na mesma vitrine.
+            Em Arkhai, a navegacao comeca pela categoria: depois disso, cada area abre sua propria
+            listagem por tipo, slot ou uso. Isso evita misturar armas, armaduras e acessorios na mesma vitrine.
           </p>
 
           <h2 class="section-title">Categorias Principais</h2>
-          <div class="category-grid">
-            <a class="category-link" href="weapons.html">
-              <span class="category-icon">⚔️</span>
-              <span>Armas</span>
-            </a>
-            <a class="category-link" href="armors.html">
-              <span class="category-icon">🛡️</span>
-              <span>Armaduras</span>
-            </a>
-            <a class="category-link" href="accessories.html">
-              <span class="category-icon">💍</span>
-              <span>Acessorios</span>
-            </a>
-            <a class="category-link" href="consumables.html">
-              <span class="category-icon">🧪</span>
-              <span>Consumiveis</span>
-            </a>
-          </div>
+          <div id="category-grid" class="category-grid"></div>
 
           <h2 class="section-title">Como a wiki se organiza</h2>
           <div class="subtle-box">
-            Categoria > Tipo > Item > Variante.
+            Categoria &gt; Tipo &gt; Item &gt; Variante.
           </div>
           <p>
-            Exemplo prático: <strong>Armas</strong> abre os tipos de arma; <strong>Adagas</strong>
+            Exemplo pratico: <strong>Armas</strong> abre os tipos de arma; <strong>Adagas</strong>
             mostra todas as linhas de adaga; e a ficha final exibe a variante da familia com raridade e tier.
           </p>
 
           <p class="category-note">
-            Quando novas familias entrarem, a estrutura já suporta crescimento sem precisar duplicar cards da mesma linha.
+            Quando novas familias entrarem, a estrutura ja suporta crescimento sem precisar duplicar cards da mesma linha.
           </p>
         </article>
       </section>
     </main>
   </div>
   <script src="assets/layout.js"></script>
-  <script>renderLayout('items.html');</script>
+  <script src="assets/hub-page.js"></script>
+  <script>
+    renderLayout('items.html');
+    renderItemsPage();
+  </script>
 </body>
 </html>

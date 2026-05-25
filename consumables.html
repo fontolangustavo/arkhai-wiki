@@ -14,22 +14,29 @@
       <section class="content">
         <article class="article">
           <header class="article-header">
-            <h1>Consumiveis</h1>
-            <div class="article-actions">categoria em estruturacao · Arkhai Wiki</div>
+            <h1 id="category-title">Consumiveis</h1>
+            <div class="article-actions" id="category-actions">categoria em estruturacao · Arkhai Wiki</div>
           </header>
-          <div class="status-line">Consumiveis, elixires e itens de uso rapido entram aqui. A pagina ainda esta em fase de indice.</div>
-          <p>
-            Esta categoria cobre itens de uso rapido, buffs, recuperacao e utilidades de combate.
-            O objetivo e manter um catalogo separado de equipamento permanente.
-          </p>
+          <div id="category-status" class="status-line"></div>
+          <p id="category-intro"></p>
           <h2 class="section-title">Fonte de design</h2>
-          <p>O ponto de partida esta em <strong>mmorpg-design-docs/05-items-and-equipment/consumables.md</strong>.</p>
-          <div class="subtle-box">Categoria reservada para pocoes, elixires e itens de suporte.</div>
+          <p id="category-source"></p>
+          <div id="category-subtle" class="subtle-box"></div>
         </article>
       </section>
     </main>
   </div>
   <script src="assets/layout.js"></script>
-  <script>renderLayout('consumables.html');</script>
+  <script src="assets/hub-page.js"></script>
+  <script>
+    renderLayout('consumables.html');
+    renderCategoryPage('Consumiveis', {
+      actions: 'categoria em estruturacao · Arkhai Wiki',
+      status: 'Consumiveis, elixires e itens de uso rapido entram aqui. A pagina ainda esta em fase de indice.',
+      introHtml: 'Esta categoria cobre itens de uso rapido, buffs, recuperacao e utilidades de combate. O objetivo e manter um catalogo separado de equipamento permanente.',
+      sourceHtml: 'O ponto de partida esta em <strong>mmorpg-design-docs/05-items-and-equipment/consumables.md</strong>.',
+      subtle: 'Categoria reservada para pocoes, elixires e itens de suporte.'
+    });
+  </script>
 </body>
 </html>

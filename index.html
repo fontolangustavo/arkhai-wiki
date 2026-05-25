@@ -12,13 +12,12 @@
     <main class="main">
       <div id="wiki-topbar"></div>
       <section class="content">
-        <div id="updates" class="notice-grid">
-          <article class="notice-card"><div class="notice-icon">🏜️</div><div><h2>Khem-Nippur</h2><p>Regiao inicial do deserto, necromancia, sol e artefatos antigos.</p><a href="#cities">Saiba mais →</a></div></article>
-          <article class="notice-card"><div class="notice-icon">⚔️</div><div><h2>Balanceamento de Itens</h2><p>Base inicial para raridades, atributos, aprimoramento e ascensao.</p><a href="items.html">Saiba mais →</a></div></article>
-          <article class="notice-card"><div class="notice-icon">📜</div><div><h2>Codex Ar-Khe</h2><p>Fragmentos de lore, grimorios, essencias e historia do mundo.</p><a href="#lore">Saiba mais →</a></div></article>
-        </div>
+        <div id="updates" class="notice-grid"></div>
         <article id="home" class="article">
-          <header class="article-header"><h1>Arkhai Wiki</h1><div class="article-actions">versao publicada · Arkhai Wiki</div></header>
+          <header class="article-header">
+            <h1>Arkhai Wiki</h1>
+            <div class="article-actions">versao publicada · Arkhai Wiki</div>
+          </header>
           <div class="status-line">👁 Enciclopedia inicial do universo Arkhai.</div>
           <div class="article-body">
             <div>
@@ -30,22 +29,30 @@
               <p id="ascension"><strong>Ascensao:</strong> leva o item alem do limite comum, adicionando multiplicadores, efeitos visuais e progressao de endgame.</p>
               <p id="crafting"><strong>Crafting:</strong> usa ferraria, essencias, partes de monstros e artefatos para criar ou evoluir equipamentos.</p>
               <h2 id="cities" class="section-title">Cidades de Arkhai</h2>
-              <div class="city-grid">
-                <div class="city-card"><strong>Khem-Nippur</strong><span>O Bercario de Ouro, deserto, necromancia e sol.</span></div>
-                <div class="city-card"><strong>Hellas-Assur</strong><span>A Agora de Marmore, arenas, forja e disciplina marcial.</span></div>
-                <div class="city-card"><strong>Ermo de Nod</strong><span>A fronteira do esquecimento, neve, polvora e exilio.</span></div>
-                <div class="city-card"><strong>Silvan-Arcadia</strong><span>O santuario das raizes, alquimia botanica e cura.</span></div>
-              </div>
+              <div id="cities-grid" class="city-grid"></div>
               <h2 id="lore" class="section-title">Fragmento de lore</h2>
               <p>Em Arkhai, cada item carrega residuos de Ar-Khe. Alguns equipamentos apenas ferem. Outros lembram. Os mais antigos escolhem quem pode desperta-los.</p>
             </div>
-            <aside class="infobox"><div class="infobox-title">Database Viva</div><div class="item-preview">📜</div><table><tr><th>Base</th><td>JSON</td></tr><tr><th>Foco</th><td>Itens, sistemas e lore</td></tr><tr><th>Regiao inicial</th><td>Khem-Nippur</td></tr><tr><th>Status</th><td>Em construcao</td></tr></table></aside>
+            <aside class="infobox">
+              <div class="infobox-title">Database Viva</div>
+              <div class="item-preview">🜃</div>
+              <table>
+                <tr><th>Base</th><td>JSON</td></tr>
+                <tr><th>Foco</th><td>Itens, sistemas e lore</td></tr>
+                <tr><th>Regiao inicial</th><td>Khem-Nippur</td></tr>
+                <tr><th>Status</th><td>Em construcao</td></tr>
+              </table>
+            </aside>
           </div>
         </article>
       </section>
     </main>
   </div>
   <script src="assets/layout.js"></script>
-  <script>renderLayout('index.html');</script>
+  <script src="assets/hub-page.js"></script>
+  <script>
+    renderLayout('index.html');
+    renderHomePage();
+  </script>
 </body>
 </html>
