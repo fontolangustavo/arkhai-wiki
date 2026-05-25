@@ -58,6 +58,12 @@ node .\scripts\serve.mjs
 
 Then open `http://localhost:8000/`.
 
+If you are using Git Bash or another POSIX-style shell on Windows, use forward slashes:
+
+```bash
+node ./scripts/serve.mjs
+```
+
 ### Why not open the HTML file directly?
 
 Browsers usually block `fetch()` from `file://` pages. Serving the site locally avoids that problem and matches the GitHub Pages deployment model.
