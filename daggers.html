@@ -17,30 +17,39 @@
         <article class="article">
           <header class="article-header">
             <h1>Adagas</h1>
-            <div class="article-actions">versao publicada · Arkhai Wiki</div>
+            <div class="article-actions">fonte: arkhai/mmorpg-design-docs/05-items-and-equipment</div>
           </header>
 
-          <div class="status-line">🗡️ Lista inicial de adagas conhecidas em Arkhai.</div>
+          <div class="status-line">🦂 Dados sincronizados com a fonte verdadeira: <strong>families/escorpiao/weapons.md</strong>.</div>
 
-          <p>As <strong>adagas</strong> sao armas rapidas focadas em mobilidade, veneno, sangramento e ataques criticos. Muitas linhagens de assassinos e duelistas utilizam adagas ancestrais ligadas a residuos de Ar-Khe.</p>
+          <p>
+            As <strong>adagas da familia Escorpiao</strong> sao armas fisicas de curto alcance,
+            com velocidade base <strong>1.45</strong>, atributo principal <strong>Agilidade</strong>
+            e identidade focada em critico rapido, perfuracao e veneno acumulativo.
+          </p>
+
+          <div class="subtle-box">
+            A fonte oficial define quatro tiers internos para cada raridade. Por isso a tabela abaixo exibe
+            <strong>16 linhas reais</strong>: Incomum I-IV, Raro I-IV, Epico I-IV e Lendario I-IV.
+          </div>
 
           <table class="wiki-table" id="daggers-table">
             <thead>
               <tr>
                 <th>Nome</th>
                 <th>Imagem</th>
+                <th>Raridade/Tier</th>
                 <th>Lvl</th>
-                <th>Vocacao</th>
-                <th>Maos</th>
+                <th>Multiplicador</th>
+                <th>Tipo</th>
+                <th>Vel.</th>
+                <th>Alcance</th>
+                <th>Classes</th>
                 <th>Atq</th>
-                <th>Dano Elemental</th>
-                <th>Def</th>
-                <th>Mod. Defesa</th>
-                <th>Bonus</th>
-                <th>Slots</th>
-                <th>Tier</th>
-                <th>Raridade</th>
-                <th>Fonte</th>
+                <th>Agilidade</th>
+                <th>Critico</th>
+                <th>Perfuracao</th>
+                <th>Veneno</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -54,21 +63,52 @@
   <script>
     renderLayout('daggers.html');
 
+    const rarityClassMap = {
+      Incomum: 'uncommon',
+      Raro: 'rare',
+      Epico: 'epic',
+      Lendario: 'legendary'
+    };
+
+    function toItemId(baseId, tier) {
+      return `${baseId}_${tier.toLowerCase()}`;
+    }
+
+    function expandDaggers(data) {
+      return data.tiers.map(tier => {
+        const rarityLine = data.rarityLines[tier.rarity];
+        const profile = data.profile;
+
+        return {
+          ...profile,
+          ...tier,
+          id: toItemId(rarityLine.baseId, tier.internalTier),
+          baseId: rarityLine.baseId,
+          baseName: rarityLine.baseName,
+          name: `${rarityLine.baseName} ${tier.internalTier}`,
+          image: rarityLine.image,
+          icon: rarityLine.icon,
+          family: data.family,
+          weaponType: data.weaponType,
+          region: data.region,
+          sourceDocument: data.sourceDocument,
+          sourceSection: data.sourceSection,
+          rarityTier: `${tier.rarity} ${tier.internalTier}`,
+          initialRecipe: data.initialRecipes[toItemId(rarityLine.baseId, tier.internalTier)] || [],
+          ascension: data.ascensions[toItemId(rarityLine.baseId, tier.internalTier)] || null
+        };
+      });
+    }
+
     async function loadDaggers() {
       const tbody = document.querySelector('#daggers-table tbody');
 
       try {
-        const daggers = await loadWikiJson('data/daggers.json');
+        const sourceData = await loadWikiJson('data/daggers.json');
+        const daggers = expandDaggers(sourceData);
 
         daggers.forEach(dagger => {
-          const rarityClassMap = {
-            Incomum: 'uncommon',
-            Raro: 'rare',
-            Epico: 'epic',
-            Lendario: 'legendary'
-          };
           const rarityClass = rarityClassMap[dagger.rarity] || '';
-
           const row = document.createElement('tr');
           const itemHref = `item.html?${new URLSearchParams({ source: 'daggers', id: dagger.id }).toString()}`;
 
@@ -80,18 +120,18 @@
               <small style="color: var(--muted)">${dagger.description}</small>
             </td>
             <td><img class="item-thumb" src="${dagger.image}" alt="${dagger.name}"></td>
+            <td><span class="rarity ${rarityClass}">${dagger.rarityTier}</span></td>
             <td>${dagger.level}</td>
-            <td>${dagger.vocation}</td>
-            <td>${dagger.hands}</td>
+            <td>${dagger.powerMultiplier}</td>
+            <td>${dagger.attackType}</td>
+            <td>${dagger.baseSpeed}</td>
+            <td>${dagger.range}</td>
+            <td>${dagger.classes}</td>
             <td>${dagger.attack}</td>
-            <td>${dagger.elementalDamage}</td>
-            <td>${dagger.defense}</td>
-            <td>${dagger.defenseModifier}</td>
-            <td>${dagger.bonus}</td>
-            <td>${dagger.slots}</td>
-            <td>${dagger.tier}</td>
-            <td><span class="rarity ${rarityClass}">${dagger.rarity}</span></td>
-            <td>${dagger.source}</td>
+            <td>${dagger.primaryAttributeValue}</td>
+            <td>${dagger.criticalChance}</td>
+            <td>${dagger.penetration}</td>
+            <td>${dagger.poisonChance}</td>
           `;
 
           tbody.appendChild(row);
