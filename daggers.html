@@ -9,10 +9,8 @@
 <body>
   <div class="wiki-shell">
     <div id="wiki-sidebar"></div>
-
     <main class="main">
       <div id="wiki-topbar"></div>
-
       <section class="content">
         <article class="article">
           <header class="article-header">
@@ -20,7 +18,7 @@
             <div class="article-actions">fonte: arkhai/mmorpg-design-docs/05-items-and-equipment</div>
           </header>
 
-          <div class="status-line">🦂 Dados sincronizados com a fonte verdadeira: <strong>families/escorpiao/weapons.md</strong>.</div>
+          <div class="status-line">🦂 Cada card representa uma linha do item. O detalhe permite trocar entre raridade e tier sem repetir a mesma arma na listagem.</div>
 
           <p>
             As <strong>adagas da familia Escorpiao</strong> sao armas fisicas de curto alcance,
@@ -29,37 +27,19 @@
           </p>
 
           <div class="subtle-box">
-            A fonte oficial define quatro tiers internos para cada raridade. Por isso a tabela abaixo exibe
-            <strong>16 linhas reais</strong>: Incomum I-IV, Raro I-IV, Epico I-IV e Lendario I-IV.
+            A fonte oficial define quatro linhas de progressao para a familia Escorpiao.
+            Cada linha resume <strong>I-IV</strong> no mesmo card, deixando o detalhe para a
+            exploracao de cada variante.
           </div>
 
-          <table class="wiki-table" id="daggers-table">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Imagem</th>
-                <th>Raridade/Tier</th>
-                <th>Lvl</th>
-                <th>Multiplicador</th>
-                <th>Tipo</th>
-                <th>Vel.</th>
-                <th>Alcance</th>
-                <th>Classes</th>
-                <th>Atq</th>
-                <th>Agilidade</th>
-                <th>Critico</th>
-                <th>Perfuracao</th>
-                <th>Veneno</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+          <div id="daggers-list" class="item-line-grid"></div>
         </article>
       </section>
     </main>
   </div>
 
   <script src="assets/layout.js"></script>
+  <script src="assets/items-data.js"></script>
   <script>
     renderLayout('daggers.html');
 
@@ -70,79 +50,61 @@
       Lendario: 'legendary'
     };
 
-    function toItemId(baseId, tier) {
-      return `${baseId}_${tier.toLowerCase()}`;
+    function renderRange(first, last, key) {
+      if (!first || !last) {
+        return '-';
+      }
+
+      return `${first[key]} - ${last[key]}`;
     }
 
-    function expandDaggers(data) {
-      return data.tiers.map(tier => {
-        const rarityLine = data.rarityLines[tier.rarity];
-        const profile = data.profile;
+    function buildLineCard(line) {
+      const first = line.firstVariant;
+      const last = line.lastVariant;
+      const itemHref = `item.html?${new URLSearchParams({
+        source: 'daggers',
+        line: line.lineId,
+        tier: first ? first.internalTier : 'I'
+      }).toString()}`;
+      const rarityClass = rarityClassMap[line.rarity] || '';
+      const image = `<img class="item-image" src="${line.image}" alt="${line.displayName}">`;
 
-        return {
-          ...profile,
-          ...tier,
-          id: toItemId(rarityLine.baseId, tier.internalTier),
-          baseId: rarityLine.baseId,
-          baseName: rarityLine.baseName,
-          name: `${rarityLine.baseName} ${tier.internalTier}`,
-          image: rarityLine.image,
-          icon: rarityLine.icon,
-          family: data.family,
-          weaponType: data.weaponType,
-          region: data.region,
-          sourceDocument: data.sourceDocument,
-          sourceSection: data.sourceSection,
-          rarityTier: `${tier.rarity} ${tier.internalTier}`,
-          initialRecipe: data.initialRecipes[toItemId(rarityLine.baseId, tier.internalTier)] || [],
-          ascension: data.ascensions[toItemId(rarityLine.baseId, tier.internalTier)] || null
-        };
-      });
+      return `
+        <a class="item-line-card" href="${itemHref}">
+          <figure>${image}</figure>
+          <div>
+            <div class="item-line-head">
+              <div>
+                <h2>${line.displayName}</h2>
+                <p>${line.description}</p>
+              </div>
+              <span class="rarity ${rarityClass}">${line.rarity}</span>
+            </div>
+            <div class="item-line-meta">
+              <span class="item-line-pill">${line.variantCount} tiers</span>
+              <span class="item-line-pill">Lv ${renderRange(first, last, 'level')}</span>
+              <span class="item-line-pill">Atq ${renderRange(first, last, 'attack')}</span>
+              <span class="item-line-pill">Crit ${renderRange(first, last, 'criticalChance')}</span>
+              <span class="item-line-pill">Veneno ${renderRange(first, last, 'poisonChance')}</span>
+            </div>
+          </div>
+        </a>
+      `;
     }
 
     async function loadDaggers() {
-      const tbody = document.querySelector('#daggers-table tbody');
+      const container = document.getElementById('daggers-list');
 
       try {
         const sourceData = await loadWikiJson('data/daggers.json');
-        const daggers = expandDaggers(sourceData);
+        const model = buildDaggersModel(sourceData);
 
-        daggers.forEach(dagger => {
-          const rarityClass = rarityClassMap[dagger.rarity] || '';
-          const row = document.createElement('tr');
-          const itemHref = `item.html?${new URLSearchParams({ source: 'daggers', id: dagger.id }).toString()}`;
-
-          row.innerHTML = `
-            <td>
-              <a href="${itemHref}">
-                <strong>${dagger.name}</strong>
-              </a><br>
-              <small style="color: var(--muted)">${dagger.description}</small>
-            </td>
-            <td><img class="item-thumb" src="${dagger.image}" alt="${dagger.name}"></td>
-            <td><span class="rarity ${rarityClass}">${dagger.rarityTier}</span></td>
-            <td>${dagger.level}</td>
-            <td>${dagger.powerMultiplier}</td>
-            <td>${dagger.attackType}</td>
-            <td>${dagger.baseSpeed}</td>
-            <td>${dagger.range}</td>
-            <td>${dagger.classes}</td>
-            <td>${dagger.attack}</td>
-            <td>${dagger.primaryAttributeValue}</td>
-            <td>${dagger.criticalChance}</td>
-            <td>${dagger.penetration}</td>
-            <td>${dagger.poisonChance}</td>
-          `;
-
-          tbody.appendChild(row);
-        });
+        container.innerHTML = model.lineOrder.map(buildLineCard).join('');
       } catch (error) {
-        tbody.innerHTML = `
-          <tr>
-            <td colspan="14">
-              <div class="status-line">Nao foi possivel carregar a lista de adagas. ${error.message}</div>
-            </td>
-          </tr>
+        container.innerHTML = `
+          <div class="status-line">
+            Nao foi possivel carregar a lista de adagas. ${error.message}
+          </div>
         `;
       }
     }

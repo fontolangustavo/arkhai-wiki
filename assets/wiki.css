@@ -30,6 +30,20 @@ h1, .article h1 { font-family:Georgia,serif; font-size:35px; font-weight:500; ma
 .item-spotlight p:last-child { margin-bottom:0; }
 .item-spotlight figure { margin:0; display:flex; align-items:center; justify-content:center; min-height:160px; }
 .item-spotlight .item-image { max-width:160px; max-height:160px; }
+.item-line-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:16px; }
+.item-line-card { display:grid; grid-template-columns:128px 1fr; gap:16px; align-items:start; padding:16px; background:var(--surface-soft); border:1px solid var(--border); border-radius:12px; color:inherit; box-shadow:0 6px 18px rgba(89,64,35,.08); transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.item-line-card:hover { text-decoration:none; transform:translateY(-2px); box-shadow:0 10px 24px rgba(89,64,35,.12); border-color:var(--border-strong); }
+.item-line-card figure { margin:0; min-height:112px; display:flex; align-items:center; justify-content:center; }
+.item-line-card h2 { margin:0; border:0; padding:0; font-size:20px; color:#1f2937; }
+.item-line-card p { margin:8px 0 10px; color:var(--muted); }
+.item-line-head { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:6px; }
+.item-line-meta { display:flex; flex-wrap:wrap; gap:8px; }
+.item-line-pill { display:inline-flex; align-items:center; padding:4px 8px; border-radius:999px; background:#fff; border:1px solid var(--border); color:#4b5563; font-size:12px; font-weight:600; }
+.variant-switcher { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:14px 0 18px; }
+.variant-field label { display:block; margin-bottom:6px; font-size:13px; font-weight:700; color:#4b3d2c; }
+.variant-field select { width:100%; padding:10px 12px; border:1px solid var(--border-strong); border-radius:8px; background:#fffdf8; color:var(--text); }
+.progression-table { margin-top:14px; }
+.progression-table tr.is-active td { background:#fff2d8 !important; }
 .missing-item-icon { width:42px; height:42px; display:flex; align-items:center; justify-content:center; margin:auto; border:1px dashed #9aa6b2; background:#18202b; color:#ff6b6b; font-family:Consolas, monospace; font-size:12px; font-weight:700; border-radius:6px; }
 .detail-icon .missing-item-icon { width:86px; height:86px; font-size:18px; }
 .detail-layout { display:grid; grid-template-columns:minmax(0,1fr) 540px; gap:24px; align-items:start; }
@@ -66,17 +80,20 @@ h1, .article h1 { font-family:Georgia,serif; font-size:35px; font-weight:500; ma
 .detail-section { border-top:1px solid rgba(127,199,255,.65); margin-top:14px; padding-top:12px; }
 .detail-section h3 { margin:0 0 8px; color:#fff2d8; font-size:14px; text-transform:uppercase; }
 .detail-section p { margin:0 0 8px; color:#e7edf6; }
-.detail-icon {
-  width:86px;
-  height:86px;
+.detail-image-frame {
+  margin:0 0 12px;
+  padding:12px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:46px;
+  min-height:140px;
   background:rgba(32,42,54,.82);
   border:1px solid rgba(127,199,255,.82);
-  margin-bottom:12px;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
+}
+.detail-image-frame .item-image {
+  max-width:120px;
+  max-height:120px;
 }
 .detail-card.rarity-uncommon {
   border-color:#3c9d6d;
@@ -134,10 +151,10 @@ h1, .article h1 { font-family:Georgia,serif; font-size:35px; font-weight:500; ma
     radial-gradient(circle at 82% 70%, rgba(255,255,255,.10), transparent 7%),
     linear-gradient(135deg, rgba(255,255,255,.10), transparent 34%);
 }
-.detail-card.rarity-legendary .detail-icon,
-.detail-card.rarity-epic .detail-icon,
-.detail-card.rarity-rare .detail-icon,
-.detail-card.rarity-uncommon .detail-icon {
+.detail-card.rarity-legendary .detail-image-frame,
+.detail-card.rarity-epic .detail-image-frame,
+.detail-card.rarity-rare .detail-image-frame,
+.detail-card.rarity-uncommon .detail-image-frame {
   background:rgba(14,18,24,.26);
 }
 .rarity { padding:3px 7px; border-radius:999px; font-size:12px; font-weight:700; display:inline-block; } .legendary { background:#fff0d4; color:#935f00; border:1px solid #d99f3e; } .uncommon { background:#e5f7ec; color:#237345; border:1px solid #9bd3ae; }
@@ -147,4 +164,4 @@ h1, .article h1 { font-family:Georgia,serif; font-size:35px; font-weight:500; ma
 .city-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .city-card { border:1px solid var(--border); background:var(--surface-soft); border-radius:9px; padding:13px; } .city-card strong { display:block; color:#263241; margin-bottom:4px; } .city-card span { color:var(--muted); font-size:13px; }
 .category-grid { display:grid; grid-template-columns:repeat(3,minmax(190px,1fr)); gap:8px 28px; margin:14px 0 18px; max-width:920px; } .category-link { display:grid; grid-template-columns:34px 1fr; align-items:center; min-height:38px; color:var(--link); } .category-icon { width:30px; height:30px; border-radius:7px; font-size:19px; box-shadow:inset 0 1px 0 rgba(255,255,255,.75); } .category-note { color:var(--muted); margin-top:0; max-width:1100px; }
 @media(max-width:1050px){.notice-grid{grid-template-columns:1fr}.article-body{grid-template-columns:1fr}.infobox{max-width:420px}.category-grid{grid-template-columns:repeat(2,minmax(160px,1fr));}.detail-layout{grid-template-columns:1fr}.detail-card{max-width:none}}
-@media(max-width:760px){.wiki-shell{grid-template-columns:1fr}.sidebar{position:static;height:auto}.topbar{position:static;height:auto;flex-direction:column;align-items:stretch;gap:10px;padding:12px}.tabs{height:auto;flex-wrap:wrap}.tab{padding:8px 10px;border:1px solid var(--border)}.search input{width:100%}.content{padding:16px}.city-grid,.category-grid{grid-template-columns:1fr}.item-spotlight{grid-template-columns:1fr}}
+@media(max-width:760px){.wiki-shell{grid-template-columns:1fr}.sidebar{position:static;height:auto}.topbar{position:static;height:auto;flex-direction:column;align-items:stretch;gap:10px;padding:12px}.tabs{height:auto;flex-wrap:wrap}.tab{padding:8px 10px;border:1px solid var(--border)}.search input{width:100%}.content{padding:16px}.city-grid,.category-grid,.item-line-grid,.variant-switcher{grid-template-columns:1fr}.item-spotlight{grid-template-columns:1fr}.item-line-card{grid-template-columns:1fr}}
