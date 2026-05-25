@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10233f"/>
+      <stop offset="55%" stop-color="#204f85"/>
+      <stop offset="100%" stop-color="#0b111b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="43%" r="55%">
+      <stop offset="0%" stop-color="#9ad8ff" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#9ad8ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="320" rx="28" fill="url(#g)"/>
+  <circle cx="160" cy="144" r="112" fill="url(#glow)"/>
+  <path d="M107 219 L203 92 L222 105 L126 232 Z" fill="#ddefff" stroke="#7ac7ff" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M122 232 L103 255 L118 267 L139 244 Z" fill="#cfe8ff" stroke="#7ac7ff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M205 96 L237 73 L250 87 L222 108 Z" fill="#7ac7ff" stroke="#e9f7ff" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M141 151 L188 119" stroke="#4ac7ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M129 173 L176 143" stroke="#4ac7ff" stroke-width="4" stroke-linecap="round"/>
+  <text x="160" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#eff8ff">Espada</text>
+  <text x="160" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#bce6ff">Wyrm de Gelo</text>
+</svg>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tipo de Arma - Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/wiki.css" />
+</head>
+<body>
+  <div class="wiki-shell">
+    <div id="wiki-sidebar"></div>
+    <main class="main">
+      <div id="wiki-topbar"></div>
+      <section class="content">
+        <article class="article">
+          <header class="article-header">
+            <h1 id="weapon-type-title">Tipo de Arma</h1>
+            <div class="article-actions" id="weapon-type-actions">lista de familias · fonte verdadeira</div>
+          </header>
+
+          <div id="weapon-type-content"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/layout.js"></script>
+  <script src="assets/weapons-data.js"></script>
+  <script>
+    renderLayout('weapon-type.html');
+
+    const params = new URLSearchParams(window.location.search);
+    let currentTypeName = resolveWeaponTypeName(params.get('type') || weaponTypeOrder[0]);
+
+    const weaponTypeMeta = {
+      Adaga: {
+        summary: 'Linha focada em velocidade, veneno, critico e perfuracao curta.',
+        focus: 'Adagas publicadas'
+      },
+      Espada: {
+        summary: 'Linha focada em corte consistente, forca e identidade marcial.',
+        focus: 'Espadas publicadas'
+      },
+      Cajado: {
+        summary: 'Linha focada em canalizacao arcana, controle e area.',
+        focus: 'Cajados publicados'
+      },
+      Arco: {
+        summary: 'Linha focada em distancia, precision e dano de flanco.',
+        focus: 'Arcos publicados'
+      },
+      Pistola: {
+        summary: 'Linha focada em disparo concentrado e critico de medio alcance.',
+        focus: 'Pistolas publicadas'
+      },
+      Martelo: {
+        summary: 'Linha focada em impacto, quebra de defesa e forca bruta.',
+        focus: 'Martelos publicados'
+      }
+    };
+
+    function syncUrl() {
+      const nextParams = new URLSearchParams({
+        type: currentTypeName
+      });
+
+      history.replaceState(null, '', `weapon-type.html?${nextParams.toString()}`);
+    }
+
+    function buildFamilyCard(entry) {
+      const family = entry.family;
+      const type = entry.type;
+      const image = createWeaponImageHtml(type.previewImage || family.image, type.baseWeaponName);
+      const href = `weapon.html?${new URLSearchParams({
+        family: family.id,
+        type: type.id
+      }).toString()}`;
+
+      return `
+        <a class="item-line-card" href="${href}">
+          <figure>${image}</figure>
+          <div>
+            <div class="item-line-head">
+              <div>
+                <h2>${type.baseWeaponName}</h2>
+                <p>${family.summary}</p>
+              </div>
+              <span class="item-line-pill">${family.familyName}</span>
+            </div>
+            <div class="item-line-meta">
+              <span class="item-line-pill">${family.region}</span>
+              <span class="item-line-pill">${type.weaponType}</span>
+              <span class="item-line-pill">${family.markName}</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+
+    function renderTypePage() {
+      const content = document.getElementById('weapon-type-content');
+      const title = document.getElementById('weapon-type-title');
+      const actions = document.getElementById('weapon-type-actions');
+      const entries = weaponTypeIndex[currentTypeName] || [];
+      const options = weaponTypeOrder.map(typeName => {
+        const active = typeName === currentTypeName ? 'selected' : '';
+        return `<option value="${typeName}" ${active}>${typeName}</option>`;
+      }).join('');
+      const meta = weaponTypeMeta[currentTypeName] || {};
+
+      title.textContent = `${currentTypeName}s`;
+      actions.textContent = `${entries.length} familias publicadas`;
+      document.title = `${currentTypeName}s - Arkhai Wiki`;
+
+      content.innerHTML = `
+        <div class="status-line">
+          ⚔️ Esta pagina lista todas as familias publicadas para o tipo <strong>${currentTypeName}</strong>.
+        </div>
+
+        <div class="variant-switcher">
+          <div class="variant-field">
+            <label for="type-select">Tipo</label>
+            <select id="type-select">${options}</select>
+          </div>
+        </div>
+
+        <div class="subtle-box">
+          <strong>${currentTypeName}</strong> - ${meta.summary || 'Categoria de armas.'}
+        </div>
+
+        ${
+          entries.length
+            ? `<div class="item-line-grid">${entries.map(buildFamilyCard).join('')}</div>`
+            : '<div class="status-line">Nenhuma familia publicada para este tipo ainda.</div>'
+        }
+      `;
+
+      document.getElementById('type-select').addEventListener('change', event => {
+        currentTypeName = resolveWeaponTypeName(event.target.value);
+        syncUrl();
+        renderTypePage();
+      });
+    }
+
+    syncUrl();
+    renderTypePage();
+  </script>
+</body>
+</html>

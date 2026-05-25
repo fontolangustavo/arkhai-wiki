@@ -11,8 +11,28 @@ function getActiveSectionName() {
     const source = new URLSearchParams(window.location.search).get('source');
 
     if (source) {
+      if (source === 'daggers') {
+        return 'weapons.html';
+      }
+
       return `${source}.html`;
     }
+  }
+
+  if (pageName === 'weapon.html') {
+    return 'weapons.html';
+  }
+
+  if (pageName === 'weapon-type.html') {
+    return 'weapons.html';
+  }
+
+  if (pageName === 'daggers.html') {
+    return 'weapons.html';
+  }
+
+  if (pageName === 'swords.html') {
+    return 'weapons.html';
   }
 
   return pageName;
@@ -54,15 +74,30 @@ function renderLayout(activePage) {
     ? 'Home'
     : pageName === 'items.html'
       ? 'Itens'
-      : pageName === 'daggers.html'
-        ? 'Adagas'
+      : pageName === 'weapons.html'
+        ? 'Armas'
+        : pageName === 'weapon-type.html'
+          ? 'Tipo de Arma'
+      : pageName === 'weapon.html'
+          ? 'Arma'
+      : pageName === 'swords.html'
+        ? 'Espadas'
+      : pageName === 'armors.html'
+        ? 'Armaduras'
+      : pageName === 'accessories.html'
+        ? 'Acessorios'
+      : pageName === 'consumables.html'
+        ? 'Consumiveis'
         : 'Item';
 
   const tabs = [
     { label: currentLabel, href: currentHref, active: true },
     { label: 'Início', href: resolveHref('index.html'), active: activeSection === 'index.html' },
     { label: 'Itens', href: resolveHref('items.html'), active: activeSection === 'items.html' },
-    { label: 'Adagas', href: resolveHref('daggers.html'), active: activeSection === 'daggers.html' }
+    { label: 'Armas', href: resolveHref('weapons.html'), active: activeSection === 'weapons.html' },
+    { label: 'Armaduras', href: resolveHref('armors.html'), active: activeSection === 'armors.html' },
+    { label: 'Acessorios', href: resolveHref('accessories.html'), active: activeSection === 'accessories.html' },
+    { label: 'Consumiveis', href: resolveHref('consumables.html'), active: activeSection === 'consumables.html' }
   ].filter((tab, index) => index === 0 || tab.href !== currentHref);
 
   const sidebar = `
@@ -78,7 +113,10 @@ function renderLayout(activePage) {
         ${buildSidebarLink(resolveHref('index.html'), 'Home', activeSection === 'index.html')}
         ${buildSidebarLink(resolveHref('index.html#updates'), 'Mudancas recentes', activeSection === 'index.html')}
         ${buildSidebarLink(resolveHref('items.html'), 'Itens', activeSection === 'items.html')}
-        ${buildSidebarLink(resolveHref('daggers.html'), 'Adagas', activeSection === 'daggers.html')}
+        ${buildSidebarLink(resolveHref('weapons.html'), 'Armas', activeSection === 'weapons.html')}
+        ${buildSidebarLink(resolveHref('armors.html'), 'Armaduras', activeSection === 'armors.html')}
+        ${buildSidebarLink(resolveHref('accessories.html'), 'Acessorios', activeSection === 'accessories.html')}
+        ${buildSidebarLink(resolveHref('consumables.html'), 'Consumiveis', activeSection === 'consumables.html')}
       </nav>
 
       <nav class="side-section">

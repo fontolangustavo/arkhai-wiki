@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armas - Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/wiki.css" />
+</head>
+<body>
+  <div class="wiki-shell">
+    <div id="wiki-sidebar"></div>
+    <main class="main">
+      <div id="wiki-topbar"></div>
+      <section class="content">
+        <article class="article">
+          <header class="article-header">
+            <h1>Armas</h1>
+            <div class="article-actions">indice de tipos · fonte verdadeira</div>
+          </header>
+
+          <div class="status-line">
+            ⚔️ Esta pagina organiza o catalogo por tipo de arma. Cada tipo leva para a lista de familias publicadas.
+          </div>
+
+          <p>
+            A categoria de armas agora funciona em tres camadas: <strong>categoria</strong>,
+            <strong>tipo</strong> e <strong>familia</strong>. Assim evitamos repetir a mesma arma em massa
+            e mantemos a navegação pronta para novas familias.
+          </p>
+
+          <div id="weapon-type-list" class="item-line-grid"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/layout.js"></script>
+  <script src="assets/weapons-data.js"></script>
+  <script>
+    renderLayout('weapons.html');
+
+    const weaponTypeMeta = {
+      Adaga: {
+        icon: '🦂',
+        summary: 'Ataques rapidos, veneno constante, critico e perfuracao curta.',
+        focus: 'Mobilidade, burst e aplicacao de marca'
+      },
+      Espada: {
+        icon: '🗡️',
+        summary: 'Cortes consistentes, forca e identidade marcial clara.',
+        focus: 'Dano solido, ritmo medio e versatilidade'
+      },
+      Cajado: {
+        icon: '🔱',
+        summary: 'Canalizacao magica, controle e efeitos elementais.',
+        focus: 'Inteligencia, area e sustentacao arcana'
+      },
+      Arco: {
+        icon: '🏹',
+        summary: 'Longo alcance, precision e dano de flanco.',
+        focus: 'Mobilidade, perfuracao e distancia'
+      },
+      Pistola: {
+        icon: '🔫',
+        summary: 'Disparo concentrado, critico e pressao de médio alcance.',
+        focus: 'Explosao rapida e dano por janela'
+      },
+      Martelo: {
+        icon: '🔨',
+        summary: 'Impacto pesado, quebra de defesa e controle bruto.',
+        focus: 'Forca, atordoamento e area curta'
+      }
+    };
+
+    function buildTypeCard(typeName) {
+      const meta = weaponTypeMeta[typeName] || {};
+      const families = weaponTypeIndex[typeName] || [];
+      const familyCount = families.length;
+      const href = `weapon-type.html?${new URLSearchParams({ type: typeName }).toString()}`;
+      const countLabel = familyCount === 1 ? '1 familia publicada' : `${familyCount} familias publicadas`;
+
+      return `
+        <a class="item-line-card" href="${href}">
+          <figure class="item-preview">${meta.icon || '⚔️'}</figure>
+          <div>
+            <div class="item-line-head">
+              <div>
+                <h2>${typeName}</h2>
+                <p>${meta.summary || 'Tipo de arma da familia.'}</p>
+              </div>
+              <span class="item-line-pill">${countLabel}</span>
+            </div>
+            <div class="item-line-meta">
+              <span class="item-line-pill">${meta.focus || 'Categoria de combate'}</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+
+    function loadTypes() {
+      const container = document.getElementById('weapon-type-list');
+      container.innerHTML = weaponTypeOrder.map(buildTypeCard).join('');
+    }
+
+    loadTypes();
+  </script>
+</body>
+</html>

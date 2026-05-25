@@ -16,7 +16,13 @@ Ele existe para apresentar ao publico apenas informacoes derivadas da fonte inte
 
 ## Estrutura Atual
 
-- `index.html`, `items.html`, `item.html`, `daggers.html`: paginas publicas do site.
+- `index.html`: entrada publica do site.
+- `items.html`: hub de categorias.
+- `weapons.html`: indice de tipos de arma.
+- `weapon-type.html`: lista de familias por tipo de arma.
+- `weapon.html`: ficha de detalhe da familia/tipo/variante.
+- `armors.html`, `accessories.html`, `consumables.html`: categorias publicas em estruturação.
+- `item.html`, `daggers.html`: paginas legadas ou aliases mantidas por compatibilidade.
 - `docs/`: conteudo editorial e de referencia da wiki.
 - `data/`: JSONs usados como fonte de dados para listas, detalhes e simuladores.
 - `assets/`: estilos, layout compartilhado e imagens.
@@ -46,4 +52,3 @@ Ele existe para apresentar ao publico apenas informacoes derivadas da fonte inte
 - Se surgir uma nova regra de item, primeiro alinhe com `arkhai/` e depois atualize a wiki.
 - Se criar uma nova pagina, atualize navegacao, dados e conteudo relacionado no mesmo ciclo.
 - Em caso de duvida, favoreca clareza publica e consistencia com a documentacao interna.
-

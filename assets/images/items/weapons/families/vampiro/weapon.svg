@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d0f18"/>
+      <stop offset="55%" stop-color="#53131f"/>
+      <stop offset="100%" stop-color="#0d1118"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#ff6a8a" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#ff6a8a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="320" rx="28" fill="url(#g)"/>
+  <circle cx="160" cy="144" r="112" fill="url(#glow)"/>
+  <path d="M118 229 L194 79 L229 94 L153 244 Z" fill="#eff2f7" stroke="#1d2635" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M188 92 L248 64 L246 87 L201 112 Z" fill="#8f1d34"/>
+  <path d="M155 245 L132 261 L145 276 L170 258 Z" fill="#35222c" stroke="#f0b2c0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M144 131 L196 110" stroke="#ff5d7d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M132 158 L188 132" stroke="#ff5d7d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M121 185 L176 160" stroke="#ff5d7d" stroke-width="4" stroke-linecap="round"/>
+  <text x="160" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#ffeef2">Espada</text>
+  <text x="160" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffb9c7">Vampiro</text>
+</svg>
