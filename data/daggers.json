@@ -1,78 +1,268 @@
-[
-  {
-    "id": "scorpion_dagger",
-    "name": "Adaga de Escorpiao",
-    "image": "assets/images/items/weapons/daggers/scorpion_dagger.png",
-    "icon": "🦂",
-    "level": 12,
-    "vocation": "Todas",
-    "hands": "Uma",
-    "attack": 18,
-    "elementalDamage": "Veneno +4",
-    "defense": 6,
-    "defenseModifier": "0",
-    "bonus": "Chance de envenenar",
-    "slots": 1,
-    "tier": 1,
-    "rarity": "Incomum",
-    "source": "Escorpioes de Khem-Nippur",
-    "description": "A lamina curva imita o ferrao. Cada corte deposita o veneno que o Escorpiao acumula no deserto."
+{
+  "sourceDocument": "arkhai/mmorpg-design-docs/05-items-and-equipment/families/escorpiao/weapons.md",
+  "sourceSection": "Familia Escorpiao - Armas > Tabelas de Atributos por Arma > Adaga de Escorpiao",
+  "family": "Escorpiao",
+  "weaponType": "Adaga",
+  "region": "Khem-Nippur",
+  "profile": {
+    "attackType": "Fisico",
+    "baseSpeed": "1.45",
+    "range": "Curto",
+    "primaryAttribute": "Agilidade",
+    "classes": "Espadachim, Pistoleiro",
+    "identity": "critico rapido e veneno acumulativo",
+    "description": "A lamina curva imita o ferrao. Cada corte deposita o veneno que o Escorpiao acumula no deserto.",
+    "function": "arma rapida para aplicar veneno varias vezes em pouco tempo.",
+    "gameplay": "baixo dano por golpe, alta velocidade, boa chance de critico e aplicacao constante de Envenenamento.",
+    "silhouette": "lamina curta, curva, agressiva, parecida com o ferrao de um escorpiao.",
+    "visual": "cabo de quitina negra, guarda pequena em formato de pinca, fio esverdeado e gotas de veneno cristalizado."
   },
-  {
-    "id": "elite_scorpion_dagger",
-    "name": "Adaga do Escorpiao Elite",
-    "image": "assets/images/items/weapons/daggers/elite_scorpion_dagger.png",
-    "icon": "🦂",
-    "level": 28,
-    "vocation": "Todas",
-    "hands": "Uma",
-    "attack": 31,
-    "elementalDamage": "Veneno +9",
-    "defense": 9,
-    "defenseModifier": "+1",
-    "bonus": "Critico +2%, Veneno +6",
-    "slots": 2,
-    "tier": 2,
-    "rarity": "Raro",
-    "source": "Escorpiao Elite",
-    "description": "Uma versao refinada da adaga de escorpiao, criada a partir da quitina endurecida de criaturas elites."
+  "rarityLines": {
+    "Incomum": {
+      "baseId": "scorpion_dagger",
+      "baseName": "Adaga de Escorpiao",
+      "image": "assets/images/items/weapons/daggers/scorpion_dagger.png",
+      "icon": "🦂"
+    },
+    "Raro": {
+      "baseId": "elite_scorpion_dagger",
+      "baseName": "Adaga do Escorpiao Elite",
+      "image": "assets/images/items/weapons/daggers/elite_scorpion_dagger.png",
+      "icon": "🦂"
+    },
+    "Epico": {
+      "baseId": "master_scorpion_blade",
+      "baseName": "Lamina do Mestre Escorpiao",
+      "image": "assets/images/items/weapons/daggers/master_scorpion_blade.png",
+      "icon": "🦂"
+    },
+    "Lendario": {
+      "baseId": "fangs_of_the_king",
+      "baseName": "Presas do Rei",
+      "image": "assets/images/items/weapons/daggers/fangs_of_the_king.png",
+      "icon": "👑"
+    }
   },
-  {
-    "id": "master_scorpion_blade",
-    "name": "Lamina do Mestre Escorpiao",
-    "image": "assets/images/items/weapons/daggers/master_scorpion_blade.png",
-    "icon": "🦂",
-    "level": 48,
-    "vocation": "Assassinos, Duelistas",
-    "hands": "Uma",
-    "attack": 46,
-    "elementalDamage": "Veneno +16",
-    "defense": 13,
-    "defenseModifier": "+2",
-    "bonus": "Critico +5%, Velocidade +3%",
-    "slots": 2,
-    "tier": 3,
-    "rarity": "Epico",
-    "source": "Mestre Escorpiao",
-    "description": "Uma lamina agressiva, usada por cacadores do deserto que aprenderam a lutar observando o movimento dos escorpioes."
+  "tiers": [
+    {
+      "rarity": "Incomum",
+      "internalTier": "I",
+      "level": 10,
+      "powerMultiplier": "1.00x",
+      "attack": 18,
+      "primaryAttributeValue": "+4",
+      "criticalChance": "6%",
+      "penetration": "2%",
+      "poisonChance": "8%"
+    },
+    {
+      "rarity": "Incomum",
+      "internalTier": "II",
+      "level": 20,
+      "powerMultiplier": "1.18x",
+      "attack": 21,
+      "primaryAttributeValue": "+5",
+      "criticalChance": "7%",
+      "penetration": "3%",
+      "poisonChance": "9%"
+    },
+    {
+      "rarity": "Incomum",
+      "internalTier": "III",
+      "level": 30,
+      "powerMultiplier": "1.36x",
+      "attack": 24,
+      "primaryAttributeValue": "+5",
+      "criticalChance": "8%",
+      "penetration": "4%",
+      "poisonChance": "10%"
+    },
+    {
+      "rarity": "Incomum",
+      "internalTier": "IV",
+      "level": 40,
+      "powerMultiplier": "1.55x",
+      "attack": 28,
+      "primaryAttributeValue": "+6",
+      "criticalChance": "9%",
+      "penetration": "5%",
+      "poisonChance": "11%"
+    },
+    {
+      "rarity": "Raro",
+      "internalTier": "I",
+      "level": 50,
+      "powerMultiplier": "1.85x",
+      "attack": 33,
+      "primaryAttributeValue": "+7",
+      "criticalChance": "11%",
+      "penetration": "7%",
+      "poisonChance": "13%"
+    },
+    {
+      "rarity": "Raro",
+      "internalTier": "II",
+      "level": 60,
+      "powerMultiplier": "2.10x",
+      "attack": 38,
+      "primaryAttributeValue": "+8",
+      "criticalChance": "12%",
+      "penetration": "8%",
+      "poisonChance": "14%"
+    },
+    {
+      "rarity": "Raro",
+      "internalTier": "III",
+      "level": 70,
+      "powerMultiplier": "2.35x",
+      "attack": 42,
+      "primaryAttributeValue": "+9",
+      "criticalChance": "13%",
+      "penetration": "9%",
+      "poisonChance": "15%"
+    },
+    {
+      "rarity": "Raro",
+      "internalTier": "IV",
+      "level": 80,
+      "powerMultiplier": "2.65x",
+      "attack": 48,
+      "primaryAttributeValue": "+11",
+      "criticalChance": "14%",
+      "penetration": "11%",
+      "poisonChance": "17%"
+    },
+    {
+      "rarity": "Epico",
+      "internalTier": "I",
+      "level": 90,
+      "powerMultiplier": "3.10x",
+      "attack": 56,
+      "primaryAttributeValue": "+12",
+      "criticalChance": "16%",
+      "penetration": "14%",
+      "poisonChance": "20%"
+    },
+    {
+      "rarity": "Epico",
+      "internalTier": "II",
+      "level": 105,
+      "powerMultiplier": "3.55x",
+      "attack": 64,
+      "primaryAttributeValue": "+14",
+      "criticalChance": "18%",
+      "penetration": "16%",
+      "poisonChance": "22%"
+    },
+    {
+      "rarity": "Epico",
+      "internalTier": "III",
+      "level": 120,
+      "powerMultiplier": "4.00x",
+      "attack": 72,
+      "primaryAttributeValue": "+16",
+      "criticalChance": "20%",
+      "penetration": "18%",
+      "poisonChance": "24%"
+    },
+    {
+      "rarity": "Epico",
+      "internalTier": "IV",
+      "level": 135,
+      "powerMultiplier": "4.50x",
+      "attack": 81,
+      "primaryAttributeValue": "+18",
+      "criticalChance": "22%",
+      "penetration": "20%",
+      "poisonChance": "26%"
+    },
+    {
+      "rarity": "Lendario",
+      "internalTier": "I",
+      "level": 150,
+      "powerMultiplier": "5.20x",
+      "attack": 94,
+      "primaryAttributeValue": "+21",
+      "criticalChance": "25%",
+      "penetration": "24%",
+      "poisonChance": "31%"
+    },
+    {
+      "rarity": "Lendario",
+      "internalTier": "II",
+      "level": 165,
+      "powerMultiplier": "5.90x",
+      "attack": 106,
+      "primaryAttributeValue": "+24",
+      "criticalChance": "28%",
+      "penetration": "27%",
+      "poisonChance": "34%"
+    },
+    {
+      "rarity": "Lendario",
+      "internalTier": "III",
+      "level": 180,
+      "powerMultiplier": "6.70x",
+      "attack": 121,
+      "primaryAttributeValue": "+27",
+      "criticalChance": "31%",
+      "penetration": "30%",
+      "poisonChance": "38%"
+    },
+    {
+      "rarity": "Lendario",
+      "internalTier": "IV",
+      "level": 200,
+      "powerMultiplier": "7.60x",
+      "attack": 137,
+      "primaryAttributeValue": "+30",
+      "criticalChance": "35%",
+      "penetration": "34%",
+      "poisonChance": "43%"
+    }
+  ],
+  "initialRecipes": {
+    "scorpion_dagger_i": [
+      "Projeto de Adaga",
+      "Fragmento de Escorpiao",
+      "Ferrao de Escorpiao Incomum",
+      "Liga de Khem Incomum",
+      "Selo Runico Incomum"
+    ]
   },
-  {
-    "id": "fangs_of_the_king",
-    "name": "Presas do Rei",
-    "image": "assets/images/items/weapons/daggers/fangs_of_the_king.png",
-    "icon": "👑",
-    "level": 72,
-    "vocation": "Assassinos, Duelistas",
-    "hands": "Uma",
-    "attack": 64,
-    "elementalDamage": "Veneno Real +28",
-    "defense": 18,
-    "defenseModifier": "+3",
-    "bonus": "Critico +8%, Veneno +18, Velocidade +5%",
-    "slots": 3,
-    "tier": 4,
-    "rarity": "Lendario",
-    "source": "Rei Escorpiao",
-    "description": "Forjada com os fragmentos do ferrao do Rei Escorpiao. Dizem que sua toxina continua viva mesmo depois da morte da criatura."
+  "ascensions": {
+    "elite_scorpion_dagger_i": {
+      "from": "Adaga de Escorpiao [Incomum IV]",
+      "materials": [
+        "Glandula de Veneno Rara",
+        "Liga de Khem Rara",
+        "100x Fragmento de Ar-Khe Raro",
+        "100x Cinza Arcana Rara",
+        "100x Selo Runico Raro"
+      ],
+      "result": "Adaga do Escorpiao Elite [Raro I]"
+    },
+    "master_scorpion_blade_i": {
+      "from": "Adaga do Escorpiao Elite [Raro IV]",
+      "materials": [
+        "Ferrao do Mestre Escorpiao Epico",
+        "Cristal do Gihon Epico",
+        "300x Fragmento de Ar-Khe Epico",
+        "300x Cinza Arcana Epica",
+        "300x Selo Runico Epico"
+      ],
+      "result": "Lamina do Mestre Escorpiao [Epico I]"
+    },
+    "fangs_of_the_king_i": {
+      "from": "Lamina do Mestre Escorpiao [Epico IV]",
+      "materials": [
+        "Presa do Rei Escorpiao Lendaria",
+        "Gema Venenosa Primordial",
+        "900x Fragmento de Ar-Khe Primordial",
+        "900x Cinza Arcana Primordial",
+        "900x Selo Runico Primordial"
+      ],
+      "result": "Presas do Rei [Lendario I]"
+    }
   }
-]
+}
