@@ -20,6 +20,7 @@ const PAGE_LABELS = {
   'swords.html': 'Espadas',
   'armors.html': 'Armaduras',
   'accessories.html': 'Acessorios',
+  'materials.html': 'Materiais',
   'consumables.html': 'Consumiveis',
   'item.html': 'Item'
 };
@@ -83,6 +84,7 @@ function renderLayout(activePage) {
     { label: 'Armas', href: resolveHref('weapons.html'), active: activeSection === 'weapons.html' },
     { label: 'Armaduras', href: resolveHref('armors.html'), active: activeSection === 'armors.html' },
     { label: 'Acessorios', href: resolveHref('accessories.html'), active: activeSection === 'accessories.html' },
+    { label: 'Materiais', href: resolveHref('materials.html'), active: activeSection === 'materials.html' },
     { label: 'Consumiveis', href: resolveHref('consumables.html'), active: activeSection === 'consumables.html' }
   ].filter((tab, index) => index === 0 || tab.href !== currentHref);
 
@@ -102,6 +104,7 @@ function renderLayout(activePage) {
         ${buildSidebarLink(resolveHref('weapons.html'), 'Armas', activeSection === 'weapons.html')}
         ${buildSidebarLink(resolveHref('armors.html'), 'Armaduras', activeSection === 'armors.html')}
         ${buildSidebarLink(resolveHref('accessories.html'), 'Acessorios', activeSection === 'accessories.html')}
+        ${buildSidebarLink(resolveHref('materials.html'), 'Materiais', activeSection === 'materials.html')}
         ${buildSidebarLink(resolveHref('consumables.html'), 'Consumiveis', activeSection === 'consumables.html')}
       </nav>
 

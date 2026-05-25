@@ -15,27 +15,36 @@
         <article class="article">
           <header class="article-header">
             <h1 id="category-title">Acessorios</h1>
-            <div class="article-actions" id="category-actions">categoria em estruturacao · Arkhai Wiki</div>
+            <div class="article-actions" id="category-actions">catalogo publico - Arkhai Wiki</div>
           </header>
           <div id="category-status" class="status-line"></div>
           <p id="category-intro"></p>
           <h2 class="section-title">Fonte de design</h2>
           <p id="category-source"></p>
           <div id="category-subtle" class="subtle-box"></div>
+          <div id="category-content"></div>
         </article>
       </section>
     </main>
   </div>
   <script src="assets/layout.js"></script>
-  <script src="assets/hub-page.js"></script>
+  <script src="assets/equipment-catalog.js"></script>
+  <script src="assets/equipment-catalog-page.js"></script>
   <script>
     renderLayout('accessories.html');
-    renderCategoryPage('Acessorios', {
-      actions: 'categoria em estruturacao · Arkhai Wiki',
-      status: 'Acessorios seguem a progressao por brinco, colar e anel. A biblioteca publica ainda vai receber a listagem completa.',
-      introHtml: 'A estrutura canonica esta pronta no design docs. Quando os primeiros acessorios publicos entrarem, esta pagina vai se tornar o indice por slot e familia.',
-      sourceHtml: 'O mapeamento canonico esta em <strong>mmorpg-design-docs/05-items-and-equipment/accessories.md</strong>.',
-      subtle: 'Categoria reservada para builds especializadas e progressao de endgame.'
+    renderEquipmentCategoryPage({
+      docKey: 'accessories',
+      icon: '💍',
+      backHref: 'items.html',
+      backLabel: 'Itens',
+      primaryHeading: 'Tipos de Acessorio',
+      primaryLabel: 'Tipos de acessorio',
+      materialHeading: 'Materiais de Criacao - Acessorios',
+      materialLabel: 'Materiais de acessorio',
+      status: 'Os acessorios agora sao lidos diretamente dos docs canonicos por familia.',
+      intro: 'Cada familia publica tipos, linhas de raridade e materiais de criacao proprios.',
+      sourceHtml: 'Leitura direta dos docs canonicos de acessorios por familia.',
+      subtle: 'A lista publica mostra a base por tipo, com caminho de imagem preparado por id.'
     });
   </script>
 </body>

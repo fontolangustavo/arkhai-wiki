@@ -75,8 +75,9 @@
       title: 'Coleta, Crafting e Refino',
       description: 'Blocos futuros para materiais, profissao, upgrade e progressao de suporte.',
       icon: '🪓',
-      href: '#crafting',
+      href: 'materials.html',
       links: [
+        { label: 'Materiais', href: 'materials.html' },
         { label: 'Coleta', href: null },
         { label: 'Crafting', href: null },
         { label: 'Refino', href: null }

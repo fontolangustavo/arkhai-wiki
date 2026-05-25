@@ -1,5 +1,18 @@
 (function () {
-  const weaponTypeMeta = window.weaponTypeMeta || {};
+  const catalog = window.ArkhaiWeaponCatalog || null;
+  const weaponTypeMeta = catalog ? catalog.weaponTypeMeta : (window.weaponTypeMeta || {});
+  const weaponTypeIndex = catalog ? catalog.weaponTypeIndex : (window.weaponTypeIndex || {});
+  const weaponTypeOrder = catalog ? catalog.weaponTypeOrder : (window.weaponTypeOrder || ['Adaga', 'Espada', 'Cajado', 'Arco', 'Pistola', 'Martelo']);
+  const resolveTypeName = window.resolveWeaponCatalogTypeName || window.resolveWeaponTypeName || (value => value);
+
+  function escapeHtml(value) {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
 
   function syncUrl(currentTypeName) {
     const nextParams = new URLSearchParams({
@@ -24,15 +37,15 @@
         <div>
           <div class="item-line-head">
             <div>
-              <h2>${type.baseWeaponName}</h2>
-              <p>${family.summary}</p>
+              <h2>${escapeHtml(type.baseWeaponName)}</h2>
+              <p>${escapeHtml(type.summary || family.summary || '')}</p>
             </div>
-            <span class="item-line-pill">${family.familyName}</span>
+            <span class="item-line-pill">${escapeHtml(family.familyName)}</span>
           </div>
           <div class="item-line-meta">
-            <span class="item-line-pill">${family.region}</span>
-            <span class="item-line-pill">${type.weaponType}</span>
-            <span class="item-line-pill">${family.markName}</span>
+            <span class="item-line-pill">${escapeHtml(family.region)}</span>
+            <span class="item-line-pill">${escapeHtml(type.weaponType)}</span>
+            <span class="item-line-pill">${escapeHtml(family.markName)}</span>
           </div>
         </div>
       </a>
@@ -41,7 +54,7 @@
 
   function renderWeaponTypePage() {
     const params = new URLSearchParams(window.location.search);
-    const currentTypeName = resolveWeaponTypeName(params.get('type') || weaponTypeOrder[0]);
+    const currentTypeName = resolveTypeName(params.get('type') || weaponTypeOrder[0]);
     const content = document.getElementById('weapon-type-content');
     const title = document.getElementById('weapon-type-title');
     const actions = document.getElementById('weapon-type-actions');

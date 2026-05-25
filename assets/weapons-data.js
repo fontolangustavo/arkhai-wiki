@@ -40,6 +40,14 @@
       detailSummary: 'Linha focada em impacto, quebra de defesa e forca bruta.'
     }
   };
+  const weaponTypeFolderByName = {
+    Adaga: 'daggers',
+    Espada: 'swords',
+    Cajado: 'staffs',
+    Arco: 'bows',
+    Pistola: 'pistols',
+    Martelo: 'hammers'
+  };
   const weaponTypeNameBySlug = Object.fromEntries(
     weaponTypeOrder.map(typeName => [slugifyWeaponType(typeName), typeName])
   );
@@ -65,6 +73,19 @@
       .replace(/^-+|-+$/g, '');
   }
 
+  function slugifyWeaponId(value) {
+    return slugifyWeaponType(value).replace(/-/g, '_');
+  }
+
+  function buildWeaponVariantId(baseName, tier) {
+    return `${slugifyWeaponId(baseName)}_${String(tier).toLowerCase()}`;
+  }
+
+  function buildWeaponVariantImagePath(familyId, weaponType, variantId) {
+    const folder = weaponTypeFolderByName[weaponType] || `${slugifyWeaponType(weaponType)}s`;
+    return `assets/images/items/weapons/families/${familyId}/${folder}/${variantId}.png`;
+  }
+
   function resolveWeaponTypeName(value) {
     return weaponTypeNameBySlug[slugifyWeaponType(value)] || weaponTypeOrder[0];
   }
@@ -74,6 +95,7 @@
       const baseName = rarityNames[rarity];
 
       return tierOrder.map(tier => ({
+        id: buildWeaponVariantId(baseName, tier),
         rarity,
         tier,
         name: `${baseName} ${tier}`
@@ -88,8 +110,12 @@
     const imageByRarity = typeConfig.imageByRarity || familyConfig.imageByRarity || {};
     const statTable = typeConfig.statTable || familyConfig.statTable || null;
     const image = resolveWeaponImage(typeConfig.image || familyConfig.image);
-    const previewImage = resolveWeaponImage(imageByRarity.Incomum || image);
     const variants = buildVariants(rarityNames);
+    const previewVariant = variants[0] || null;
+    const fallbackImage = previewVariant
+      ? buildWeaponVariantImagePath(familyConfig.id, weaponType, previewVariant.id)
+      : image;
+    const previewImage = resolveWeaponImage(imageByRarity.Incomum || fallbackImage);
 
     return {
       ...typeConfig,
@@ -107,7 +133,7 @@
           `${variant.rarity}:${variant.tier}`,
           {
             ...variant,
-            image: resolveWeaponImage(imageByRarity[variant.rarity] || image),
+            image: resolveWeaponImage(imageByRarity[variant.rarity] || buildWeaponVariantImagePath(familyConfig.id, weaponType, variant.id)),
             stats: statTable ? statTable.rows[`${variant.rarity}:${variant.tier}`] || null : null
           }
         ])

@@ -1,4 +1,5 @@
 (function () {
+
   function formatWeaponStatValue(value) {
     if (value === null || value === undefined || value === '') {
       return '-';
@@ -146,6 +147,36 @@
     `;
   }
 
+  function renderCatalystTable(type) {
+    if (!type || !type.catalystTable || !Array.isArray(type.catalystTable.rows)) {
+      return '';
+    }
+
+    const rows = type.catalystTable.rows.map(row => `
+      <tr class="${row[0] === type.weaponType ? 'is-active' : ''}">
+        <th scope="row">${row[0]}</th>
+        <td>${row[1] || '-'}</td>
+        <td>${row[2] || '-'}</td>
+        <td>${row[3] || '-'}</td>
+      </tr>
+    `).join('');
+
+    return `
+      <h2 class="section-title">Catalisadores de Ascensao</h2>
+      <table class="wiki-table progression-table">
+        <thead>
+          <tr>
+            <th>Arma</th>
+            <th>Raro I</th>
+            <th>Epico I</th>
+            <th>Lendario I</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
   function renderOptionChips(label, items, activeValue, inputName) {
     const buttons = items.map(item => {
       const isActive = item === activeValue;
@@ -255,6 +286,46 @@
     };
   }
 
+  function getCatalogSelection(state) {
+    if (!window.getWeaponCatalogSelection) {
+      return null;
+    }
+
+    return window.getWeaponCatalogSelection(state);
+  }
+
+  function getLegacySelection(state) {
+    if (!window.getWeaponSelection) {
+      return null;
+    }
+
+    return window.getWeaponSelection(state);
+  }
+
+  function getResolvedWeaponSelection(state) {
+    const legacyFamily = window.weaponFamilies && window.weaponFamilies.find(family => family.id === state.familyId);
+    const hasLegacyType = legacyFamily && (!state.typeId || legacyFamily.typeById[state.typeId]);
+
+    if (hasLegacyType) {
+      const legacySelection = getLegacySelection(state);
+      if (legacySelection && legacySelection.family && legacySelection.type && legacySelection.variant) {
+        return {
+          source: 'legacy',
+          family: legacySelection.family,
+          type: legacySelection.type,
+          variant: legacySelection.variant
+        };
+      }
+    }
+
+    const catalogSelection = getCatalogSelection(state);
+    if (catalogSelection) {
+      return catalogSelection;
+    }
+
+    return hasLegacyType ? getLegacySelection(state) : null;
+  }
+
   function syncWeaponUrl(state) {
     const nextParams = new URLSearchParams({
       family: state.familyId,
@@ -275,7 +346,14 @@
     const content = document.getElementById('weapon-content');
     const title = document.getElementById('weapon-title');
     const actions = document.getElementById('weapon-actions');
-    const selection = getWeaponSelection(state);
+    const selection = getResolvedWeaponSelection(state);
+
+    if (!selection) {
+      content.innerHTML = '<div class="status-line">Nenhuma arma encontrada para os parametros informados.</div>';
+      title.textContent = 'Arma';
+      actions.textContent = 'dados indisponiveis';
+      return;
+    }
 
     state.familyId = selection.family.id;
     state.typeId = selection.type.id;
@@ -286,10 +364,11 @@
     const type = selection.type;
     const variant = selection.variant;
     const baseVariant = type.variantByKey['Incomum:I'] || type.variants[0];
-    const recipe = type.recipe || family.recipe;
-    const ascensions = type.ascensions || family.ascensions;
-    const visuals = type.visuals || family.visuals;
-    const directions = type.directions || family.directions;
+    const recipe = selection.source === 'legacy' ? (type.recipe || family.recipe) : null;
+    const ascensions = selection.source === 'legacy' ? (type.ascensions || family.ascensions) : null;
+    const visuals = type.visuals || family.visuals || [];
+    const directions = selection.source === 'legacy' ? (type.directions || family.directions) : [];
+    const summaryText = family.theme || family.summary || type.summary || '';
     const rarityClass = state.rarity === 'Incomum' ? 'uncommon'
       : state.rarity === 'Raro' ? 'rare'
         : state.rarity === 'Epico' ? 'epic'
@@ -345,14 +424,20 @@
           ${renderRarityMatrix(type, variant)}
           ${renderWeaponAttributeTable(type, variant)}
 
-          <h2 class="section-title">Receita Inicial</h2>
-          ${renderCodeBlock(recipe)}
+          ${
+            selection.source === 'legacy'
+              ? `
+                <h2 class="section-title">Receita Inicial</h2>
+                ${renderCodeBlock(recipe)}
 
-          ${renderAscensions(ascensions)}
+                ${renderAscensions(ascensions)}
+              `
+              : renderCatalystTable(type)
+          }
 
           ${renderVisualTable(visuals, state.rarity)}
 
-          ${renderList('Diretrizes', directions)}
+          ${directions.length ? renderList('Diretrizes', directions) : ''}
 
           <h2 class="section-title">Fonte verdadeira</h2>
           <p><strong>Arquivo:</strong> ${family.sourceDocument}</p>
@@ -374,7 +459,7 @@
           ${renderWeaponAttributeComparison(type, variant)}
           <div class="detail-section">
             <h3>Resumo</h3>
-            <p>${family.theme}</p>
+            <p>${summaryText}</p>
           </div>
         </aside>
       </div>

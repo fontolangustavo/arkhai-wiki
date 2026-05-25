@@ -15,27 +15,36 @@
         <article class="article">
           <header class="article-header">
             <h1 id="category-title">Armaduras</h1>
-            <div class="article-actions" id="category-actions">categoria em estruturacao · Arkhai Wiki</div>
+            <div class="article-actions" id="category-actions">catalogo publico - Arkhai Wiki</div>
           </header>
           <div id="category-status" class="status-line"></div>
           <p id="category-intro"></p>
           <h2 class="section-title">Fonte de design</h2>
           <p id="category-source"></p>
           <div id="category-subtle" class="subtle-box"></div>
+          <div id="category-content"></div>
         </article>
       </section>
     </main>
   </div>
   <script src="assets/layout.js"></script>
-  <script src="assets/hub-page.js"></script>
+  <script src="assets/equipment-catalog.js"></script>
+  <script src="assets/equipment-catalog-page.js"></script>
   <script>
     renderLayout('armors.html');
-    renderCategoryPage('Armaduras', {
-      actions: 'categoria em estruturacao · Arkhai Wiki',
-      status: 'Esta categoria ja esta prevista nos docs de design, mas a lista publica ainda nao foi materializada na wiki.',
-      introHtml: 'As armaduras seguem a mesma logica de categoria &gt; slot &gt; familia &gt; variante. Quando os conjuntos publicados entrarem, esta pagina vai mostrar o indice por slot e categoria de peso.',
-      sourceHtml: 'O mapeamento canonico esta em <strong>mmorpg-design-docs/05-items-and-equipment/armor.md</strong>.',
-      subtle: 'Categoria reservada para conjuntos de 6 slots, peso e progressao por raridade.'
+    renderEquipmentCategoryPage({
+      docKey: 'armor',
+      icon: '🛡️',
+      backHref: 'items.html',
+      backLabel: 'Itens',
+      primaryHeading: 'Slots de Armadura',
+      primaryLabel: 'Slots de armadura',
+      materialHeading: 'Materiais de Criacao - Armaduras por Peca',
+      materialLabel: 'Materiais por peca',
+      status: 'As armaduras agora sao lidas diretamente dos docs canonicos por familia.',
+      intro: 'Cada familia publica slots, linhas de raridade e materiais de criacao proprios.',
+      sourceHtml: 'Leitura direta dos docs canonicos de armaduras por familia.',
+      subtle: 'A lista publica mostra a base por slot, com caminho de imagem preparado por id.'
     });
   </script>
 </body>

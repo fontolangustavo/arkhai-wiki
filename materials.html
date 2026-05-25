@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materiais - Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/wiki.css" />
+</head>
+<body>
+  <div class="wiki-shell">
+    <div id="wiki-sidebar"></div>
+    <main class="main">
+      <div id="wiki-topbar"></div>
+      <section class="content">
+        <article class="article">
+          <header class="article-header">
+            <h1 id="category-title">Materiais</h1>
+            <div class="article-actions" id="category-actions">catalogo publico - Arkhai Wiki</div>
+          </header>
+          <div id="category-status" class="status-line"></div>
+          <p id="category-intro"></p>
+          <h2 class="section-title">Fonte de design</h2>
+          <p id="category-source"></p>
+          <div id="category-subtle" class="subtle-box"></div>
+          <div id="category-content"></div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="assets/layout.js"></script>
+  <script src="assets/equipment-catalog.js"></script>
+  <script src="assets/equipment-catalog-page.js"></script>
+  <script>
+    renderLayout('materials.html');
+    renderEquipmentCategoryPage({
+      docKey: 'materials',
+      icon: '🪨',
+      backHref: 'items.html',
+      backLabel: 'Itens',
+      primaryHeading: 'Materiais Nucleares da Familia',
+      primaryLabel: 'Materiais nucleares',
+      materialHeading: 'Materiais de Profissao para Armaduras',
+      materialLabel: 'Materiais de profissao',
+      status: 'Os materiais agora sao lidos diretamente dos docs canonicos por familia.',
+      intro: 'Cada familia publica materiais nucleares, materiais de profissao e materias de ascensao.',
+      sourceHtml: 'Leitura direta dos docs canonicos de materiais por familia.',
+      subtle: 'Aqui ficam os materiais que depois alimentam armas, armaduras, acessorios e ascensao.'
+    });
+  </script>
+</body>
+</html>
