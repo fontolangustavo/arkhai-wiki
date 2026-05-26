@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T01:04:28.463Z",
+  "generatedAt": "2026-05-26T12:38:39.129Z",
   "families": [
     {
       "id": "aracu-das-sombras",
@@ -1586,8 +1586,8 @@
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_ii.png",
-              "imageId": "espada_do_aracu_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_i.png",
+              "imageId": "espada_do_aracu_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1596,8 +1596,8 @@
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_iii.png",
-              "imageId": "espada_do_aracu_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_i.png",
+              "imageId": "espada_do_aracu_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1606,8 +1606,8 @@
               "baseName": "Espada do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_iv.png",
-              "imageId": "espada_do_aracu_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_do_aracu_i.png",
+              "imageId": "espada_do_aracu_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1626,8 +1626,8 @@
               "baseName": "Espada das Sombras",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_ii.png",
-              "imageId": "espada_das_sombras_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_i.png",
+              "imageId": "espada_das_sombras_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1636,8 +1636,8 @@
               "baseName": "Espada das Sombras",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_iii.png",
-              "imageId": "espada_das_sombras_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_i.png",
+              "imageId": "espada_das_sombras_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1646,8 +1646,8 @@
               "baseName": "Espada das Sombras",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_iv.png",
-              "imageId": "espada_das_sombras_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/espada_das_sombras_i.png",
+              "imageId": "espada_das_sombras_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1666,8 +1666,8 @@
               "baseName": "Sabre da Penumbra",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_ii.png",
-              "imageId": "sabre_da_penumbra_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_i.png",
+              "imageId": "sabre_da_penumbra_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1676,8 +1676,8 @@
               "baseName": "Sabre da Penumbra",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_iii.png",
-              "imageId": "sabre_da_penumbra_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_i.png",
+              "imageId": "sabre_da_penumbra_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1686,8 +1686,8 @@
               "baseName": "Sabre da Penumbra",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_iv.png",
-              "imageId": "sabre_da_penumbra_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/sabre_da_penumbra_i.png",
+              "imageId": "sabre_da_penumbra_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1706,8 +1706,8 @@
               "baseName": "Corte do Vazio",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_ii.png",
-              "imageId": "corte_do_vazio_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_i.png",
+              "imageId": "corte_do_vazio_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1716,8 +1716,8 @@
               "baseName": "Corte do Vazio",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_iii.png",
-              "imageId": "corte_do_vazio_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_i.png",
+              "imageId": "corte_do_vazio_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1726,8 +1726,8 @@
               "baseName": "Corte do Vazio",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_iv.png",
-              "imageId": "corte_do_vazio_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/swords/corte_do_vazio_i.png",
+              "imageId": "corte_do_vazio_i",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1736,8 +1736,8 @@
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_i.png",
-              "imageId": "cajado_do_aracu_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_incomun.png",
+              "imageId": "staff_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1746,8 +1746,8 @@
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_ii.png",
-              "imageId": "cajado_do_aracu_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_incomun.png",
+              "imageId": "staff_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1756,8 +1756,8 @@
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_iii.png",
-              "imageId": "cajado_do_aracu_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_incomun.png",
+              "imageId": "staff_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1766,8 +1766,8 @@
               "baseName": "Cajado do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_do_aracu_iv.png",
-              "imageId": "cajado_do_aracu_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_incomun.png",
+              "imageId": "staff_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1776,8 +1776,8 @@
               "baseName": "Cajado das Sombras",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_das_sombras_i.png",
-              "imageId": "cajado_das_sombras_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_rare.png",
+              "imageId": "staff_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1786,8 +1786,8 @@
               "baseName": "Cajado das Sombras",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_das_sombras_ii.png",
-              "imageId": "cajado_das_sombras_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_rare.png",
+              "imageId": "staff_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1796,8 +1796,8 @@
               "baseName": "Cajado das Sombras",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_das_sombras_iii.png",
-              "imageId": "cajado_das_sombras_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_rare.png",
+              "imageId": "staff_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1806,8 +1806,8 @@
               "baseName": "Cajado das Sombras",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cajado_das_sombras_iv.png",
-              "imageId": "cajado_das_sombras_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_rare.png",
+              "imageId": "staff_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1816,8 +1816,8 @@
               "baseName": "Cetro da Penumbra",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cetro_da_penumbra_i.png",
-              "imageId": "cetro_da_penumbra_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_epic.png",
+              "imageId": "staff_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1826,8 +1826,8 @@
               "baseName": "Cetro da Penumbra",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cetro_da_penumbra_ii.png",
-              "imageId": "cetro_da_penumbra_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_epic.png",
+              "imageId": "staff_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1836,8 +1836,8 @@
               "baseName": "Cetro da Penumbra",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cetro_da_penumbra_iii.png",
-              "imageId": "cetro_da_penumbra_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_epic.png",
+              "imageId": "staff_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1846,8 +1846,8 @@
               "baseName": "Cetro da Penumbra",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/cetro_da_penumbra_iv.png",
-              "imageId": "cetro_da_penumbra_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_epic.png",
+              "imageId": "staff_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1856,8 +1856,8 @@
               "baseName": "Voz do Vazio",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/voz_do_vazio_i.png",
-              "imageId": "voz_do_vazio_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_legendary.png",
+              "imageId": "staff_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1866,8 +1866,8 @@
               "baseName": "Voz do Vazio",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/voz_do_vazio_ii.png",
-              "imageId": "voz_do_vazio_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_legendary.png",
+              "imageId": "staff_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1876,8 +1876,8 @@
               "baseName": "Voz do Vazio",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/voz_do_vazio_iii.png",
-              "imageId": "voz_do_vazio_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_legendary.png",
+              "imageId": "staff_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1886,8 +1886,8 @@
               "baseName": "Voz do Vazio",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/voz_do_vazio_iv.png",
-              "imageId": "voz_do_vazio_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/staffs/staff_aracu_legendary.png",
+              "imageId": "staff_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1896,8 +1896,8 @@
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_i.png",
-              "imageId": "arco_do_aracu_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_incomun.png",
+              "imageId": "bow_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1906,8 +1906,8 @@
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_ii.png",
-              "imageId": "arco_do_aracu_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_incomun.png",
+              "imageId": "bow_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1916,8 +1916,8 @@
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_iii.png",
-              "imageId": "arco_do_aracu_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_incomun.png",
+              "imageId": "bow_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1926,8 +1926,8 @@
               "baseName": "Arco do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_do_aracu_iv.png",
-              "imageId": "arco_do_aracu_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_incomun.png",
+              "imageId": "bow_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1936,8 +1936,8 @@
               "baseName": "Arco das Sombras",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_das_sombras_i.png",
-              "imageId": "arco_das_sombras_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_rare.png",
+              "imageId": "bow_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1946,8 +1946,8 @@
               "baseName": "Arco das Sombras",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_das_sombras_ii.png",
-              "imageId": "arco_das_sombras_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_rare.png",
+              "imageId": "bow_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1956,8 +1956,8 @@
               "baseName": "Arco das Sombras",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_das_sombras_iii.png",
-              "imageId": "arco_das_sombras_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_rare.png",
+              "imageId": "bow_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1966,8 +1966,8 @@
               "baseName": "Arco das Sombras",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_das_sombras_iv.png",
-              "imageId": "arco_das_sombras_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_rare.png",
+              "imageId": "bow_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1976,8 +1976,8 @@
               "baseName": "Arco da Penumbra",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_da_penumbra_i.png",
-              "imageId": "arco_da_penumbra_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_epic.png",
+              "imageId": "bow_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1986,8 +1986,8 @@
               "baseName": "Arco da Penumbra",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_da_penumbra_ii.png",
-              "imageId": "arco_da_penumbra_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_epic.png",
+              "imageId": "bow_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -1996,8 +1996,8 @@
               "baseName": "Arco da Penumbra",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_da_penumbra_iii.png",
-              "imageId": "arco_da_penumbra_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_epic.png",
+              "imageId": "bow_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2006,8 +2006,8 @@
               "baseName": "Arco da Penumbra",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/arco_da_penumbra_iv.png",
-              "imageId": "arco_da_penumbra_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_epic.png",
+              "imageId": "bow_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2016,8 +2016,8 @@
               "baseName": "Asas do Vazio",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/asas_do_vazio_i.png",
-              "imageId": "asas_do_vazio_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_legendary.png",
+              "imageId": "bow_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2026,8 +2026,8 @@
               "baseName": "Asas do Vazio",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/asas_do_vazio_ii.png",
-              "imageId": "asas_do_vazio_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_legendary.png",
+              "imageId": "bow_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2036,8 +2036,8 @@
               "baseName": "Asas do Vazio",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/asas_do_vazio_iii.png",
-              "imageId": "asas_do_vazio_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_legendary.png",
+              "imageId": "bow_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2046,8 +2046,8 @@
               "baseName": "Asas do Vazio",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/asas_do_vazio_iv.png",
-              "imageId": "asas_do_vazio_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/bows/bow_aracu_legendary.png",
+              "imageId": "bow_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2056,8 +2056,8 @@
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_i.png",
-              "imageId": "pistola_do_aracu_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_incomun.png",
+              "imageId": "gun_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2066,8 +2066,8 @@
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_ii.png",
-              "imageId": "pistola_do_aracu_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_incomun.png",
+              "imageId": "gun_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2076,8 +2076,8 @@
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_iii.png",
-              "imageId": "pistola_do_aracu_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_incomun.png",
+              "imageId": "gun_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2086,8 +2086,8 @@
               "baseName": "Pistola do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_do_aracu_iv.png",
-              "imageId": "pistola_do_aracu_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_incomun.png",
+              "imageId": "gun_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2096,8 +2096,8 @@
               "baseName": "Pistola das Sombras",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_das_sombras_i.png",
-              "imageId": "pistola_das_sombras_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_rare.png",
+              "imageId": "gun_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2106,8 +2106,8 @@
               "baseName": "Pistola das Sombras",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_das_sombras_ii.png",
-              "imageId": "pistola_das_sombras_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_rare.png",
+              "imageId": "gun_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2116,8 +2116,8 @@
               "baseName": "Pistola das Sombras",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_das_sombras_iii.png",
-              "imageId": "pistola_das_sombras_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_rare.png",
+              "imageId": "gun_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2126,8 +2126,8 @@
               "baseName": "Pistola das Sombras",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/pistola_das_sombras_iv.png",
-              "imageId": "pistola_das_sombras_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_rare.png",
+              "imageId": "gun_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2136,8 +2136,8 @@
               "baseName": "Canhao da Penumbra",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/canhao_da_penumbra_i.png",
-              "imageId": "canhao_da_penumbra_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_epic.png",
+              "imageId": "gun_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2146,8 +2146,8 @@
               "baseName": "Canhao da Penumbra",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/canhao_da_penumbra_ii.png",
-              "imageId": "canhao_da_penumbra_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_epic.png",
+              "imageId": "gun_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2156,8 +2156,8 @@
               "baseName": "Canhao da Penumbra",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/canhao_da_penumbra_iii.png",
-              "imageId": "canhao_da_penumbra_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_epic.png",
+              "imageId": "gun_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2166,8 +2166,8 @@
               "baseName": "Canhao da Penumbra",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/canhao_da_penumbra_iv.png",
-              "imageId": "canhao_da_penumbra_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_epic.png",
+              "imageId": "gun_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2176,8 +2176,8 @@
               "baseName": "Disparo do Vazio",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/disparo_do_vazio_i.png",
-              "imageId": "disparo_do_vazio_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_legendary.png",
+              "imageId": "gun_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2186,8 +2186,8 @@
               "baseName": "Disparo do Vazio",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/disparo_do_vazio_ii.png",
-              "imageId": "disparo_do_vazio_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_legendary.png",
+              "imageId": "gun_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2196,8 +2196,8 @@
               "baseName": "Disparo do Vazio",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/disparo_do_vazio_iii.png",
-              "imageId": "disparo_do_vazio_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_legendary.png",
+              "imageId": "gun_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2206,8 +2206,8 @@
               "baseName": "Disparo do Vazio",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/disparo_do_vazio_iv.png",
-              "imageId": "disparo_do_vazio_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/pistols/gun_aracu_legendary.png",
+              "imageId": "gun_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2216,8 +2216,8 @@
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_i.png",
-              "imageId": "martelo_do_aracu_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_incomun.png",
+              "imageId": "hammer_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2226,8 +2226,8 @@
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_ii.png",
-              "imageId": "martelo_do_aracu_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_incomun.png",
+              "imageId": "hammer_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2236,8 +2236,8 @@
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_iii.png",
-              "imageId": "martelo_do_aracu_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_incomun.png",
+              "imageId": "hammer_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2246,8 +2246,8 @@
               "baseName": "Martelo do Aracu",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_do_aracu_iv.png",
-              "imageId": "martelo_do_aracu_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_incomun.png",
+              "imageId": "hammer_aracu_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2256,8 +2256,8 @@
               "baseName": "Martelo das Sombras",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_das_sombras_i.png",
-              "imageId": "martelo_das_sombras_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_rare.png",
+              "imageId": "hammer_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2266,8 +2266,8 @@
               "baseName": "Martelo das Sombras",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_das_sombras_ii.png",
-              "imageId": "martelo_das_sombras_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_rare.png",
+              "imageId": "hammer_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2276,8 +2276,8 @@
               "baseName": "Martelo das Sombras",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_das_sombras_iii.png",
-              "imageId": "martelo_das_sombras_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_rare.png",
+              "imageId": "hammer_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2286,8 +2286,8 @@
               "baseName": "Martelo das Sombras",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/martelo_das_sombras_iv.png",
-              "imageId": "martelo_das_sombras_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_rare.png",
+              "imageId": "hammer_aracu_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2296,8 +2296,8 @@
               "baseName": "Malho da Penumbra",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/malho_da_penumbra_i.png",
-              "imageId": "malho_da_penumbra_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_epic.png",
+              "imageId": "hammer_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2306,8 +2306,8 @@
               "baseName": "Malho da Penumbra",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/malho_da_penumbra_ii.png",
-              "imageId": "malho_da_penumbra_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_epic.png",
+              "imageId": "hammer_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2316,8 +2316,8 @@
               "baseName": "Malho da Penumbra",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/malho_da_penumbra_iii.png",
-              "imageId": "malho_da_penumbra_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_epic.png",
+              "imageId": "hammer_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2326,8 +2326,8 @@
               "baseName": "Malho da Penumbra",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/malho_da_penumbra_iv.png",
-              "imageId": "malho_da_penumbra_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_epic.png",
+              "imageId": "hammer_aracu_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2336,8 +2336,8 @@
               "baseName": "Peso do Vazio",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/peso_do_vazio_i.png",
-              "imageId": "peso_do_vazio_i",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_legendary.png",
+              "imageId": "hammer_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2346,8 +2346,8 @@
               "baseName": "Peso do Vazio",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/peso_do_vazio_ii.png",
-              "imageId": "peso_do_vazio_ii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_legendary.png",
+              "imageId": "hammer_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2356,8 +2356,8 @@
               "baseName": "Peso do Vazio",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/peso_do_vazio_iii.png",
-              "imageId": "peso_do_vazio_iii",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_legendary.png",
+              "imageId": "hammer_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             },
             {
@@ -2366,8 +2366,8 @@
               "baseName": "Peso do Vazio",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/peso_do_vazio_iv.png",
-              "imageId": "peso_do_vazio_iv",
+              "image": "assets/images/items/weapons/families/aracu-das-sombras/hammers/hammer_aracu_legendary.png",
+              "imageId": "hammer_aracu_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/aracu-das-sombras/weapons.md"
             }
           ]

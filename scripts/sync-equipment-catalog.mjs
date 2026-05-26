@@ -182,14 +182,19 @@ function listPngFiles(dirPath) {
 function pickWeaponImageFile(files, rarity) {
   const lowerFiles = files.map(fileName => fileName.toLowerCase());
   const picks = {
-    Incomum: file => !/(elite|master|king|legend|epic|rare|ancient|final)/.test(file),
-    Raro: file => /(elite|rare)/.test(file),
-    Epico: file => /(master|epic)/.test(file),
-    Lendario: file => /(king|legend|eternal|mythic)/.test(file)
+    Incomum: file => /(incomum|uncommon|common|basic|novice)/.test(file),
+    Raro: file => /(raro|rare|elite)/.test(file),
+    Epico: file => /(epico|epic|master)/.test(file),
+    Lendario: file => /(lendario|legendary|legend|eternal|mythic|king)/.test(file)
   };
 
   const matcher = picks[rarity] || picks.Incomum;
-  const matchedIndex = lowerFiles.findIndex(fileName => matcher(fileName));
+  let matchedIndex = lowerFiles.findIndex(fileName => matcher(fileName));
+
+  if (matchedIndex < 0 && rarity === 'Incomum') {
+    matchedIndex = lowerFiles.findIndex(fileName => !/(rare|epic|master|legend|legendary|eternal|mythic|king|elite)/.test(fileName));
+  }
+
   return matchedIndex >= 0 ? files[matchedIndex] : files[0];
 }
 
