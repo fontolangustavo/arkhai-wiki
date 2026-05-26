@@ -64,10 +64,6 @@
     `;
   }
 
-  function renderCodeBlock(lines) {
-    return `<pre><code>${lines.join('\n')}</code></pre>`;
-  }
-
   function renderWeaponAttributeComparison(type, variant) {
     if (!type.statTable || !type.statTable.columns || type.statTable.columns.length === 0) {
       return '';
@@ -98,27 +94,6 @@
         <h3>Atributos</h3>
         <div class="detail-stat-grid">${rows}</div>
       </div>
-    `;
-  }
-
-  function renderAscensions(ascensions) {
-    if (!ascensions || ascensions.length === 0) {
-      return `
-        <h2 class="section-title">Ascensoes</h2>
-        <div class="subtle-box">Ascensoes ainda nao documentadas nesta familia.</div>
-      `;
-    }
-
-    return `
-      <h2 class="section-title">Ascensoes</h2>
-      ${ascensions.map(step => `
-        <h3>${step.from} -> ${step.result}</h3>
-        ${renderCodeBlock([
-          step.from,
-          ...step.materials.map(material => `+ ${material}`),
-          `= ${step.result}`
-        ])}
-      `).join('')}
     `;
   }
 
@@ -286,44 +261,12 @@
     };
   }
 
-  function getCatalogSelection(state) {
+  function getResolvedWeaponSelection(state) {
     if (!window.getWeaponCatalogSelection) {
       return null;
     }
 
     return window.getWeaponCatalogSelection(state);
-  }
-
-  function getLegacySelection(state) {
-    if (!window.getWeaponSelection) {
-      return null;
-    }
-
-    return window.getWeaponSelection(state);
-  }
-
-  function getResolvedWeaponSelection(state) {
-    const legacyFamily = window.weaponFamilies && window.weaponFamilies.find(family => family.id === state.familyId);
-    const hasLegacyType = legacyFamily && (!state.typeId || legacyFamily.typeById[state.typeId]);
-
-    if (hasLegacyType) {
-      const legacySelection = getLegacySelection(state);
-      if (legacySelection && legacySelection.family && legacySelection.type && legacySelection.variant) {
-        return {
-          source: 'legacy',
-          family: legacySelection.family,
-          type: legacySelection.type,
-          variant: legacySelection.variant
-        };
-      }
-    }
-
-    const catalogSelection = getCatalogSelection(state);
-    if (catalogSelection) {
-      return catalogSelection;
-    }
-
-    return hasLegacyType ? getLegacySelection(state) : null;
   }
 
   function syncWeaponUrl(state) {
@@ -364,10 +307,8 @@
     const type = selection.type;
     const variant = selection.variant;
     const baseVariant = type.variantByKey['Incomum:I'] || type.variants[0];
-    const recipe = selection.source === 'legacy' ? (type.recipe || family.recipe) : null;
-    const ascensions = selection.source === 'legacy' ? (type.ascensions || family.ascensions) : null;
     const visuals = type.visuals || family.visuals || [];
-    const directions = selection.source === 'legacy' ? (type.directions || family.directions) : [];
+    const directions = type.directions || family.directions || [];
     const summaryText = family.theme || family.summary || type.summary || '';
     const rarityClass = state.rarity === 'Incomum' ? 'uncommon'
       : state.rarity === 'Raro' ? 'rare'
@@ -424,16 +365,7 @@
           ${renderRarityMatrix(type, variant)}
           ${renderWeaponAttributeTable(type, variant)}
 
-          ${
-            selection.source === 'legacy'
-              ? `
-                <h2 class="section-title">Receita Inicial</h2>
-                ${renderCodeBlock(recipe)}
-
-                ${renderAscensions(ascensions)}
-              `
-              : renderCatalystTable(type)
-          }
+          ${renderCatalystTable(type)}
 
           ${renderVisualTable(visuals, state.rarity)}
 

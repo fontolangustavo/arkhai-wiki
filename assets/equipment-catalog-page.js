@@ -28,10 +28,32 @@
     return doc.tables.find(table => table.headingPath[table.headingPath.length - 1] === heading) || null;
   }
 
+  function findPreviewVariant(doc) {
+    return (doc.variants || []).find(variant => variant && variant.image) || null;
+  }
+
+  function renderPreviewFigure(variant) {
+    if (!variant || !variant.image) {
+      return '';
+    }
+
+    return `
+      <figure class="category-group-preview">
+        <img
+          class="item-image"
+          src="${escapeHtml(variant.image)}"
+          alt="${escapeHtml(variant.name || variant.baseName || 'Item')}"
+          onerror="this.onerror=null;this.src='assets/images/items/weapons/default.svg'"
+        >
+      </figure>
+    `;
+  }
+
   function renderFamilyBlock(family, doc, options) {
     const introTable = findTable(doc, options.primaryHeading);
     const rarityTable = findTable(doc, 'Linhas de Raridade');
     const materialTable = options.materialHeading ? findTable(doc, options.materialHeading) : null;
+    const previewVariant = findPreviewVariant(doc);
 
     const introChips = introTable
       ? introTable.rows.map(row => `<span class="category-chip">${escapeHtml(row[0])}</span>`).join('')
@@ -49,6 +71,7 @@
         <div class="category-group-head">
           <div class="category-group-title">
             <span class="category-group-icon">${options.icon}</span>
+            ${renderPreviewFigure(previewVariant)}
             <div>
               <h2>${escapeHtml(family.familyName)}</h2>
               <p>${escapeHtml(doc.summary || family.docs[options.docKey].summary || '')}</p>

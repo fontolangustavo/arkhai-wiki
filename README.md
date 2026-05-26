@@ -36,9 +36,8 @@ swords.html
 assets/
   layout.js
   wiki.css
-  items-data.js
-  weapons-data.js
   equipment-catalog-page.js
+  weapon-catalog-data.js
   hub-page.js
   item-page.js
   weapon-page.js
@@ -61,7 +60,7 @@ docs/
 - `weapons.html` lists weapon types.
 - `weapon-type.html` lists families for the selected type.
 - `weapon.html` shows the family, selected variant, and comparison data.
-- `item.html`, `daggers.html`, and `swords.html` are legacy-compatible entry points that keep older links working.
+- `item.html`, `daggers.html`, and `swords.html` are compatibility entry points that keep older links working.
 - `armors.html`, `accessories.html`, and `materials.html` are public catalog pages driven by the family docs.
 
 ## Running Locally

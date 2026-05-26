@@ -42,10 +42,6 @@ function readText(filePath) {
   return fs.readFileSync(filePath, 'utf8');
 }
 
-function ensureDir(dirPath) {
-  fs.mkdirSync(dirPath, { recursive: true });
-}
-
 function splitCells(line) {
   return line
     .trim()
@@ -173,20 +169,65 @@ function parseIntroFields(text) {
   };
 }
 
-function buildVariantPath(category, familyId, groupSlug, baseName, tier) {
+function listPngFiles(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    return [];
+  }
+
+  return fs.readdirSync(dirPath)
+    .filter(fileName => fileName.toLowerCase().endsWith('.png'))
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function pickWeaponImageFile(files, rarity) {
+  const lowerFiles = files.map(fileName => fileName.toLowerCase());
+  const picks = {
+    Incomum: file => !/(elite|master|king|legend|epic|rare|ancient|final)/.test(file),
+    Raro: file => /(elite|rare)/.test(file),
+    Epico: file => /(master|epic)/.test(file),
+    Lendario: file => /(king|legend|eternal|mythic)/.test(file)
+  };
+
+  const matcher = picks[rarity] || picks.Incomum;
+  const matchedIndex = lowerFiles.findIndex(fileName => matcher(fileName));
+  return matchedIndex >= 0 ? files[matchedIndex] : files[0];
+}
+
+function resolveWeaponVariantImage(category, familyId, groupSlug, baseName, rarity, tier) {
   const folder = categoryFolderByName[category];
   const variantId = `${slugifyItemId(baseName)}_${String(tier).toLowerCase()}`;
   const relativePath = `assets/images/items/${folder}/families/${familyId}/${groupSlug}/${variantId}.png`;
   const absolutePath = path.join(wikiRoot, relativePath);
 
-  ensureDir(path.dirname(absolutePath));
-  const gitkeepPath = path.join(path.dirname(absolutePath), '.gitkeep');
-
-  if (!fs.existsSync(gitkeepPath)) {
-    fs.writeFileSync(gitkeepPath, '');
+  if (fs.existsSync(absolutePath)) {
+    return {
+      image: relativePath,
+      imageId: variantId
+    };
   }
 
-  return relativePath;
+  const folderPath = path.dirname(absolutePath);
+  const pngFiles = listPngFiles(folderPath);
+  if (category === 'weapons' && pngFiles.length) {
+    const baseTierFile = `${slugifyItemId(baseName)}_i.png`;
+    if (pngFiles.includes(baseTierFile)) {
+      return {
+        image: `assets/images/items/${folder}/families/${familyId}/${groupSlug}/${baseTierFile}`,
+        imageId: path.parse(baseTierFile).name
+      };
+    }
+
+    const fileName = pickWeaponImageFile(pngFiles, rarity);
+    return {
+      image: `assets/images/items/${folder}/families/${familyId}/${groupSlug}/${fileName}`,
+      imageId: path.parse(fileName).name
+    };
+  }
+
+  return {
+    image: relativePath,
+    imageId: variantId
+  };
 }
 
 function parseRarityTable(table) {
@@ -236,11 +277,39 @@ function parseFamilyDoc(category, familyId, familyName, filePath) {
     const groupSlug = category === 'weapons'
       ? (weaponTypeFolderByName[line.label] || `${slugify(line.label)}s`)
       : slugify(line.label);
+
+    if (category === 'weapons') {
+      rarityOrder.forEach(rarity => {
+        const baseName = line.rarities[rarity];
+        if (!baseName) {
+          return;
+        }
+
+        tierOrder.forEach(tier => {
+          const variantId = `${slugifyItemId(baseName)}_${tier.toLowerCase()}`;
+          const resolvedImage = resolveWeaponVariantImage(category, familyId, groupSlug, baseName, rarity, tier);
+
+          variants.push({
+            id: variantId,
+            name: `${baseName} ${tier}`,
+            baseName,
+            rarity,
+            tier,
+            image: resolvedImage.image,
+            imageId: resolvedImage.imageId,
+            sourceDocument: path.relative(wikiRoot, filePath).replaceAll('\\', '/')
+          });
+        });
+      });
+      return;
+    }
+
     tierOrder.forEach(tier => {
       const rarityIndex = rarityOrder.findIndex(r => Object.prototype.hasOwnProperty.call(line.rarities, r));
       const rarity = rarityTable && rarityTable.headers[rarityIndex + 1] ? rarityTable.headers[rarityIndex + 1] : rarityOrder[0];
       const baseName = line.rarities[rarity] || line.label;
       const variantId = `${slugifyItemId(baseName)}_${tier.toLowerCase()}`;
+      const resolvedImage = resolveWeaponVariantImage(category, familyId, groupSlug, baseName, rarity, tier);
 
       variants.push({
         id: variantId,
@@ -248,7 +317,8 @@ function parseFamilyDoc(category, familyId, familyName, filePath) {
         baseName,
         rarity,
         tier,
-        image: buildVariantPath(category, familyId, groupSlug, baseName, tier),
+        image: resolvedImage.image,
+        imageId: resolvedImage.imageId,
         sourceDocument: path.relative(wikiRoot, filePath).replaceAll('\\', '/')
       });
     });

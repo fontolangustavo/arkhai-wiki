@@ -81,12 +81,16 @@
   function buildWeaponTypeFromDocs(family, weaponDoc, rarityLine, overviewTable, catalystTable, visualTable) {
     const typeLabel = rarityLine.label;
     const typeId = slugifyWeaponType(typeLabel);
-    const baseWeaponName = rarityLine.rarities && rarityLine.rarities.Incomum ? rarityLine.rarities.Incomum : typeLabel;
+    const rarityNames = rarityLine.rarities || {};
+    const rarityBaseNames = rarityOrder
+      .map(rarity => rarityNames[rarity])
+      .filter(Boolean);
+    const baseWeaponName = rarityNames.Incomum || rarityBaseNames[0] || typeLabel;
     const typeTable = weaponDoc.tables.find(table => {
       const heading = table.headingPath && table.headingPath[table.headingPath.length - 1];
       return table.headingPath && table.headingPath[0] === 'Tabelas de Atributos por Arma' && heading === baseWeaponName;
     }) || null;
-    const variants = (weaponDoc.variants || []).filter(variant => variant.baseName === baseWeaponName);
+    const variants = (weaponDoc.variants || []).filter(variant => rarityBaseNames.includes(variant.baseName));
     const statRowsByKey = buildStatTableRows(typeTable);
     const variantByKey = buildVariantMap(variants, statRowsByKey);
     const previewVariant = variantByKey['Incomum:I'] || variants[0] || null;
@@ -123,8 +127,8 @@
       variantByKey,
       imageByRarity: Object.fromEntries(
         rarityOrder.map(rarity => {
-          const preferredVariant = variants.find(variant => variant.rarity === rarity && variant.tier === 'I')
-            || variants.find(variant => variant.rarity === rarity)
+          const preferredVariant = Object.values(variantByKey).find(variant => variant.rarity === rarity && variant.tier === 'I')
+            || Object.values(variantByKey).find(variant => variant.rarity === rarity)
             || null;
 
           return [rarity, preferredVariant ? preferredVariant.image : defaultImage];
@@ -132,7 +136,7 @@
       ),
       previewImage: previewVariant ? previewVariant.image : defaultImage,
       image: previewVariant ? previewVariant.image : defaultImage,
-      rarityNames: rarityLine.rarities || {},
+      rarityNames,
       visuals: visualTable && Array.isArray(visualTable.rows)
         ? visualTable.rows.map(row => ({ rarity: row[0], text: row[1] }))
         : [],
@@ -258,11 +262,19 @@
 
   if (catalog) {
     window.ArkhaiWeaponCatalog = catalog;
-    window.weaponCatalogFamilies = catalog.families;
-    window.weaponCatalogFamilyById = catalog.familyById;
-    window.weaponCatalogWeaponTypeIndex = catalog.weaponTypeIndex;
-    window.weaponCatalogWeaponTypeMeta = catalog.weaponTypeMeta;
-    window.weaponCatalogWeaponTypeOrder = catalog.weaponTypeOrder;
+    window.weaponRarityOrder = catalog.rarityOrder;
+    window.weaponTierOrder = catalog.tierOrder;
+    window.weaponTypeOrder = catalog.weaponTypeOrder;
+    window.weaponTypeMeta = catalog.weaponTypeMeta;
+    window.weaponTypeIndex = catalog.weaponTypeIndex;
+    window.weaponFamilies = catalog.families;
+    window.weaponFamilyById = catalog.familyById;
+    window.weaponDefaultImage = catalog.defaultImage;
+    window.resolveWeaponTypeName = catalog.resolveWeaponTypeName;
+    window.createWeaponImageHtml = window.createWeaponImageHtml || ((image, alt, className = 'item-image') => {
+      const resolvedImage = image || catalog.defaultImage;
+      return `<img class="${className}" src="${resolvedImage}" alt="${alt}" onerror="this.onerror=null;this.src='${catalog.defaultImage}'">`;
+    });
     window.resolveWeaponCatalogTypeName = catalog.resolveWeaponTypeName;
     window.getWeaponCatalogSelection = getWeaponCatalogSelection;
   }
