@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T12:38:39.129Z",
+  "generatedAt": "2026-05-26T23:25:51.843Z",
   "families": [
     {
       "id": "aracu-das-sombras",
@@ -13411,8 +13411,8 @@
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_i.png",
-              "imageId": "adaga_vulcanica_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_uncommon.png",
+              "imageId": "dagger_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13421,8 +13421,8 @@
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_ii.png",
-              "imageId": "adaga_vulcanica_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_uncommon.png",
+              "imageId": "dagger_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13431,8 +13431,8 @@
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_iii.png",
-              "imageId": "adaga_vulcanica_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_uncommon.png",
+              "imageId": "dagger_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13441,8 +13441,8 @@
               "baseName": "Adaga Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_vulcanica_iv.png",
-              "imageId": "adaga_vulcanica_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_uncommon.png",
+              "imageId": "dagger_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13451,8 +13451,8 @@
               "baseName": "Adaga de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_de_brasa_i.png",
-              "imageId": "adaga_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_rare.png",
+              "imageId": "dagger_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13461,8 +13461,8 @@
               "baseName": "Adaga de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_de_brasa_ii.png",
-              "imageId": "adaga_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_rare.png",
+              "imageId": "dagger_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13471,8 +13471,8 @@
               "baseName": "Adaga de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_de_brasa_iii.png",
-              "imageId": "adaga_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_rare.png",
+              "imageId": "dagger_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13481,8 +13481,8 @@
               "baseName": "Adaga de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/adaga_de_brasa_iv.png",
-              "imageId": "adaga_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_rare.png",
+              "imageId": "dagger_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13491,8 +13491,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/lamina_do_ancestral_i.png",
-              "imageId": "lamina_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_epic.png",
+              "imageId": "dagger_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13501,8 +13501,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/lamina_do_ancestral_ii.png",
-              "imageId": "lamina_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_epic.png",
+              "imageId": "dagger_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13511,8 +13511,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/lamina_do_ancestral_iii.png",
-              "imageId": "lamina_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_epic.png",
+              "imageId": "dagger_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13521,8 +13521,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/lamina_do_ancestral_iv.png",
-              "imageId": "lamina_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_epic.png",
+              "imageId": "dagger_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13531,8 +13531,8 @@
               "baseName": "Dente da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dente_da_forja_i.png",
-              "imageId": "dente_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_legendary.png",
+              "imageId": "dagger_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13541,8 +13541,8 @@
               "baseName": "Dente da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dente_da_forja_ii.png",
-              "imageId": "dente_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_legendary.png",
+              "imageId": "dagger_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13551,8 +13551,8 @@
               "baseName": "Dente da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dente_da_forja_iii.png",
-              "imageId": "dente_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_legendary.png",
+              "imageId": "dagger_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13561,8 +13561,8 @@
               "baseName": "Dente da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dente_da_forja_iv.png",
-              "imageId": "dente_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/daggers/dagger_golem_legendary.png",
+              "imageId": "dagger_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13571,8 +13571,8 @@
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_i.png",
-              "imageId": "espada_vulcanica_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_uncommon.png",
+              "imageId": "sword_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13581,8 +13581,8 @@
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_ii.png",
-              "imageId": "espada_vulcanica_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_uncommon.png",
+              "imageId": "sword_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13591,8 +13591,8 @@
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_iii.png",
-              "imageId": "espada_vulcanica_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_uncommon.png",
+              "imageId": "sword_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13601,8 +13601,8 @@
               "baseName": "Espada Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_vulcanica_iv.png",
-              "imageId": "espada_vulcanica_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_uncommon.png",
+              "imageId": "sword_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13611,8 +13611,8 @@
               "baseName": "Espada de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_de_brasa_i.png",
-              "imageId": "espada_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_rare.png",
+              "imageId": "sword_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13621,8 +13621,8 @@
               "baseName": "Espada de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_de_brasa_ii.png",
-              "imageId": "espada_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_rare.png",
+              "imageId": "sword_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13631,8 +13631,8 @@
               "baseName": "Espada de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_de_brasa_iii.png",
-              "imageId": "espada_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_rare.png",
+              "imageId": "sword_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13641,8 +13641,8 @@
               "baseName": "Espada de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/espada_de_brasa_iv.png",
-              "imageId": "espada_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_rare.png",
+              "imageId": "sword_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13651,8 +13651,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/lamina_do_ancestral_i.png",
-              "imageId": "lamina_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_epic.png",
+              "imageId": "sword_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13661,8 +13661,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/lamina_do_ancestral_ii.png",
-              "imageId": "lamina_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_epic.png",
+              "imageId": "sword_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13671,8 +13671,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/lamina_do_ancestral_iii.png",
-              "imageId": "lamina_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_epic.png",
+              "imageId": "sword_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13681,8 +13681,8 @@
               "baseName": "Lamina do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/lamina_do_ancestral_iv.png",
-              "imageId": "lamina_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_epic.png",
+              "imageId": "sword_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13691,8 +13691,8 @@
               "baseName": "Colera da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/colera_da_forja_i.png",
-              "imageId": "colera_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_legendary.png",
+              "imageId": "sword_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13701,8 +13701,8 @@
               "baseName": "Colera da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/colera_da_forja_ii.png",
-              "imageId": "colera_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_legendary.png",
+              "imageId": "sword_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13711,8 +13711,8 @@
               "baseName": "Colera da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/colera_da_forja_iii.png",
-              "imageId": "colera_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_legendary.png",
+              "imageId": "sword_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13721,8 +13721,8 @@
               "baseName": "Colera da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/colera_da_forja_iv.png",
-              "imageId": "colera_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/swords/sword_golem_legendary.png",
+              "imageId": "sword_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13731,8 +13731,8 @@
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_i.png",
-              "imageId": "cajado_vulcanico_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_incomun.png",
+              "imageId": "staff_golem_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13741,8 +13741,8 @@
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_ii.png",
-              "imageId": "cajado_vulcanico_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_incomun.png",
+              "imageId": "staff_golem_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13751,8 +13751,8 @@
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_iii.png",
-              "imageId": "cajado_vulcanico_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_incomun.png",
+              "imageId": "staff_golem_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13761,8 +13761,8 @@
               "baseName": "Cajado Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_vulcanico_iv.png",
-              "imageId": "cajado_vulcanico_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_incomun.png",
+              "imageId": "staff_golem_incomun",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13771,8 +13771,8 @@
               "baseName": "Cajado de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_de_brasa_i.png",
-              "imageId": "cajado_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_rare.png",
+              "imageId": "staff_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13781,8 +13781,8 @@
               "baseName": "Cajado de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_de_brasa_ii.png",
-              "imageId": "cajado_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_rare.png",
+              "imageId": "staff_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13791,8 +13791,8 @@
               "baseName": "Cajado de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_de_brasa_iii.png",
-              "imageId": "cajado_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_rare.png",
+              "imageId": "staff_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13801,8 +13801,8 @@
               "baseName": "Cajado de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cajado_de_brasa_iv.png",
-              "imageId": "cajado_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_rare.png",
+              "imageId": "staff_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13811,8 +13811,8 @@
               "baseName": "Cetro do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cetro_do_ancestral_i.png",
-              "imageId": "cetro_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_epic.png",
+              "imageId": "staff_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13821,8 +13821,8 @@
               "baseName": "Cetro do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cetro_do_ancestral_ii.png",
-              "imageId": "cetro_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_epic.png",
+              "imageId": "staff_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13831,8 +13831,8 @@
               "baseName": "Cetro do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cetro_do_ancestral_iii.png",
-              "imageId": "cetro_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_epic.png",
+              "imageId": "staff_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13841,8 +13841,8 @@
               "baseName": "Cetro do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/cetro_do_ancestral_iv.png",
-              "imageId": "cetro_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_epic.png",
+              "imageId": "staff_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13851,8 +13851,8 @@
               "baseName": "Oraculo da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/oraculo_da_forja_i.png",
-              "imageId": "oraculo_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_legendary.png",
+              "imageId": "staff_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13861,8 +13861,8 @@
               "baseName": "Oraculo da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/oraculo_da_forja_ii.png",
-              "imageId": "oraculo_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_legendary.png",
+              "imageId": "staff_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13871,8 +13871,8 @@
               "baseName": "Oraculo da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/oraculo_da_forja_iii.png",
-              "imageId": "oraculo_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_legendary.png",
+              "imageId": "staff_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13881,8 +13881,8 @@
               "baseName": "Oraculo da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/oraculo_da_forja_iv.png",
-              "imageId": "oraculo_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/staffs/staff_golem_legendary.png",
+              "imageId": "staff_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13891,8 +13891,8 @@
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_i.png",
-              "imageId": "arco_vulcanico_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_uncommon.png",
+              "imageId": "bow_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13901,8 +13901,8 @@
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_ii.png",
-              "imageId": "arco_vulcanico_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_uncommon.png",
+              "imageId": "bow_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13911,8 +13911,8 @@
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_iii.png",
-              "imageId": "arco_vulcanico_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_uncommon.png",
+              "imageId": "bow_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13921,8 +13921,8 @@
               "baseName": "Arco Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_vulcanico_iv.png",
-              "imageId": "arco_vulcanico_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_uncommon.png",
+              "imageId": "bow_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13931,8 +13931,8 @@
               "baseName": "Arco de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_de_brasa_i.png",
-              "imageId": "arco_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_rare.png",
+              "imageId": "bow_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13941,8 +13941,8 @@
               "baseName": "Arco de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_de_brasa_ii.png",
-              "imageId": "arco_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_rare.png",
+              "imageId": "bow_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13951,8 +13951,8 @@
               "baseName": "Arco de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_de_brasa_iii.png",
-              "imageId": "arco_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_rare.png",
+              "imageId": "bow_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13961,8 +13961,8 @@
               "baseName": "Arco de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_de_brasa_iv.png",
-              "imageId": "arco_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_rare.png",
+              "imageId": "bow_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13971,8 +13971,8 @@
               "baseName": "Arco do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_do_ancestral_i.png",
-              "imageId": "arco_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_epic.png",
+              "imageId": "bow_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13981,8 +13981,8 @@
               "baseName": "Arco do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_do_ancestral_ii.png",
-              "imageId": "arco_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_epic.png",
+              "imageId": "bow_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -13991,8 +13991,8 @@
               "baseName": "Arco do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_do_ancestral_iii.png",
-              "imageId": "arco_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_epic.png",
+              "imageId": "bow_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14001,8 +14001,8 @@
               "baseName": "Arco do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/arco_do_ancestral_iv.png",
-              "imageId": "arco_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_epic.png",
+              "imageId": "bow_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14011,8 +14011,8 @@
               "baseName": "Flecha da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/flecha_da_forja_i.png",
-              "imageId": "flecha_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_legendary.png",
+              "imageId": "bow_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14021,8 +14021,8 @@
               "baseName": "Flecha da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/flecha_da_forja_ii.png",
-              "imageId": "flecha_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_legendary.png",
+              "imageId": "bow_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14031,8 +14031,8 @@
               "baseName": "Flecha da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/flecha_da_forja_iii.png",
-              "imageId": "flecha_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_legendary.png",
+              "imageId": "bow_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14041,8 +14041,8 @@
               "baseName": "Flecha da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/flecha_da_forja_iv.png",
-              "imageId": "flecha_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/bows/bow_golem_legendary.png",
+              "imageId": "bow_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14051,8 +14051,8 @@
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_i.png",
-              "imageId": "pistola_vulcanica_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_uncommon.png",
+              "imageId": "gun_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14061,8 +14061,8 @@
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_ii.png",
-              "imageId": "pistola_vulcanica_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_uncommon.png",
+              "imageId": "gun_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14071,8 +14071,8 @@
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_iii.png",
-              "imageId": "pistola_vulcanica_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_uncommon.png",
+              "imageId": "gun_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14081,8 +14081,8 @@
               "baseName": "Pistola Vulcanica",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_vulcanica_iv.png",
-              "imageId": "pistola_vulcanica_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_uncommon.png",
+              "imageId": "gun_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14091,8 +14091,8 @@
               "baseName": "Pistola de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_de_brasa_i.png",
-              "imageId": "pistola_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_rare.png",
+              "imageId": "gun_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14101,8 +14101,8 @@
               "baseName": "Pistola de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_de_brasa_ii.png",
-              "imageId": "pistola_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_rare.png",
+              "imageId": "gun_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14111,8 +14111,8 @@
               "baseName": "Pistola de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_de_brasa_iii.png",
-              "imageId": "pistola_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_rare.png",
+              "imageId": "gun_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14121,8 +14121,8 @@
               "baseName": "Pistola de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/pistola_de_brasa_iv.png",
-              "imageId": "pistola_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_rare.png",
+              "imageId": "gun_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14131,8 +14131,8 @@
               "baseName": "Canhao do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/canhao_do_ancestral_i.png",
-              "imageId": "canhao_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_epic.png",
+              "imageId": "gun_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14141,8 +14141,8 @@
               "baseName": "Canhao do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/canhao_do_ancestral_ii.png",
-              "imageId": "canhao_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_epic.png",
+              "imageId": "gun_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14151,8 +14151,8 @@
               "baseName": "Canhao do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/canhao_do_ancestral_iii.png",
-              "imageId": "canhao_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_epic.png",
+              "imageId": "gun_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14161,8 +14161,8 @@
               "baseName": "Canhao do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/canhao_do_ancestral_iv.png",
-              "imageId": "canhao_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_epic.png",
+              "imageId": "gun_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14171,8 +14171,8 @@
               "baseName": "Disparo da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/disparo_da_forja_i.png",
-              "imageId": "disparo_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_legendary.png",
+              "imageId": "gun_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14181,8 +14181,8 @@
               "baseName": "Disparo da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/disparo_da_forja_ii.png",
-              "imageId": "disparo_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_legendary.png",
+              "imageId": "gun_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14191,8 +14191,8 @@
               "baseName": "Disparo da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/disparo_da_forja_iii.png",
-              "imageId": "disparo_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_legendary.png",
+              "imageId": "gun_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14201,8 +14201,8 @@
               "baseName": "Disparo da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/disparo_da_forja_iv.png",
-              "imageId": "disparo_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/pistols/gun_golem_legendary.png",
+              "imageId": "gun_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14211,8 +14211,8 @@
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_i.png",
-              "imageId": "martelo_vulcanico_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_uncommon.png",
+              "imageId": "hammer_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14221,8 +14221,8 @@
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_ii.png",
-              "imageId": "martelo_vulcanico_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_uncommon.png",
+              "imageId": "hammer_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14231,8 +14231,8 @@
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_iii.png",
-              "imageId": "martelo_vulcanico_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_uncommon.png",
+              "imageId": "hammer_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14241,8 +14241,8 @@
               "baseName": "Martelo Vulcanico",
               "rarity": "Incomum",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_vulcanico_iv.png",
-              "imageId": "martelo_vulcanico_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_uncommon.png",
+              "imageId": "hammer_golem_uncommon",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14251,8 +14251,8 @@
               "baseName": "Martelo de Brasa",
               "rarity": "Raro",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_de_brasa_i.png",
-              "imageId": "martelo_de_brasa_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_rare.png",
+              "imageId": "hammer_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14261,8 +14261,8 @@
               "baseName": "Martelo de Brasa",
               "rarity": "Raro",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_de_brasa_ii.png",
-              "imageId": "martelo_de_brasa_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_rare.png",
+              "imageId": "hammer_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14271,8 +14271,8 @@
               "baseName": "Martelo de Brasa",
               "rarity": "Raro",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_de_brasa_iii.png",
-              "imageId": "martelo_de_brasa_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_rare.png",
+              "imageId": "hammer_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14281,8 +14281,8 @@
               "baseName": "Martelo de Brasa",
               "rarity": "Raro",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/martelo_de_brasa_iv.png",
-              "imageId": "martelo_de_brasa_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_rare.png",
+              "imageId": "hammer_golem_rare",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14291,8 +14291,8 @@
               "baseName": "Forja do Ancestral",
               "rarity": "Epico",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/forja_do_ancestral_i.png",
-              "imageId": "forja_do_ancestral_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_epic.png",
+              "imageId": "hammer_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14301,8 +14301,8 @@
               "baseName": "Forja do Ancestral",
               "rarity": "Epico",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/forja_do_ancestral_ii.png",
-              "imageId": "forja_do_ancestral_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_epic.png",
+              "imageId": "hammer_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14311,8 +14311,8 @@
               "baseName": "Forja do Ancestral",
               "rarity": "Epico",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/forja_do_ancestral_iii.png",
-              "imageId": "forja_do_ancestral_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_epic.png",
+              "imageId": "hammer_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14321,8 +14321,8 @@
               "baseName": "Forja do Ancestral",
               "rarity": "Epico",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/forja_do_ancestral_iv.png",
-              "imageId": "forja_do_ancestral_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_epic.png",
+              "imageId": "hammer_golem_epic",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14331,8 +14331,8 @@
               "baseName": "Coracao da Forja",
               "rarity": "Lendario",
               "tier": "I",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/coracao_da_forja_i.png",
-              "imageId": "coracao_da_forja_i",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_legendary.png",
+              "imageId": "hammer_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14341,8 +14341,8 @@
               "baseName": "Coracao da Forja",
               "rarity": "Lendario",
               "tier": "II",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/coracao_da_forja_ii.png",
-              "imageId": "coracao_da_forja_ii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_legendary.png",
+              "imageId": "hammer_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14351,8 +14351,8 @@
               "baseName": "Coracao da Forja",
               "rarity": "Lendario",
               "tier": "III",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/coracao_da_forja_iii.png",
-              "imageId": "coracao_da_forja_iii",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_legendary.png",
+              "imageId": "hammer_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             },
             {
@@ -14361,8 +14361,8 @@
               "baseName": "Coracao da Forja",
               "rarity": "Lendario",
               "tier": "IV",
-              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/coracao_da_forja_iv.png",
-              "imageId": "coracao_da_forja_iv",
+              "image": "assets/images/items/weapons/families/golem-de-cinzas/hammers/hammer_golem_legendary.png",
+              "imageId": "hammer_golem_legendary",
               "sourceDocument": "../arkhai/mmorpg-design-docs/05-items-and-equipment/families/golem-de-cinzas/weapons.md"
             }
           ]
