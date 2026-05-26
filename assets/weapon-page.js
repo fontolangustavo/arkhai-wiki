@@ -315,7 +315,15 @@
         : state.rarity === 'Epico' ? 'epic'
           : 'legendary';
     const detailCardClass = `detail-card rarity-${rarityClass}`;
-    const image = createWeaponImageHtml(variant.image || type.image || family.image, variant.name);
+    const imageHtml = createWeaponImageHtml(variant.image || type.image || family.image, variant.name);
+    const image = window.createImageModalTriggerHtml
+      ? window.createImageModalTriggerHtml(imageHtml, {
+          src: variant.image || type.image || family.image,
+          alt: variant.name,
+          title: variant.name,
+          caption: `${family.familyName} - ${type.weaponType} - ${variant.rarity} ${variant.tier}`
+        })
+      : imageHtml;
     const typeOptions = family.types.map(entry => {
       const active = entry.id === type.id ? 'selected' : '';
       return `<option value="${entry.id}" ${active}>${entry.weaponType}</option>`;

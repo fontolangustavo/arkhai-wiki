@@ -139,7 +139,15 @@
     currentTier = item.internalTier;
     const rarityClass = rarityClassMap[item.rarity] || '';
     const detailCardClass = rarityClass ? `detail-card rarity-${rarityClass}` : 'detail-card';
-    const itemImage = `<img class="item-image" src="${item.image}" alt="${item.name}">`;
+    const itemImageInner = `<img class="item-image" src="${item.image}" alt="${item.name}">`;
+    const itemImage = window.createImageModalTriggerHtml
+      ? window.createImageModalTriggerHtml(itemImageInner, {
+          src: item.image,
+          alt: item.name,
+          title: item.name,
+          caption: `${item.family} - ${item.rarityTier}`
+        })
+      : itemImageInner;
     const lineOptions = model.lineOrder.map(entry => {
       const active = entry.lineId === line.lineId ? 'selected' : '';
       return `<option value="${entry.lineId}" ${active}>${entry.displayName} (${entry.rarity})</option>`;
