@@ -22,6 +22,7 @@ const PAGE_LABELS = {
   'accessories.html': 'Acessorios',
   'materials.html': 'Materiais',
   'consumables.html': 'Consumiveis',
+  'cities.html': 'Cidades',
   'item.html': 'Item'
 };
 
@@ -85,7 +86,8 @@ function renderLayout(activePage) {
     { label: 'Armaduras', href: resolveHref('armors.html'), active: activeSection === 'armors.html' },
     { label: 'Acessorios', href: resolveHref('accessories.html'), active: activeSection === 'accessories.html' },
     { label: 'Materiais', href: resolveHref('materials.html'), active: activeSection === 'materials.html' },
-    { label: 'Consumiveis', href: resolveHref('consumables.html'), active: activeSection === 'consumables.html' }
+    { label: 'Consumiveis', href: resolveHref('consumables.html'), active: activeSection === 'consumables.html' },
+    { label: 'Cidades', href: resolveHref('cities.html'), active: activeSection === 'cities.html' }
   ].filter((tab, index) => index === 0 || tab.href !== currentHref);
 
   const sidebar = `
@@ -110,7 +112,11 @@ function renderLayout(activePage) {
 
       <nav class="side-section">
         <h3>Atlas</h3>
-        ${buildSidebarLink(resolveHref('index.html#cities'), 'Cidades', activeSection === 'index.html')}
+        ${buildSidebarLink(resolveHref('cities.html'), 'Cidades', activeSection === 'cities.html')}
+        ${buildSidebarLink(resolveHref('cities.html#khem-nippur'), 'Khem-Nippur', activeSection === 'cities.html')}
+        ${buildSidebarLink(resolveHref('cities.html#hellas-assur'), 'Hellas-Assur', activeSection === 'cities.html')}
+        ${buildSidebarLink(resolveHref('cities.html#ermo-de-nod'), 'Ermo de Nod', activeSection === 'cities.html')}
+        ${buildSidebarLink(resolveHref('cities.html#silvan-arcadia'), 'Silvan-Arcadia', activeSection === 'cities.html')}
         ${buildSidebarLink(resolveHref('index.html#systems'), 'Sistemas', activeSection === 'index.html')}
         ${buildSidebarLink(resolveHref('index.html#crafting'), 'Crafting', activeSection === 'index.html')}
         ${buildSidebarLink(resolveHref('index.html#lore'), 'Lore', activeSection === 'index.html')}

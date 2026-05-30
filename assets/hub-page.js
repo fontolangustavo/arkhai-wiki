@@ -1,10 +1,10 @@
 (function () {
   const hubCards = [
     {
-      title: 'Khem-Nippur',
-      icon: '🏜️',
-      description: 'Regiao inicial do deserto, necromancia, sol e artefatos antigos.',
-      href: '#cities'
+      title: 'Cidades de Arkhai',
+      icon: '🏛️',
+      description: 'Hubs seguros, economicos e sociais conectados aos dominios e Dungeons.',
+      href: 'cities.html'
     },
     {
       title: 'Balanceamento de Itens',
@@ -21,10 +21,10 @@
   ];
 
   const cityCards = [
-    { title: 'Khem-Nippur', description: 'O Bercario de Ouro, deserto, necromancia e sol.' },
-    { title: 'Hellas-Assur', description: 'A Agora de Marmore, arenas, forja e disciplina marcial.' },
-    { title: 'Ermo de Nod', description: 'A fronteira do esquecimento, neve, polvora e exilio.' },
-    { title: 'Silvan-Arcadia', description: 'O santuario das raizes, alquimia botanica e cura.' }
+    { title: 'Khem-Nippur', description: 'A Necropole de Ouro: almas, joalheria, venenos e memoria ancestral.', href: 'cities.html#khem-nippur' },
+    { title: 'Hellas-Assur', description: 'A Agora de Marmore: treino, PvP amigavel e ferraria pesada.', href: 'cities.html#hellas-assur' },
+    { title: 'Ermo de Nod', description: 'A Cidadela de Fuligem: polvora, runaria e alquimia sombria.', href: 'cities.html#ermo-de-nod' },
+    { title: 'Silvan-Arcadia', description: 'O Vilarejo das Raizes: cura, tecelagem, furtividade e alquimia botanica.', href: 'cities.html#silvan-arcadia' }
   ];
 
   const itemGroups = [
@@ -100,10 +100,10 @@
 
   function renderCityCards() {
     return cityCards.map(city => `
-      <div class="city-card">
+      <a class="city-card city-card-link" href="${city.href}">
         <strong>${city.title}</strong>
         <span>${city.description}</span>
-      </div>
+      </a>
     `).join('');
   }
 

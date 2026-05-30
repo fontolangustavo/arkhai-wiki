@@ -1,0 +1,92 @@
+.city-loop-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin:16px 0 24px;
+}
+
+.city-loop-card,
+.city-detail-card {
+  border:1px solid var(--border);
+  background:#ffffff;
+  border-radius:14px;
+  padding:16px;
+}
+
+.city-loop-card h3,
+.city-detail-card h3 {
+  margin:0 0 8px;
+  color:#111111;
+  font-size:18px;
+}
+
+.city-loop-card p,
+.city-detail-card p:last-child {
+  margin-bottom:0;
+}
+
+.city-detail-card {
+  margin:0 0 18px;
+}
+
+.city-detail-head {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--border);
+}
+
+.city-detail-head p {
+  margin:0;
+  color:var(--muted);
+}
+
+.city-symbol {
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#f5f5f5;
+  color:#111111;
+  font-size:24px;
+  font-weight:800;
+  flex:0 0 auto;
+}
+
+.city-detail-card ul {
+  margin:12px 0;
+  padding-left:22px;
+}
+
+.city-detail-card li {
+  margin:7px 0;
+}
+
+.city-note {
+  padding:10px 12px;
+  border-left:4px solid #111111;
+  background:#f8f8f8;
+  color:#222222;
+}
+
+.city-card-link {
+  display:block;
+  color:inherit;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.city-card-link:hover {
+  text-decoration:none;
+  transform:translateY(-2px);
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+  border-color:var(--border-strong);
+}
+
+@media(max-width:1050px){
+  .city-loop-grid{grid-template-columns:1fr;}
+}

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cidades - Arkhai Wiki</title>
+  <link rel="stylesheet" href="assets/wiki.css" />
+  <link rel="stylesheet" href="assets/cities-page.css" />
+</head>
+<body>
+  <div class="wiki-shell">
+    <div id="wiki-sidebar"></div>
+    <main class="main">
+      <div id="wiki-topbar"></div>
+      <section class="content">
+        <article class="article">
+          <header class="article-header">
+            <h1>Cidades de Arkhai</h1>
+            <div class="article-actions">atlas publico · fonte: arkhai</div>
+          </header>
+
+          <div class="status-line">
+            🏛️ Hubs seguros, economicos e sociais usados para preparar o jogador antes das Dungeons.
+          </div>
+
+          <div class="article-body">
+            <div>
+              <p>
+                As cidades de Arkhai sao <strong>zonas seguras interativas</strong>. Elas concentram gestao de recursos,
+                comercio, reparo de equipamentos, aprendizado de habilidades, interacao social e preparacao para novas
+                incursões em Dungeons.
+              </p>
+              <p>
+                Cada cidade tambem possui uma identidade regional propria. O jogador deve reconhecer onde encontrar as
+                melhores forjas, mercados, centros profissionais, especializacoes economicas e servicos ligados ao dominio local.
+              </p>
+
+              <div class="see-also">
+                🔗 <span>Baseado em <code>arkhai/mmorpg-design-docs/01-world/cities.md</code> e <code>arkhai/mmorpg-design-docs/08-professions/15-cidades-e-hubs-economicos.md</code>.</span>
+              </div>
+
+              <h2 id="overview" class="section-title">Papel das cidades no loop</h2>
+              <div class="city-loop-grid">
+                <section class="city-loop-card">
+                  <h3>Entrada</h3>
+                  <p>O jogador chega com reliquias brutas, loot de Dungeon, Ar-Khe corrompido e equipamentos danificados.</p>
+                </section>
+                <section class="city-loop-card">
+                  <h3>Processamento</h3>
+                  <p>A cidade transforma recursos em progresso: refino, comercio, reparos, aprendizado e sincronizacao com o Altar do Dominio.</p>
+                </section>
+                <section class="city-loop-card">
+                  <h3>Saida</h3>
+                  <p>O jogador retorna para a acao com inventario limpo, buffs de descanso, equipamentos aprimorados e novas coordenadas de Dungeons.</p>
+                </section>
+              </div>
+
+              <h2 id="cities-list" class="section-title">Cidades documentadas</h2>
+
+              <section class="city-detail-card" id="khem-nippur">
+                <div class="city-detail-head">
+                  <span class="city-symbol">𓂀</span>
+                  <div>
+                    <h3>Khem-Nippur</h3>
+                    <p>A Necropole de Ouro</p>
+                  </div>
+                </div>
+                <p>
+                  Khem-Nippur representa o dominio da morte sagrada, da memoria ancestral e do ouro ritual. Sua funcao principal
+                  e apoiar sistemas de <strong>reviver mercenarios, pets ou summons</strong>, alem de purificar almas para gerar bonus magicos.
+                </p>
+                <ul>
+                  <li><strong>Especializacao economica:</strong> mineracao, veneno e joalheria.</li>
+                  <li><strong>Servicos esperados:</strong> purificacao de almas, expansao de inventario, comercio de ossos antigos e artefatos funerarios.</li>
+                  <li><strong>Identidade visual:</strong> necropole dourada, canais de mana azul, piramides invertidas e zigurates cerimoniais.</li>
+                  <li><strong>Exemplo local:</strong> Nippur-Ka, com o Sumo-Embalsamador como NPC chave.</li>
+                </ul>
+                <p class="city-note">
+                  Fantasia de uso: cidade inicial para jogadores que buscam magia, necromancia, invocacoes, reliquias antigas e progresso espiritual.
+                </p>
+              </section>
+
+              <section class="city-detail-card" id="hellas-assur">
+                <div class="city-detail-head">
+                  <span class="city-symbol">Ω</span>
+                  <div>
+                    <h3>Hellas-Assur</h3>
+                    <p>A Agora de Marmore</p>
+                  </div>
+                </div>
+                <p>
+                  Hellas-Assur e o centro marcial de Arkhai. A cidade concentra disciplina, treinamento, forja pesada e disputa controlada,
+                  funcionando como ponto de referencia para jogadores focados em combate direto e evolucao de armas robustas.
+                </p>
+                <ul>
+                  <li><strong>Especializacao economica:</strong> ferraria pesada.</li>
+                  <li><strong>Servicos esperados:</strong> arenas de treino, PvP amigavel, mestres marciais e melhoria de armas pesadas.</li>
+                  <li><strong>Identidade visual:</strong> marmore, pracas abertas, colunas monumentais, forjas cerimoniais e arquitetura de agora.</li>
+                  <li><strong>Gancho de live-ops:</strong> eventos podem afetar taxas de forja se a cidade sofrer danos durante ciclos narrativos.</li>
+                </ul>
+                <p class="city-note">
+                  Fantasia de uso: hub para treino, exibicao de equipamentos, testes de build, forja e preparacao para desafios fisicos.
+                </p>
+              </section>
+
+              <section class="city-detail-card" id="ermo-de-nod">
+                <div class="city-detail-head">
+                  <span class="city-symbol">✶</span>
+                  <div>
+                    <h3>Ermo de Nod</h3>
+                    <p>A Cidadela de Fuligem</p>
+                  </div>
+                </div>
+                <p>
+                  O Ermo de Nod e uma cidade de fronteira sombria, marcada por fuligem, exilio, tecnologia perigosa e alquimia proibida.
+                  Ela conecta a fantasia de sobrevivencia ambiental com engenharia, polvora, runas e resistencia contra regioes hostis.
+                </p>
+                <ul>
+                  <li><strong>Especializacao economica:</strong> runaria e alquimia sombria.</li>
+                  <li><strong>Servicos esperados:</strong> engenharia de polvora, upgrades tecnologicos, refino alquimico e protecoes ambientais.</li>
+                  <li><strong>Identidade visual:</strong> metal escuro, cinzas, fornalhas, oficinas instaveis, torres queimadas e luz de brasa.</li>
+                  <li><strong>Uso sistemico:</strong> refino de materia-prima em consumiveis ou melhorias, especialmente por alquimia.</li>
+                </ul>
+                <p class="city-note">
+                  Fantasia de uso: cidade para jogadores que preferem tecnologia arcana, dano explosivo, resistencia e pactos sombrios.
+                </p>
+              </section>
+
+              <section class="city-detail-card" id="silvan-arcadia">
+                <div class="city-detail-head">
+                  <span class="city-symbol">♧</span>
+                  <div>
+                    <h3>Silvan-Arcadia</h3>
+                    <p>O Vilarejo das Raizes</p>
+                  </div>
+                </div>
+                <p>
+                  Silvan-Arcadia e o polo natural de Arkhai. A cidade mistura cura, alquimia botanica, encantamentos organicos,
+                  tecelagem e furtividade, criando uma identidade mais silenciosa, viva e espiritual.
+                </p>
+                <ul>
+                  <li><strong>Especializacao economica:</strong> tecelagem e furtividade.</li>
+                  <li><strong>Servicos esperados:</strong> cura, alquimia botanica, encantamentos organicos, ervas raras e tecidos especiais.</li>
+                  <li><strong>Identidade visual:</strong> raizes expostas, casas integradas a arvores, luz filtrada, musgo, seiva e simbolos druidicos.</li>
+                  <li><strong>Perfil de jogador:</strong> classes ageis, suporte, druidas, arqueiros, curandeiros e builds de mobilidade.</li>
+                </ul>
+                <p class="city-note">
+                  Fantasia de uso: hub de cuidado, furtividade, venenos naturais, suporte e preparacao organica antes das Dungeons.
+                </p>
+              </section>
+
+              <h2 id="systems" class="section-title">Dependencias com sistemas</h2>
+              <table class="wiki-table">
+                <thead>
+                  <tr>
+                    <th>Sistema</th>
+                    <th>Como afeta as cidades</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dungeons</td>
+                    <td>O sucesso nas Dungeons de uma regiao desbloqueia novos distritos, NPCs e servicos na cidade local.</td>
+                  </tr>
+                  <tr>
+                    <td>Economia</td>
+                    <td>Precos e servicos podem variar conforme o Fluxo de Ar-Khe da regiao, criando mercado dinamico.</td>
+                  </tr>
+                  <tr>
+                    <td>Progresso</td>
+                    <td>A Ziggurat central funciona como medidor de progresso global do jogador naquele dominio.</td>
+                  </tr>
+                  <tr>
+                    <td>Timeline</td>
+                    <td>Ciclos e eventos sazonais podem alterar visualmente os hubs, liberar chefes mundiais e modificar taxas ou recompensas.</td>
+                  </tr>
+                  <tr>
+                    <td>Social</td>
+                    <td>As cidades servem como salas sociais para grupos, guildas, comercio, exibicao de equipamentos e preparacao multiplayer.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h2 id="open-questions" class="section-title">Questoes em aberto</h2>
+              <p>
+                A fonte de verdade ainda deixa pontos para evolucao futura: definir se as cidades serao instanciadas ou persistentes,
+                validar se o tempo gasto nelas ajuda ou atrapalha o ritmo mobile-first, medir interacao social antes das Dungeons e decidir
+                se jogadores terao moradias ou espacos privados para exibir trofeus.
+              </p>
+            </div>
+
+            <aside class="infobox">
+              <div class="infobox-title">Atlas de Cidades</div>
+              <div class="item-preview">🏛️</div>
+              <table>
+                <tr><th>Tipo</th><td>Hub seguro</td></tr>
+                <tr><th>Funcoes</th><td>Economia, social, preparo</td></tr>
+                <tr><th>Dominios</th><td>4 cidades base</td></tr>
+                <tr><th>Fonte</th><td>arkhai</td></tr>
+              </table>
+            </aside>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="assets/layout.js"></script>
+  <script>
+    renderLayout('cities.html');
+  </script>
+</body>
+</html>
